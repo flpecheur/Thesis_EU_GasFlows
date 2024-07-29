@@ -1,0 +1,127 @@
+,geojson_name,point_label,point_type,geojson_id,tp_map_x,tp_map_y,latitude,longitude
+0,Belfast,Greater Belfast,Distribution Point ExtEU,INET_N_555,-113.25,16.43,54.589,-5.911
+1,Alrewas,Alrewas (WM),Distribution Point ExtEU,INET_N_514,0.0,0.0,52.73869018,-1.77561329
+2,Imatra,Imatra,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_386,66.75,62.12,61.1695977,28.7645463
+3,Mediesu Aurit,Mediesu Aurit (RO) - Tekovo (UA),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_972,36.52,-37.02,47.786743,23.1376644
+4,Audley,Audley (WM),Distribution Point ExtEU,INET_N_518,0.0,0.0,53.06,-2.35
+5,Blackrod,Blackrod,Distribution Point ExtEU,INET_N_538,0.0,0.0,53.5924,-2.5
+6,Sakiai,Sakiai,Cross-Border Transmission IP between EU and Non-EU,INET_N_790,35.11,18.8,54.952671,23.0480199
+7,Peterborough,Peterborough Eye (Tee),Distribution Point ExtEU,INET_N_511,0.0,0.0,52.62697052,-0.301506985
+8,Zeebrugge,Zeebrugge IZT,Cross-Border Transmission IP between EU and ExtEU,INET_N_50,-67.33,-11.5,51.323,3.213
+9,Oss,Ross (WM),Distribution Point ExtEU,INET_N_846,0.0,0.0,51.76,5.513
+10,Kotlovka,Kotlovka,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_785,51.15,16.93,54.716599,25.7475233
+11,Hust,Shustoke,Distribution Point ExtEU,INET_N_1072,0.0,0.0,48.1734633,23.2972476
+12,Zeebrugge,Zeebrugge ZPT,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_50,-66.93,-11.5,51.323,3.213
+13,Bacton,Bacton (IUK),Cross-Border Transmission IP between EU and ExtEU,INET_N_516,-75.45,1.17,52.8506,1.466
+14,Moffat,Moffat,Cross-Border Transmission IP between EU and ExtEU,INET_N_566,-101.25,21.7,55.27762088,-3.438048755
+15,Kienbaum,Kienbaum,Transmission Point,INET_N_235,0.0,0.0,52.4483075,13.9567212
+16,Wardenburg,Wardenburg RG,Transmission Point,INET_N_254,-40.69,4.61,53.074963,8.171742
+17,Alrewas,Alrewas (EM),Distribution Point ExtEU,INET_N_514,0.0,0.0,52.73869018,-1.77561329
+18,Kyustendil,Kyustendil (BG) / Zidilovo (MK),Cross-Border Transmission IP between EU and Non-EU,INET_N_64,33.71,-63.02,42.2868817,22.6939308
+19,Dunkerque,Dunkerque,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_481,-70.58,-14.58,51.033134,2.194792
+20,Mazara Del Vallo,Mazara del Vallo,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_661,-18.28,-74.15,37.65533,12.597628
+21,Passo Gries,Griespass (CH) / Passo Gries (IT),Cross-Border Transmission IP between EU and Non-EU,INET_N_776,-39.77,-45.92,46.449851,8.366838
+22,Griespass,Griespass (CH) / Passo Gries (IT),Cross-Border Transmission IP between EU and Non-EU,INET_N_777,-39.77,-45.92,46.45,8.3666667
+23,Isaccea,Isaccea (RO) - Orlovka (UA),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_964,65.61,-51.23,45.265423,28.4607273
+24,Orlovka,Isaccea (RO) - Orlovka (UA),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_1066,65.61,-51.23,45.3199,28.45287
+25,Bishop Auckland,Bishop Auckland,Distribution Point ExtEU,INET_N_556,0.0,0.0,54.6707702,-1.565698513
+26,Ilchester,Ilchester,Distribution Point ExtEU,INET_N_485,0.0,0.0,51.002,-2.6827
+27,St Fergus,St Fergus,Distribution Point ExtEU,INET_N_573,0.0,0.0,57.567885,-1.844608
+28,Whitwell,Whitwell,Distribution Point ExtEU,INET_N_502,0.0,0.0,51.88346126,-0.294815399
+29,Rodersdorf,Oltingue (FR) / Rodersdorf (CH),Cross-Border Transmission IP between EU and Non-EU,INET_N_441,-43.9,-38.97,47.481,7.457
+30,Isaccea,Isaccea (RO) - Orlovka (UA) I,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_964,65.61,-51.23,45.265423,28.4607273
+31,Orlovka,Isaccea (RO) - Orlovka (UA) I,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_1066,65.61,-51.23,45.3199,28.45287
+32,Steinitz,Steinitz,Transmission Point,INET_N_246,-25.93,0.88,52.82964,11.112766
+33,Audley,Audley (NW),Distribution Point ExtEU,INET_N_518,0.0,0.0,53.06,-2.35
+34,Bacton,Bacton,Distribution Point ExtEU,INET_N_516,-75.45,1.17,52.8506,1.466
+35,Oss,Ross (SW),Distribution Point ExtEU,INET_N_846,0.0,0.0,51.76,5.513
+36,Cambridge,Cambridge,Distribution Point ExtEU,INET_N_505,0.0,0.0,52.0812606,0.166856789
+37,Drohne,Drohne GUD / OGE,Transmission Point,INET_N_233,-40.12,-3.38,52.429729,8.354677
+38,Kiskundorozsma,Kiskundorozsma (HU>RS),Cross-Border Transmission IP between EU and Non-EU,INET_N_625,22.06,-46.75,46.2730809,20.063011
+39,Aberdeen,Aberdeen,Distribution Point ExtEU,INET_N_572,0.0,0.0,57.13600455,-2.379727732
+40,Bathgate,Bathgate,Distribution Point ExtEU,INET_N_569,0.0,0.0,55.91941138,-3.741778958
+41,Malkoclar,Strandzha (BG) / Malkoclar (TR),Cross-Border Transmission IP between EU and Non-EU,INET_N_1065,57.5,-63.6,42.041,27.018
+42,Gela,Gela,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_656,-9.1,-75.04,37.052698,14.269219
+43,Easington,Easington,Cross-Border Transmission IP between ExtEU and Non-EU (import),INET_N_540,-82.49,7.93,53.6548,0.11978
+44,Dimitrovgrad,Kalotina (BG)/ Dimitrovgrad (RS),Cross-Border Transmission IP between EU and Non-EU,INET_N_59,35.77,-60.57,42.05521,25.59
+45,Slobodnica,Slobodnica- Bosanski Brod-Zenica,Cross-Border Transmission IP between EU and Non-EU,INET_N_615,26.81,-39.16,45.1566,17.9314
+46,Dornum,Dornum (EPT1 & EPT2),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_274,-43.95,7.71,53.66,7.404
+47,Fallentor,RC Thayngen-Fallentor,Cross-Border Transmission IP between EU and Non-EU,INET_N_93,-37.84,-38.13,47.658044,8.6948726
+48,Isaccea,VIP Mediesu Aurit - Isaccea (RO-UA),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_964,47.11,-38.13,45.265423,28.4607273
+49,Mediesu Aurit,VIP Mediesu Aurit - Isaccea (RO-UA),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_972,47.11,-38.13,47.786743,23.1376644
+50,Vitzeroda,Vitzeroda MÜP,Transmission Point,INET_N_188,-30.32,-16.51,50.881761,10.060498
+51,Dornum,Dornum GASPOOL,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_274,-44.21,7.36,53.66,7.404
+52,Paldiski,Paldiski LNG,LNG Entry point,INET_N_312,41.92,52.64,59.38445,24.07494
+53,Dunkerque,Dunkerque LNG,LNG Entry point,INET_N_481,-72.64,-14.6,51.033134,2.194792
+54,Bacton,Bacton IPs,Cross-Border Transmission IP between EU and ExtEU,INET_N_516,-75.76,1.98,52.8506,1.466
+55,Bilbao,Bilbao,LNG Entry point,INET_N_369,-99.23,-59.54,43.3612,-3.09473
+56,Zeebrugge,Zeebrugge LNG,LNG Entry point,INET_N_50,-66.53,-11.5,51.323,3.213
+57,Kipoi,Kipoi,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_605,53.92,-66.68,40.970417,26.307161
+58,Bizzarone,Bizzarone,Cross-Border Transmission IP between EU and Non-EU,INET_N_764,-36.43,-48.6,45.834135,8.946413
+59,Recanati,Recanati (IT),Transmission Point,INET_N_715,-12.96,-59.29,43.402314,13.55712
+60,Huelva,Huelva,LNG Entry point,INET_N_322,-119.27,-74.87,37.2615,-6.9422
+61,Montoir De Bretagne,Montoir de Bretagne,LNG Entry point,INET_N_436,-94.39,-40.65,47.32,-2.14
+62,Emden,Emden (NPT),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_264,-45.79,6.75,53.3594029,7.2060095
+63,Slobodnica,Slobodnica - Sotin (HR) / Bačko Novo Selo (RS),Cross-Border Transmission IP between EU and Non-EU,INET_N_615,17.27,-51.32,45.1566,17.9314
+64,Alexandroupolis,Alexandroupolis LNG,LNG Entry point,INET_N_602,51.55,-67.24,40.9399278,25.9940986
+65,Isle Of Grain,Isle of Grain,LNG Entry point ExtEU,INET_N_491,-79.85,-11.39,51.45,0.711
+66,Cartagena,Cartagena,LNG Entry point,INET_N_324,-87.89,-74.19,37.624,-0.998
+67,Tallinn,Tallinn LNG,LNG Entry point,INET_N_313,46.76,53.41,59.40601,25.0045
+68,Milford Haven,Milford Haven,LNG Entry point ExtEU,INET_N_497,-110.74,-8.23,51.71,-5.03
+69,Cork,Cork LNG (IE),LNG Entry point,INET_N_640,-126.83,-7.62,51.89,-8.46
+70,Bacton,Bacton (BBL),Cross-Border Transmission IP between EU and ExtEU,INET_N_516,-75.45,1.17,52.8506,1.466
+71,Swinoujscie,Swinoujscie,LNG Entry point,INET_N_937,-7.91,10.01,53.909167,14.294722
+72,Klaipeda,Klaipeda (LNG),LNG Entry point,INET_N_796,27.07,25.36,55.7253,21.101954
+73,Alexandroupolis,Alexandroupolis Amphitriti,LNG Entry point,INET_N_602,52.21,-66.27,40.9399278,25.9940986
+74,Narva,Narva,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_311,63.59,52.75,59.3796931,28.1790751
+75,Isaccea,Isaccea (RO) - Orlovka (UA) II,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_964,65.61,-51.23,45.265423,28.4607273
+76,Orlovka,Isaccea (RO) - Orlovka (UA) II,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_1066,65.61,-51.23,45.3199,28.45287
+77,Livorno,OLT LNG / Livorno,LNG Entry point,INET_N_716,-29.75,-58.33,43.547519,10.311025
+78,Cavarzere,Cavarzere (Porto Levante / Adriatic LNG),LNG Entry point,INET_N_741,-17.41774013,-52.02540398,45.133742,12.08022
+79,Porto,Cavarzere (Porto Levante / Adriatic LNG),LNG Entry point,INET_N_950,-17.41774013,-52.02540398,41.15,-8.63
+80,Emden,Emden (EPT1),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_264,-45.04,7.23,53.3594029,7.2060095
+81,Gernsheim,Gernsheim,Transmission Point,INET_N_164,0.0,0.0,49.743662,8.55088
+82,Stara Zagora,Stara Zagora,Transmission Point,INET_N_65,50.3,-62.8,42.435,25.638
+83,Wallbach,Wallbach,Cross-Border Transmission IP between EU and Non-EU,INET_N_120,-42.01,-39.03,47.566,7.9
+84,Isaccea,Isaccea (RO) - Orlovka (UA) III,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_964,65.61,-51.23,45.265423,28.4607273
+85,Orlovka,Isaccea (RO) - Orlovka (UA) III,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_1066,65.61,-51.23,45.3199,28.45287
+86,Lubmin,Lubmin II,Cross-Border Transmission IP between EU and Non-EU (import),INET_N_278,-12.35,11.31,54.151055,13.655607
+87,Kiskundorozsma,Kiskundorozsma-2 (HU) / Horgos (RS),Cross-Border Transmission IP between EU and Non-EU,INET_N_625,22.24,-47.07,46.2730809,20.063011
+88,Bacton,Bacton AGG,Cross-Border Transmission IP between EU and ExtEU,INET_N_516,-75.45,1.17,52.8506,1.466
+89,Malkoclar,Strandzha 2 (BG) / Malkoclar (TR),Cross-Border Transmission IP between EU and Non-EU (import),INET_N_1065,58.32,-63.61,42.041,27.018
+90,Barcelona,Barcelona,LNG Entry point,INET_N_349,-72.77,-66.56,41.398,2.174
+91,Roussines,Sines,LNG Entry point,INET_N_431,-129.11,-73.3,46.463,1.38
+92,Voisines,Sines,LNG Entry point,INET_N_446,-129.11,-73.3,47.95245,5.14
+93,Banatski Dvor,UGS Banatski Dvor (RS),Storage IP Non-EU,INET_N_982,20.21,-48.57,45.537223,20.47481
+94,Vlieghuis,Vlieghuis (NL) / Kalle (DE) (RWE),Cross-Border Storage IP within EU,INET_N_872,-47.86,-0.83,52.66,6.83
+95,Gateway,Barrow (Gateway),Storage point ExtEU,INET_N_550,0.0,0.0,54.099578,-3.18364
+96,Velke Kapusany,UGS Velke Kapusany,Storage point,INET_N_1056,30.22445025,-29.51779293,48.552002,22.121625
+97,Rehden,Rehden,Storage point,INET_N_242,-36.81492357,-1.910173259,52.613673,8.493598
+98,Wolfersberg,Wolfersberg UGS,Storage point,INET_N_133,-21.73120838,-33.32437367,48.042629,11.816447
+99,Lussagnet,Lussagnet,Storage point,INET_N_407,-85.03,-57.68,43.780448,-0.220066
+100,Oude Statenzijl,Etzel (DE) (Crystal) / Oude Statenzijl (NL),Cross-Border Storage IP within EU,INET_N_890,-41.7,6.36,53.2019,7.205
+101,Reckrod,Speicher Reckrod,Storage point,INET_N_180,-32.43,-16.85,50.785275,9.788964
+102,Bacton,Deborah Storage (Bacton),Storage point ExtEU,INET_N_516,-75.45,1.17,52.8506,1.466
+103,Oude Statenzijl,Nüttermoor H1 and H4 (DE) (EWE) Renato / Oude Statenzijl (NL),Cross-Border Storage IP within EU,INET_N_890,-45.18,5.31,53.2019,7.205
+104,Haidach,Haidach (AT) / Haidach USP (DE),Cross-Border Storage IP within EU,INET_N_17,-15.49162471,-34.0651452,47.9867,13.232375
+105,Ried,"Etzel (DE) (EKB) / Friedeburg-Etzel, Bitzenlander Weg 2",Storage point,INET_N_23,-41.7,6.36,48.21,13.48
+106,Ried,"Etzel (DE) ESE / Friedeburg-Etzel, Bitzenlander Weg 3, UGS",Storage point,INET_N_23,-41.7,6.36,48.21,13.48
+107,Oude Statenzijl,Etzel (DE) (EKB) / Oude Statenzijl Etzel (NL),Cross-Border Storage IP within EU,INET_N_890,-41.7,6.36,53.2019,7.205
+108,Ried,"Etzel (DE) (Crystal) / Friedeburg-Etzel, Bitzenlander Weg 4",Storage point,INET_N_23,-41.7,6.36,48.21,13.48
+109,Bacton,Bacton (Baird),Storage point ExtEU,INET_N_516,-75.45,1.17,52.8506,1.466
+110,Bobbau,Bobbau,Storage point,INET_N_204,-17.05,-8.23,51.703309,12.251789
+111,Oude Statenzijl,Nüttermoor (DE) (EWE) H / Oude Statenzijl (H) (NL),Cross-Border Storage IP within EU,INET_N_890,-45.18,5.31,53.2019,7.205
+112,Szoreg,UGS-2-SZOREG (HU),Storage point,INET_N_626,16.4527682,-43.0550957,46.302801,20.194969
+113,Incukalns,Incukalns (LV),Storage point,INET_N_810,41.26160892,34.0,57.169567,24.696409
+114,Grijpskerk,Grijpskerk,Storage point,INET_N_893,-50.45,4.65,53.278554,6.31028
+115,Oude Statenzijl,Etzel (DE) (OMV) Freya / Oude Statenzijl Etzel,Cross-Border Storage IP within EU,INET_N_890,-41.7,6.36,53.2019,7.205
+116,Lingen,UGS Kirchheilingen,Storage point,INET_N_239,-25.6862643,-12.16027264,52.516,7.331
+117,Ried,"Etzel (DE) EGL / Friedeburg-Etzel, Schienenstrang, EGL",Storage point,INET_N_23,-41.7,6.36,48.21,13.48
+118,Oude Statenzijl,Jemgum (DE) (EWE) / Oude Statenzijl (NL),Cross-Border Storage IP within EU,INET_N_890,-45.79,4.87,53.2019,7.205
+119,Peterborough,Rough,Storage point ExtEU,INET_N_511,0.0,0.0,52.62697052,-0.301506985
+120,Oude Statenzijl,Jemgum (DE) (astora) / Oude Statenzijl (NL),Cross-Border Storage IP within EU,INET_N_890,-45.79,4.87,53.2019,7.205
+121,Avonmouth,Avonmouth (LNG),Storage point ExtEU,INET_N_493,-97.29,-10.44,51.5306638,-2.654260229
+122,Haidach,Speicher Haiming 3-Haidach,Cross-Border Storage IP within EU,INET_N_17,-14.85,-35.03,47.9867,13.232375
+123,Eschenfelden,UGS Eschenfelden,Storage point,INET_N_161,-22.86480583,-22.60040236,49.5845,11.6307
+124,Inkoo,Inkoo LNG (FI),LNG Entry point,INET_N_377,41.0,56.0,60.044,24.005
+125,Le Havre,Le Havre (FR),LNG Entry point,INET_N_471,-82.88,-26.19,49.499,0.125
