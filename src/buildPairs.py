@@ -3,10 +3,13 @@ import pandas as pd
 import json
 from buildDataPerCountry import add_country_info, filter_data, merge_data, rename_columns
 
-
-DATE = "2019_01"
+YEAR = 2019
 DATA_DIR = "FINAL/data"
 DATA_DICT = {}
+DATES_2019 = ["2019_01",'2019_02','2019_03','2019_04','2019_05','2019_06','2019_07','2019_08','2019_09','2019_10','2019_11','2019_12']
+DATES_2023 = ["2023_01",'2023_02','2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12']
+
+dates = DATES_2019 if YEAR == 2019 else DATES_2023
 
 ###############
 #   MAPPINGS  #
@@ -54,10 +57,10 @@ COUNTRY_COORDS = {
 
 
 ##################
-# Import data   #
+# Import data   # NO MORE NEEDED
 ##################
-agg_pairs_df = pd.read_csv(f'FINAL/data/perCountry_V2/aggregated_data_{DATE}.csv')
-agg_pairs_df = agg_pairs_df.rename(columns={'Unnamed: 0': 'pairID','entryValue':'Entries','exitValue':'Exits'})
+# agg_pairs_df = pd.read_csv(f'FINAL/data/perCountry_V2/aggregated_data_{DATE}.csv')
+# agg_pairs_df = agg_pairs_df.rename(columns={'Unnamed: 0': 'pairID','entryValue':'Entries','exitValue':'Exits'})
 
 
 ################
@@ -221,8 +224,7 @@ def build_dict(dates):
 if __name__ == "__main__":
     points_df, _, interconnections_df = load_points_data()
     trans_points = filter_keyword('Transmission',points_df,'point_type')
-
-    dates = ['2019_01','2019_02','2019_03','2019_04']
+    
     data_dict = {}
     for date in dates:
         agg_pairs_df = process_data(date,trans_points,interconnections_df)
