@@ -26,10 +26,12 @@ from dash import dcc, html, Input, Output
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+import os
 from utils import process_total_data, initialize_lng_dict
 from utils import create_initial_map
 
-DIR = 'FINAL'
+current_dir = os.getcwd()
+DIR = f"{current_dir}"
 
 # Initialize the Dash app
 app = dash.Dash(__name__)

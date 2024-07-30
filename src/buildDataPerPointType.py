@@ -6,7 +6,8 @@ import pandas as pd
 import os 
 from utils import filter_point_type
 
-DIR = 'FINAL'
+current_dir = os.getcwd()
+DIR = f"{current_dir}"
         
 
 ######################
@@ -39,4 +40,4 @@ lng_points_df = lng_points_df[lng_points_df['Country'].notna()]
 
 ### Save data
 lng_points_df.to_csv(f'{DIR}/data/points/lng_points.csv',index=False)
-print("lng_points_df saved in DIR/data/points/lng_points.csv")
+print(f"lng_points_df saved in {DIR}/data/points/lng_points.csv")

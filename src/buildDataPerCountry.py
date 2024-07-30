@@ -17,23 +17,16 @@
 ##############################################################
 
 
-
-
-
-
-
 ##################
 #    Imports     #
 ##################
 import pandas as pd
-import numpy as np
 import os
 import plotly.graph_objects as go
 import plotly.express as px
 
-
-
-DATA_DIR = "FINAL"
+current_dir = os.getcwd()
+DIR = f"{current_dir}"
 YEAR = 2019
 DATES_19 = ['2019_01','2019_02','2019_03','2019_04','2019_05', '2019_06', '2019_07', '2019_08', '2019_09', '2019_10', '2019_11', '2019_12']
 DATES_23 = ['2023_01', '2023_02', '2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12' ]
@@ -44,10 +37,10 @@ dates = DATES_19 if YEAR == 2019 else DATES_23
 ##################
 def load_data(date):
     """Load operational, points, operator points directions, and interconnections data."""
-    operational_df = pd.read_csv(f"{DATA_DIR}/data/opData/op_data_{date}.csv")
-    points_df = pd.read_csv(f"{DATA_DIR}/data/points_data.csv")
-    operator_points_directions_df = pd.read_csv(f"{DATA_DIR}/data/operator_points_dir.csv")
-    interconnections_df = pd.read_csv(f'{DATA_DIR}/data/interconnections_data.csv')
+    operational_df = pd.read_csv(f"{DIR}/data/opData/op_data_{date}.csv")
+    points_df = pd.read_csv(f"{DIR}/data/points_data.csv")
+    operator_points_directions_df = pd.read_csv(f"{DIR}/data/operator_points_dir.csv")
+    interconnections_df = pd.read_csv(f'{DIR}/data/interconnections_data.csv')
     return operational_df, points_df, operator_points_directions_df, interconnections_df
 ######################
 #   Rename Columns   #
@@ -154,8 +147,6 @@ def aggregate_entries_exits(filtered_df):
     """
     entries_df = filtered_df[filtered_df['directionKey'] == 'entry']
     exits_df = filtered_df[filtered_df['directionKey'] == 'exit']
-    print(f'... Size entries: {entries_df.shape}')
-    print(f'... Size exits: {exits_df.shape}')
 
     relevant_columns = ['fromCountryLabel', 'toCountryLabel', 'value']
 
@@ -248,6 +239,8 @@ def visualize_country_entries_exits(merged_df):
     Pre : The dataframe should contain the following columns : fromCountryLabel, toCountryLabel, Entries, Exits
     Post : A bar chart px figure
     """
+    # Rename to match dataset as exported and the method
+    merged_df.rename(columns={'entryValue':'Entries','exitValues':'Exits'})
 
     melted_df = merged_df.melt(id_vars=['fromCountryLabel', 'toCountryLabel'], 
                            value_vars=['Entries', 'Exits'], 
@@ -281,13 +274,17 @@ def visualize_pairs_entries_exits(merged_df):
     Pre : The dataframe should contain the following columns : fromCountryLabel, toCountryLabel, entryValue, exitValue
     Post : a bar chart px figure containing the total entries and exits between country pairs
     """
+    # Rename to match dataset as exported and the method
+    merged_df.rename(columns={'entryValue':'Entries','exitValues':'Exits'})
+
+
     merged_df['countryPair'] = merged_df['fromCountryLabel'] + ' -> ' + merged_df['toCountryLabel']
     diff_df = merged_df.copy()
     print(f"Size before filtering: {diff_df.shape}")
     diff_df = diff_df[['countryPair', 'Entries', 'Exits']]
     diff_df = diff_df[(diff_df['Entries'] != 0) | (diff_df['Exits'] != 0)]
     diff_df = diff_df[diff_df['countryPair'].apply(lambda x: x.split(' -> ')[0] != x.split(' -> ')[1])]
-    print(f"Size after filtering: {diff_df.shape}")
+    print(f"... Size after filtering: {diff_df.shape}")
     diff_df['Difference'] = diff_df['Entries'] + diff_df['Exits']
 
     # Create a long-form DataFrame suitable for Plotly Express
@@ -338,34 +335,10 @@ def add_country_info(filtered_df):
     filtered_df['operatorCountryCode'] = filtered_df['operatorKey'].str[:2]
     return filtered_df
 
-
-# def aggregate_data(filtered_df):
-#     """Aggregate the data and create summary tables."""
-#     # TODO : !!!!!  Should not be per direction Key since all are considered as "entries"
-#     aggregated_df = filtered_df.groupby(['fromCountry', 'toCountry', 'directionKey'])['value'].sum().reset_index()
-#     aggregated_df.rename(columns={'directionKey': 'direction', 'value': 'totalGasFlow'}, inplace=True)
-
-#     aggregated = aggregated_df.groupby(['fromCountry', 'toCountry', 'direction'])['totalGasFlow'].sum().reset_index()
-#     pivot_table = aggregated.pivot_table(index=['fromCountry', 'toCountry'], columns='direction', values='totalGasFlow', fill_value=0).reset_index()
-#     pivot_table.columns = ['countryA', 'countryB', 'entryFlow', 'exitFlow']
-
-#     entries_df = pivot_table.groupby('countryB')['entryFlow'].sum().reset_index()
-#     entries_df.columns = ['countryName', 'totalEntries']
-
-#     exits_df = pivot_table.groupby('countryA')['exitFlow'].sum().reset_index()
-#     exits_df.columns = ['countryName', 'totalExits']
-
-#     percountry_flow_df = pd.merge(entries_df, exits_df, on='countryName', how='outer').fillna(0)
-
-#     return aggregated_df, pivot_table, percountry_flow_df
-
 def aggregate_data(filtered_df):
     """ 
-    NOTE 1 : Entry value and Exit value should match (entry in a country should be an exit in another), however it is not the case in the data
     - entryValue : total gas flow with key 'entry' , countryFrom to countryTo
-    - exitValue : total gas flow with key 'exit' , countryFrom to countryTo
-    - revExit : total gas flow with key 'exit' , countryTo to countryFrom
-    
+    - exitValue : total gas flow with key 'exit' , countryFrom to countryTo    
     """
 
     grouped_entries,grouped_exits = aggregate_entries_exits(filtered_df)
@@ -373,19 +346,14 @@ def aggregate_data(filtered_df):
     # NOTE : 
     #   - exit means gas exits "countryFrom" to "countryTo" 
     #   - entry means gas enters "countryFrom" from "countryTo"
-    # Therefore we need to reverse the direction of the exits to match the entries
-    # TODO : This might do double work -> Fix a threshold on the data difference between entries and exits and choose only one
-    # reversed_exits = grouped_exits.copy()
-    # reversed_exits.rename(columns={'fromCountryLabel': 'toCountryLabel','toCountryLabel':'fromCountryLabel','exitValue':'revExit'}, inplace=True)
-    
+
     aggregated_df = pd.merge(grouped_entries, grouped_exits, 
             on=['fromCountryLabel', 'toCountryLabel'], 
             how='outer').fillna(0)
 
     aggregated_df['totalFlow'] = aggregated_df['entryValue'] - aggregated_df['exitValue']
-    print(f"Remove entries from and to the same country : {aggregated_df[aggregated_df['fromCountryLabel'] == aggregated_df['toCountryLabel']].shape[0]}")
     aggregated_df = aggregated_df[(aggregated_df['fromCountryLabel'] != aggregated_df['toCountryLabel'])]
-    print(f"... Size after filtering : {aggregated_df.shape}")
+    print(f"... Size after removing intra-country data : {aggregated_df.shape}")
 
     return aggregated_df, grouped_entries, grouped_exits
 
@@ -415,11 +383,10 @@ def aggregate_percountry(aggregated_df):
 
 def save_data(aggregated_df, percountry_flow_df, date):
     """Save the aggregated data to CSV files."""
-    output_dir = f"{DATA_DIR}/data/perCountry_V2"
+    output_dir = f"{DIR}/data/perCountry_V2"
     os.makedirs(output_dir, exist_ok=True)
 
     aggregated_df.to_csv(f"{output_dir}/aggregated_data_{date}.csv", index=False)
-    # pivot_table.to_csv(f'{output_dir}/agg_data_pairs_{date}.csv', index=False)
     percountry_flow_df.to_csv(f'{output_dir}/agg_data_countries_{date}.csv', index=False)
     print(f"Data saved for {date}")
 

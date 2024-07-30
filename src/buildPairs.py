@@ -1,10 +1,14 @@
 import pandas as pd
 import pandas as pd
+import os
 import json
 from buildDataPerCountry import add_country_info, filter_data, merge_data, rename_columns
 
 YEAR = 2019
-DATA_DIR = "FINAL/data"
+
+current_dir = os.getcwd()
+DIR = f"{current_dir}"
+DATA_DIR = f"{DIR}/data"
 DATA_DICT = {}
 DATES_2019 = ["2019_01",'2019_02','2019_03','2019_04','2019_05','2019_06','2019_07','2019_08','2019_09','2019_10','2019_11','2019_12']
 DATES_2023 = ["2023_01",'2023_02','2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12']
@@ -149,7 +153,7 @@ def process_data(date,points_df,interconnections_df):
     Main function to process the operational data and create aggregated files.
     Final dataset contains the columns ['fromCountryLabel', 'toCountryLabel', 'entryValue', 'exitValue', 'totalFlow']
     """
-    print(f"Processing data for {date}...")
+    # print(f"Processing data for {date}...")
     operational_df = load_op_data(date)
     rename_columns(points_df, operational_df)
     merged_df = merge_data(operational_df, points_df, interconnections_df)
@@ -159,7 +163,7 @@ def process_data(date,points_df,interconnections_df):
     # percountry_flow_df = aggregate_percountry(aggregated_df)
     agg_pairs_df = combine_pairs(aggregated_df)
     # save_data(aggregated_df, percountry_flow_df, date)
-    print(f"Processing complete for {date}")
+    # print(f"Processing complete for {date}")
 
     return agg_pairs_df
 
@@ -167,7 +171,7 @@ def interpolate_coords(coord1, coord2, ratio=2/3):
     """Interpolates coordinates between coord1 and coord2 based on the given ratio."""
     lon1, lat1 = coord1['lon'], coord1['lat']
     lon2, lat2 = coord2['lon'], coord2['lat']
-    print(f"Interpolating between {coord1} and {coord2}")
+    # print(f"Interpolating between {coord1} and {coord2}")
     lon = lon1 + (lon2 - lon1) * ratio
     lat = lat1 + (lat2 - lat1) * ratio
     return dict(lon=lon, lat=lat)

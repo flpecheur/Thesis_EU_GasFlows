@@ -9,8 +9,9 @@ import os
 import requests
 
 # Constants
-DATA_DIR = "FINAL/data"
-COUNTRY_CODE = 'BE'  # Parameter for the data collection (UNUSED)
+current_dir = os.getcwd()
+DATA_DIR = f"{current_dir}/data"
+# COUNTRY_CODE = 'BE'  # Parameter for the data collection (UNUSED)
 N_WEEKS = 4  # Length of the time period for data collection (in weeks)
 BASE_OP_URL = "https://transparency.entsog.eu/api/v1/operationaldatas?limit=10000&timeZone=UCT"  # Base URL for the data collection
 YEAR1 = 2019  # Start year for the data collection
@@ -47,7 +48,7 @@ def collect_points_data(client, data_dir):
     Collects and saves the points data using the entsog-py client.
     """
     point_data = client.query_connection_points()
-    point_data.to_csv(os.path.join(data_dir, "points_data.csv"))
+    # point_data.to_csv(os.path.join(data_dir, "points_data.csv"))
     print("Points data collected")
 
 collect_points_data(client, DATA_DIR)
@@ -69,7 +70,6 @@ def collect_operational_API(start_date, end_date):
     url = f"{BASE_OP_URL}&from={start_date}&to={end_date}&periodType=day&indicator=Physical+Flow"
     response = requests.get(url)
     response.raise_for_status()  # Raise an error for bad status codes
-    print(response.json().keys())
     return response.json()
 
 def collect_operational_data(client, year, month, data_dir, n_weeks):
@@ -93,7 +93,7 @@ def collect_operational_data(client, year, month, data_dir, n_weeks):
     
     op_data = op_data[op_data_columns]
     file_name = f"op_data_{year}_{month:02d}.csv"
-    op_data.to_csv(os.path.join(data_dir, file_name))
+    # op_data.to_csv(os.path.join(data_dir, file_name))
     print(f"Operational data for {start_date.strftime('%Y-%m-%d')} collected")
 
 def collect_yearly_operational_data(client, year, data_dir, n_weeks):
