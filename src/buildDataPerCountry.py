@@ -37,9 +37,8 @@ def load_data(date):
     """Load operational, points, operator points directions, and interconnections data."""
     operational_df = pd.read_csv(f"{DIR}/data/opData/op_data_{date}.csv")
     points_df = pd.read_csv(f"{DIR}/data/points_data.csv")
-    operator_points_directions_df = pd.read_csv(f"{DIR}/data/operator_points_dir.csv") # UNUSED
     interconnections_df = pd.read_csv(f'{DIR}/data/interconnections_data.csv')
-    return operational_df, points_df, operator_points_directions_df, interconnections_df
+    return operational_df, points_df, [], interconnections_df
 ######################
 #   Rename Columns   #
 ######################
@@ -382,7 +381,7 @@ def aggregate_percountry(aggregated_df):
 
 def save_data(aggregated_df, percountry_flow_df, date):
     """Save the aggregated data to CSV files."""
-    output_dir = f"{DIR}/data/perCountry_V2"
+    output_dir = f"{DIR}/data/perCountry"
     os.makedirs(output_dir, exist_ok=True)
 
     aggregated_df.to_csv(f"{output_dir}/aggregated_data_{date}.csv", index=False)
@@ -413,3 +412,5 @@ if __name__ == "__main__":
     print("Aggregating data per country for 2023...")
     for date in DATES_23:   
         process_data(date)
+
+    print("Data aggregation complete. Files saved in 'perCountry' directory.")

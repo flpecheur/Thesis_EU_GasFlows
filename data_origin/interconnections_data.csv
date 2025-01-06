@@ -1,0 +1,863 @@
+country,pointKey,pointLabel,isSingleOperator,pointTpMapX,pointTpMapY,fromSystemLabel,fromInfrastructureTypeLabel,fromCountryKey,fromCountryLabel,toSystemLabel,toInfrastructureTypeLabel,toCountryKey,toCountryLabel,toOperatorKey,toOperatorLabel,toPointKey,toPointLabel,validFrom,validto,lastUpdateDateTime
+IE,ITP-00090,Moffat,False,-101.25,21.7,Ireland,Transmission,IE,Ireland,UK,Transmission,UK,United Kingdom,UK-TSO-0001,National Gas TSO,ITP-00090,Moffat,,,Jun  5 2024  6:23PM
+IE,ITP-00222,South North CSEP,False,-117.38,11.35,Ireland,Transmission,IE,Ireland,NI,Transmission,UK,United Kingdom,IE-TSO-0001,GNI (UK),ITP-00222,South North CSEP,,,Jun  5 2024  6:23PM
+IE,UGS-00007,UGS Kinsale SouthWest (IE),False,-125.86,-7.45,Ireland,Transmission,IE,Ireland,Storage,Storage,IE,Ireland,,,,,,,Jun  5 2024  6:23PM
+IE,UGS-00007,UGS Kinsale SouthWest (IE),False,-125.86,-7.45,Storage,Storage,IE,Ireland,Ireland,Transmission,IE,Ireland,IE-TSO-0002,GNI,UGS-00007,UGS Kinsale SouthWest (IE),,,Jun  5 2024  6:23PM
+IE,VTP-00005,IBP,False,-124.58,2.37,Ireland,Transmission,IE,Ireland,Ireland,Transmission,IE,Ireland,IE-TSO-0002,GNI,VTP-00005,IBP-IE,,,Jun  5 2024  6:23PM
+IE,VTP-00005,IBP,False,-124.58,2.37,Ireland,Transmission,IE,Ireland,Ireland,Transmission,IE,Ireland,,,,,,,Jun  5 2024  6:23PM
+BG,FNC-00016,Aggregated exits NGTN (BG),False,56.25,-60.63,Bulgaria,Transmission,BG,Bulgaria,Final Consumers,Final Consumers,BG,Bulgaria,,,,,,,Jun  5 2024  6:23PM
+BG,FNC-00207,Aggregated exits Bulgaria,False,49.39,-60.42,Bulgaria,Transmission,BG,Bulgaria,Final Consumers,Final Consumers,BG,Bulgaria,,,,,,,Jun  5 2024  6:23PM
+BG,FNC-00017,Aggregated exits GTNTT (BG),False,56.03,-60.63,Bulgaria,Transmission,BG,Bulgaria,Final Consumers,Final Consumers,BG,Bulgaria,,,,,,,Jun  5 2024  6:23PM
+BG,ITP-00059,"Negru Voda II, III (RO) / Kardam (BG)",False,62.8,-57.35,Bulgaria,Transmission,BG,Bulgaria,RO_DTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00301,Negru Voda II,,,Jun  5 2024  6:23PM
+BG,ITP-00041,Strandzha (BG) / Malkoclar (TR),False,57.5,-63.6,Bulgaria,Transmission,BG,Bulgaria,Transmission,Transmission,TR,Turkey,TR-TSO-0001,Botas,ITP-00041,Strandzha (BG) / Malkoclar (TR),,,Jun  5 2024  6:23PM
+BG,ITP-00059,"Negru Voda II, III (RO) / Kardam (BG)",False,62.8,-57.35,Bulgaria,Transmission,BG,Bulgaria,RO_DTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00302,Negru Voda III,,,Jun  5 2024  6:23PM
+BG,ITP-00036,Kyustendil (BG) / Zidilovo (MK),False,33.71,-63.02,Bulgaria,Transmission,BG,Bulgaria,Transmission,Transmission,MK,North Macedonia,MK-TSO-0002,NOMAGAS,ITP-00036,Kyustendil (BG) / Zidilovo (MK),,,Jun  5 2024  6:23PM
+BG,ITP-00058,Negru Voda I (RO) / Kardam (BG),False,63.5,-57.35,Bulgaria,Transmission,BG,Bulgaria,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00058,Negru Voda I,,,Jun  5 2024  6:23PM
+BG,ITP-00128,Kulata (BG) / Sidirokastron (GR),False,37.9,-65.4,Bulgaria,Transmission,BG,Bulgaria,Greece,Transmission,GR,Greece,GR-TSO-0001,DESFA S.A.,ITP-00128,Kulata (BG) / Sidirokastron (GR),,,Jun  5 2024  6:23PM
+BG,ITP-00153,Ruse (BG) / Giurgiu (RO),False,52.56,-56.85,Bulgaria,Transmission,BG,Bulgaria,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00153,Ruse (BG) / Giurgiu (RO),,,Jun  5 2024  6:23PM
+BG,ITP-00529,Kireevo (BG) / Zaychar (RS),False,33.13,-56.97,Bulgaria,Transmission,BG,Bulgaria,Transmission,Transmission,RS,Serbia,RS-TSO-0003,GASTRANS,ITP-00529,Kireevo (BG) / Zaychar (RS),,,Jun  5 2024  6:23PM
+BG,UGS-00019,GMS Chiren,True,39.64,-58.95,Storage,Storage,BG,Bulgaria,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,UGS-00019,GMS Chiren,,,Jun  5 2024  6:23PM
+BG,UGS-00019,GMS Chiren,True,39.64,-58.95,Bulgaria,Transmission,BG,Bulgaria,Storage,Storage,BG,Bulgaria,,,,,,,Jun  5 2024  6:23PM
+BG,ITP-00275,Komotini - TAP / IGB,False,49.44,-66.27,Bulgaria,Transmission,BG,Bulgaria,Greece,Transmission,GR,Greece,AL-TSO-0001,TAP AG,ITP-00275,Komotini,,,Jun  5 2024  6:23PM
+BG,ITP-00276,Stara Zagora,False,50.3,-62.8,Bulgaria,Transmission,BG,Bulgaria,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0003,ICGB,ITP-00276,Stara Zagora,,,Jun  5 2024  6:23PM
+BG,ITP-00276,Stara Zagora,False,50.3,-62.8,Bulgaria,Transmission,BG,Bulgaria,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00276,Stara Zagora,,,Jun  5 2024  6:23PM
+BG,VTP-00046,IGB Virtual Trading Point/VTP (BG),True,49.7,-64.09,Bulgaria,Transmission,BG,Bulgaria,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0003,ICGB,VTP-00046,IGB Virtual Trading Point ,,,Jun  5 2024  6:23PM
+BG,VTP-00046,IGB Virtual Trading Point/VTP (BG),True,49.7,-64.09,Bulgaria,Transmission,BG,Bulgaria,Bulgaria,Transmission,BG,Bulgaria,,,,,,,Jun  5 2024  6:23PM
+BG,ITP-00134,Kalotina (BG)/ Dimitrovgrad (RS),False,35.77,-60.57,Bulgaria,Transmission,BG,Bulgaria,Transmission,Transmission,RS,Serbia,RS-TSO-0004,TransportSrbija,ITP-00134,Kalotina (BG)/ Dimitrovgrad (RS),,,Jun  5 2024  6:23PM
+DK,ITP-00097,Nybro,False,-40.74,25.36,Joint Bal Zone DK/SE,Production,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,ITP-00097,Nybro,,,Jun  5 2024  6:23PM
+DK,ITP-00135,Ellund,False,-34.5,17.85,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00109,ELLUND,,,Jun  5 2024  6:23PM
+DK,ITP-00135,Ellund,False,-34.5,17.85,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00031,Ellund,,,Jun  5 2024  6:23PM
+DK,ITP-10011,VIP DK-THE,False,-36.08,18.4,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-10011,VIP DK-THE,,,Jun  5 2024  6:23PM
+DK,UGS-00006,Lille Torup,False,-34.94,26.43,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Storage,Storage,DK,Denmark,DK-SSO-0001,Gas Storage Denmark,UGS-00006,Lille Torup,,,Jun  5 2024  6:23PM
+DK,UGS-00006,Lille Torup,False,-34.94,26.43,Storage,Storage,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,UGS-00006,Lille Torup,,,Jun  5 2024  6:23PM
+DK,UGS-00214,Stenlille,False,-23.12,24.29,Storage,Storage,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,UGS-00214,Stenlille,,,Jun  5 2024  6:23PM
+DK,UGS-00214,Stenlille,False,-23.12,24.29,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Storage,Storage,DK,Denmark,DK-SSO-0001,Gas Storage Denmark,UGS-00214,Stenlille,,,Jun  5 2024  6:23PM
+DK,UGS-00443,Virtual Point Gas Storage Denmark,False,-20.61,26.43,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Storage,Storage,DK,Denmark,DK-SSO-0001,Gas Storage Denmark,UGS-00443,Virtual Point Gas Storage Denmark,,,Jun  5 2024  6:23PM
+DK,UGS-00443,Virtual Point Gas Storage Denmark,False,-20.61,26.43,Storage,Storage,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,UGS-00443,Virtual Point Gas Storage Denmark,,,Jun  5 2024  6:23PM
+DK,VTP-00001,GTF (Bilateral Trading Point),False,-37.0,27.76,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,VTP-00001,GTF (Bilateral Trading Point),,,Jun  5 2024  6:23PM
+DK,VTP-00001,GTF (Bilateral Trading Point),False,-37.0,27.76,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,,,,,,,Jun  5 2024  6:23PM
+DK,VTP-00004,NPTF,False,-37.71,29.69,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,VTP-00004,NPTF,,,Jun  5 2024  6:23PM
+DK,VTP-00004,NPTF,False,-37.71,29.69,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Joint Bal Zone DK/SE,Transmission,DK,Denmark,,,,,,,Jun  5 2024  6:23PM
+DK,ITP-10009,Faxe,False,-20.13,20.96,Joint Bal Zone DK/SE,Transmission,DK,Denmark,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-10009,FAXE,,,Jun  5 2024  6:23PM
+SK,ITP-00027,Balassagyarmat (HU) / Velké Zlievce (SK),False,17.93,-36.21,Slovakia,Transmission,SK,Slovakia,,,,,,,,,,,Jun  5 2024  6:23PM
+SK,ITP-00027,Balassagyarmat (HU) / Velké Zlievce (SK),False,17.93,-36.21,Slovakia,Transmission,SK,Slovakia,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-00027,Balassagyarmat (HU) / Velké Zlievce (SK),,,Jun  5 2024  6:23PM
+SK,ITP-00051,Lanžhot,False,5.36,-31.84,Slovakia,Transmission,SK,Slovakia,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00051,Lanzhot,,,Jun  5 2024  6:23PM
+SK,ITP-00168,Baumgarten,False,4.83,-34.34,Slovakia,Transmission,SK,Slovakia,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00062,Baumgarten,,,Jun  5 2024  6:23PM
+SK,ITP-00168,Baumgarten,False,4.83,-34.34,Slovakia,Transmission,SK,Slovakia,Austria,Transmission,AT,Austria,AT-TSO-0003,TAG GmbH,ITP-00037,Baumgarten,,,Jun  5 2024  6:23PM
+SK,ITP-00168,Baumgarten,False,4.83,-34.34,Slovakia,Transmission,SK,Slovakia,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00162,Baumgarten WAG,,,Jun  5 2024  6:23PM
+SK,ITP-00421,Budince,False,33.0,-33.0,Slovakia,Transmission,SK,Slovakia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00421,Budince,,,Jun  5 2024  6:23PM
+SK,UGS-00069,Dolni Bojanovice,False,11.56,-30.18,Slovakia,Transmission,SK,Slovakia,Storage,Storage,CZ,Czechia,CZ-SSO-0003,SPP Storage,UGS-00069,Dolni Bojanovice,,,Jun  5 2024  6:23PM
+SK,ITP-00177,Vyrava,False,31.64,-28.42,Slovakia,Transmission,SK,Slovakia,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-00177,Vyrava,,,Jun  5 2024  6:23PM
+SK,ITP-00117,Uzhhorod (UA) - Velké Kapušany (SK),False,32.92,-31.99,Slovakia,Transmission,SK,Slovakia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00117,GMS Uzhgorod,,,Jun  5 2024  6:23PM
+FI,ITP-00550,BALTICCONNECTOR,False,42.41,53.49,Finland,Transmission,FI,Finland,Joint Bal Zone EE/LV,Transmission,EE,Estonia,EE-TSO-0001,Elering,ITP-00550,BALTICCONNECTOR,,,Jun  5 2024  6:23PM
+FI,LNG-00011,Hamina LNG,True,57.3,59.45,LNG Terminals,LNG Terminals,FI,Finland,Finland,Transmission,FI,Finland,FI-TSO-0003,Gasgrid Finland,LNG-00011,Hamina LNG,,,Jun  5 2024  6:23PM
+FI,LNG-00072,Inkoo LNG (FI),True,41.0,56.0,LNG Terminals,LNG Terminals,FI,Finland,Finland,Transmission,FI,Finland,FI-TSO-0003,Gasgrid Finland,LNG-00072,Inkoo LNG,,,Jun  5 2024  6:23PM
+AT,ITP-00007,Überackern SUDAL (AT) / Überackern 2 (DE),False,-16.48,-34.79,Austria,Transmission,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0010,bayernets,ITP-00007,Ueberackern2,,,Jun  5 2024  6:23PM
+AT,ITP-00019,Überackern ABG (AT) / Überackern (DE),False,-15.25,-34.07,Austria,Transmission,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0010,bayernets,ITP-00019,Ueberackern,,,Jun  5 2024  6:23PM
+AT,ITP-00019,Überackern ABG (AT) / Überackern (DE),False,-15.25,-34.07,Austria,Transmission,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00019,Überackern,,,Jun  5 2024  6:23PM
+AT,ITP-00043,Mosonmagyarovar,False,6.15,-36.96,Austria,Transmission,AT,Austria,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-00043,Mosonmagyaróvár (AT>HU),,,Jun  5 2024  6:23PM
+AT,ITP-00040,Tarvisio (IT) / Arnoldstein (AT),False,-11.87,-45.01,Austria,Transmission,AT,Austria,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,ITP-00040,TARVISIO,,,Jun  5 2024  6:23PM
+AT,ITP-00079,Murfeld (AT) / Ceršak (SI),False,-2.15,-44.27,Austria,Transmission,AT,Austria,Slovenia,Transmission,SI,Slovenia,SI-TSO-0001,Plinovodi,ITP-00079,Murfeld_Cersak,,,Jun  5 2024  6:23PM
+AT,ITP-00168,Baumgarten,False,4.83,-34.34,Austria,Transmission,AT,Austria,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00168,Baumgarten,,,Jun  5 2024  6:23PM
+AT,ITP-00168,Baumgarten,False,4.83,-34.34,Austria,Transmission,AT,Austria,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00168,Baumgarten,,,Jun  5 2024  6:23PM
+AT,ITP-00168,Baumgarten,False,4.83,-34.34,Austria,Transmission,AT,Austria,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00168,Baumgarten,,,Jun  5 2024  6:23PM
+AT,ITP-00168,Baumgarten,False,4.83,-34.34,Austria,Transmission,AT,Austria,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00168,Baumgarten,,,Jun  5 2024  6:23PM
+AT,ITP-00140,Oberkappel,False,-11.0,-33.0,Austria,Transmission,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0004,GRTD,ITP-00056,Oberkappel,,,Jun  5 2024  6:23PM
+AT,ITP-00227,RC Lindau,False,-32.26,-39.1,Austria,Transmission,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0014,TNBW,ITP-00227,RC Lindau,,,Jun  5 2024  6:23PM
+AT,ITP-00308,Haiming 2-RAGES/bn,False,-13.32,-33.94,Storage,Storage,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0010,bayernets,ITP-00308,Haiming 2 - RAGES,,,Jun  5 2024  6:23PM
+AT,ITP-00539,VIP Oberkappel,False,-11.0,-33.0,Austria,Transmission,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00539,VIP Oberkappel,,,Jun  5 2024  6:23PM
+AT,UGS-00274,Haidach (AT) / Haidach USP (DE),False,-15.49162471,-34.0651452,Storage,Storage,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0010,bayernets,UGS-00274,HaidachUGS,,,Jun  5 2024  6:23PM
+AT,UGS-00274,Haidach (AT) / Haidach USP (DE),False,-15.49162471,-34.0651452,Storage,Storage,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0010,bayernets,UGS-00274,HaidachUGS,,,Jun  5 2024  6:23PM
+AT,UGS-00416,Haiming 2 7F,False,-12.83,-32.77,Storage,Storage,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,UGS-00050,Haiming 2 7F,,,Jun  5 2024  6:23PM
+AT,UGS-00416,Haiming 2 7F,False,-12.83,-32.77,Storage,Storage,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0010,bayernets,UGS-00273,Haiming_2-7F/bn,,,Jun  5 2024  6:23PM
+AT,UGS-00428,UGS RAG Storage Pool (AT),False,2.021472273,-34.34514576,Storage,Storage,AT,Austria,Austria,Transmission,AT,Austria,,,,,,,Jun  5 2024  6:23PM
+AT,UGS-00427,UGS OMV Storage Pool (AT),False,0.969969976,-34.4148277,Austria,Transmission,AT,Austria,Storage,Storage,AT,Austria,AT-SSO-0002,OMV Gas Storage,UGS-00427,UGS OMV Storage Pool (AT),,,Jun  5 2024  6:23PM
+AT,UGS-00476,Speicher Haiming 3-Haidach,False,-14.85,-35.03,Storage,Storage,AT,Austria,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,UGS-00476,Speicher Haiming 3-Haidach,,,Jun  5 2024  6:23PM
+AT,UGS-00427,UGS OMV Storage Pool (AT),False,0.969969976,-34.4148277,Storage,Storage,AT,Austria,Austria,Transmission,AT,Austria,,,,,,,Jun  5 2024  6:23PM
+AT,UGS-00428,UGS RAG Storage Pool (AT),False,2.021472273,-34.34514576,Austria,Transmission,AT,Austria,Storage,Storage,AT,Austria,AT-SSO-0001,RAG,UGS-00428,UGS RAG Storage Pool (AT),,,Jun  5 2024  6:23PM
+AT,VTP-00014,CEGH,False,-1.76,-36.7,Austria,Transmission,AT,Austria,Austria,Transmission,AT,Austria,AT-TSO-0003,TAG GmbH,VTP-00014,CEGH,,,Jun  5 2024  6:23PM
+AT,VTP-00014,CEGH,False,-1.76,-36.7,Austria,Transmission,AT,Austria,Austria,Transmission,AT,Austria,,,,,,,Jun  5 2024  6:23PM
+AT,VTP-00014,CEGH,False,-1.76,-36.7,Austria,Transmission,AT,Austria,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,VTP-00014,CEGH,,,Jun  5 2024  6:23PM
+AT,VTP-00014,CEGH,False,-1.76,-36.7,Austria,Transmission,AT,Austria,Austria,Transmission,AT,Austria,,,,,,,Jun  5 2024  6:23PM
+AT,ITP-00227,RC Lindau,False,-32.26,-39.1,Austria,Transmission,AT,Austria,Austria,Transmission,AT,Austria,AT-DSO-0001,Vorarlberger Erdgas,ITP-00227,RC Lindau,,,Jun  5 2024  6:23PM
+LY,ITP-00074,Gela,False,-9.1,-75.04,Transmission,Transmission,LY,Libya,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,ITP-00074,GELA,,,Jun  5 2024  6:23PM
+RU,ITP-00024,Imatra,False,66.75,62.12,Transmission,Transmission,RU,Russia,Finland,Transmission,FI,Finland,FI-TSO-0003,Gasgrid Finland,ITP-00024,Imatra,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0015,GOAL,ITP-00250,GREIFSWALD,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00247,Greifswald / NEL,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00251,Greifswald / OPAL,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00491,GREIFSWALD,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0020,LBTG,ITP-00454,Lubmin (regulated),,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0016,OPAL,ITP-00251,Greifswald-OPAL,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0017,NEL,ITP-00247,Greifswald-NEL,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0018,Fluxys Deutschland,ITP-00297,Greifswald,,,Jun  5 2024  6:23PM
+RU,ITP-00178,Belgorod (RU)/ Ukraine (UA),False,109.12,-20.34,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00178,Belgorod,,,Jun  5 2024  6:23PM
+RU,ITP-00182,Serebryanka (RU) / Ukraine (UA),False,120.15,-24.24,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00182,Serebrianka,,,Jun  5 2024  6:23PM
+RU,ITP-00180,Platovo (RU) / Ukraine (UA),False,116.19,-40.48,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00180,Platovo,,,Jun  5 2024  6:23PM
+RU,ITP-00179,Pisarevka (RU)/Ukraine (UA),False,123.88,-25.52,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00179,Pysarivka,,,Jun  5 2024  6:23PM
+RU,ITP-00183,Sokhranovka (RU) / Ukraine (UA),False,125.99,-26.19,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00183,Sokhranivka,,,Jun  5 2024  6:23PM
+RU,ITP-00185,Valuyki (RU) / Ukraine (UA),False,114.87,-22.88,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00185,Valuiky,,,Jun  5 2024  6:23PM
+RU,ITP-00184,Sudzha (RU) / Ukraine (UA),False,100.24,-13.71,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00184,Sudja,,,Jun  5 2024  6:23PM
+RU,ITP-00187,Värska,False,60.69,42.03,Transmission,Transmission,RU,Russia,Joint Bal Zone EE/LV,Transmission,EE,Estonia,EE-TSO-0001,Elering,ITP-00187,Värska,,,Jun  5 2024  6:23PM
+RU,ITP-00181,Prokhorovka (RU) / Ukraine (UA),False,122.39,-37.61,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00181,Prokhorovka,,,Jun  5 2024  6:23PM
+RU,ITP-00243,Narva,False,63.59,52.75,Transmission,Transmission,RU,Russia,Joint Bal Zone EE/LV,Transmission,EE,Estonia,EE-TSO-0001,Elering,ITP-00243,Narva,,,Jun  5 2024  6:23PM
+RU,ITP-00493,Luhamaa,False,59.5,40.04,Transmission,Transmission,RU,Russia,Transmission,Transmission,EE,Estonia,EE-TSO-0001,Elering,ITP-00493,Luhamaa,,,Jun  5 2024  6:23PM
+RU,ITP-00442,Lozne,False,0.0,0.0,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00442,Lozne,,,Jun  5 2024  6:23PM
+RU,ITP-00441,Volchansk (RU) / Ukraine (UA),False,0.0,0.0,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00441,Volchansk,,,Jun  5 2024  6:23PM
+RU,ITP-00443,Parkhomenko (RU) / (UA),False,0.0,0.0,Transmission,Transmission,RU,Russia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00443,Parkhomenko,,,Jun  5 2024  6:23PM
+RU,ITP-00493,Luhamaa,False,59.5,40.04,Transmission,Transmission,RU,Russia,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,ITP-00493,Luhamaa,,,Jun  5 2024  6:23PM
+RU,ITP-00501,Lubmin II,False,-12.35,11.31,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0003,ONTRAS Gastransport GmbH,ITP-00501,Lubmin II,,,Jun  5 2024  6:23PM
+RU,ITP-00501,Lubmin II,False,-12.35,11.31,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0018,Fluxys Deutschland,ITP-00501,Lubmin II,,,Jun  5 2024  6:23PM
+RU,ITP-00501,Lubmin II,False,-12.35,11.31,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00501,Lubmin II,,,Jun  5 2024  6:23PM
+RU,ITP-00501,Lubmin II,False,-12.35,11.31,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00501,Lubmin II,,,Jun  5 2024  6:23PM
+RU,ITP-00120,Greifswald,False,-13.01,11.65,Transmission,Transmission,RU,Russia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00665,Greifswald,,,Jun  5 2024  6:23PM
+UK,DIS-00015,Greater Belfast,False,-113.25,16.43,NI,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00017,PTL Stranraer,False,-109.07,19.6,NI,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00016,Lisburn,False,-114.04,15.11,NI,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00071,Austrey,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00086,Caldecott,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00063,Aberdeen,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00065,Alrewas (WM),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00088,Cirencester,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00076,Bathgate,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00096,Dyffryn Clydach,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00093,Dowlais,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00094,Drointon,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00099,Elton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00101,Farningham,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00103,Fiddington,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00107,Gosberton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00106,Glenmavis,False,-102.04,22.31,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00110,Hardwick,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00112,Horndon,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00111,Holmes Chapel,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00115,Ilchester,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00116,Ipsden,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00123,Leamington,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00127,Lower Quinton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00119,Kenn,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00130,Lyneham (Choakford),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00078,Blaby,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00081,Braishfield A,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00084,Broxburn,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00090,Coldstream,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00092,Cowpen Bewley,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00105,Gilwern,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00125,Littleton Drew,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00070,Audley (WM),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00072,Aylesbeare,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00082,Braishfield B,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00091,Corbridge,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00097,Easton Grey,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00098,Ecclestone,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00104,Ganstead,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00113,Humbleton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00118,Keld,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00124,Little Burdon,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00133,Mappowder,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00073,Bacton,False,-75.45,1.17,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00074,Baldersby,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00075,Balgray,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00080,Blyborough,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00083,Brisley,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00087,Careston,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00102,Farningham B,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00120,Kinknockie,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00126,Lockerbie,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00132,Malpas,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00136,Melkinthorpe,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00064,Alrewas (EM),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00066,Armadale,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00068,Asselby,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00079,Blackrod,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00085,Burley Bank,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00095,Drum,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00122,Langholm,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00067,Aspley,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00069,Audley (NW),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00089,Coffinswell,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00100,Evesham,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00109,Guyzance,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00117,Ipsden 2,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00121,Kirkstead,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00129,Luxborough Lane,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00134,Market Harborough,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00135,Matching Green,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00077,Bishop Auckland,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00108,Great Wilbraham,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00114,Hume,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00128,Lupton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00131,Maelor,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00143,Peterborough Eye (Tee),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00147,Pitcairngreen,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00152,Roudham Heath,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00153,Royston,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00160,Shustoke,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00179,Winkfield (NT),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00181,Winkfield (SO),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00184,Cambridge,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,ITP-00005,Bacton (IUK),False,-75.45,1.17,UK,Transmission,UK,United Kingdom,IUK,Transmission,UK,United Kingdom,UK-TSO-0003,Interconnector,ITP-00005,Bacton NTS,,,Jun  5 2024  6:23PM
+UK,DIS-00149,Rawcliffe,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00155,Saltwick Pressure Controlled,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00165,Stratford-upon-Avon,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00166,Sutton Bridge,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00168,Thornton Curtis,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00173,Walesby,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00174,Warburton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00150,Ross (SW),False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00156,Saltwick Volumetric Controlled,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00162,Soutra,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00163,St Fergus,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00182,Yelverton,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00139,Netherhowcleugh,False,0.0,0.0,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+UK,DIS-00141,Partington,False,-96.2,6.12,UK,Transmission,UK,United Kingdom,Distribution,Distribution,UK,United Kingdom,,,,,,,Jun  5 2024  6:23PM
+FR,DIS-00003,Distribution (FR North),False,-47.48,-6.23,TRF,Transmission,FR,France,Distribution,Distribution,FR,France,FR-DSO-0001,GrDF,DIS-00003,Distribution (FR North),,,Jun  5 2024  6:23PM
+FR,ITP-00033,Biriatou (FR) / Irun (ES),False,-92.24,-59.41,TRF,Transmission,FR,France,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,ITP-00033,IRUN (ES) / BIRIATOU (FR),,,Jun  5 2024  6:23PM
+FR,FNC-00015,TEREGA Delivery Pool - Industrials (FR),False,-78.97,-58.34,TRF,Transmission,FR,France,Final Consumers,Final Consumers,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,FNC-00202,GRTgaz aggregated end consumers (industrial and distribution),True,-68.33,-45.56,TRF,Transmission,FR,France,Final Consumers,Final Consumers,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,FNC-00201,GRTgaz aggregated industrial consumers,True,-72.86,-45.75,TRF,Transmission,FR,France,Final Consumers,Final Consumers,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,ITP-00018,Larrau,False,-87.98,-60.49,TRF,Transmission,FR,France,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,ITP-00018,LARRAU,,,Jun  5 2024  6:23PM
+FR,DIS-00188,TEREGA Delivery Pool - Distribution (FR),False,-77.92,-58.3,TRF,Transmission,FR,France,Distribution,Distribution,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,DIS-00197,GRTgaz aggregated distribution consumers,True,-71.94,-46.39,TRF,Transmission,FR,France,Distribution,Distribution,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,ITP-00039,Oltingue (FR) / Rodersdorf (CH),False,-43.9,-38.97,TRF,Transmission,FR,France,Switzerland,Transmission,CH,Switzerland,CH-TSO-0002,FluxSwiss,ITP-00039,Oltingue (FR) / Rodersdorf (CH),,,Jun  5 2024  6:23PM
+FR,ITP-00039,Oltingue (FR) / Rodersdorf (CH),False,-43.9,-38.97,TRF,Transmission,FR,France,Switzerland,Transmission,CH,Switzerland,CH-TSO-0001,Swissgas,ITP-00039,Oltingue (FR) / Rodersdorf (CH),,,Jun  5 2024  6:23PM
+FR,ITP-00137,Obergailbach (FR) / Medelsheim (DE),False,-44.96,-28.81,TRF,Transmission,FR,France,DE THE BZ,Transmission,DE,Germany,DE-TSO-0004,GRTD,ITP-00083,Medelsheim,,,Jun  5 2024  6:23PM
+FR,ITP-00115,Blaregnies L (BE) / Taisnières B (FR),False,-63.37,-20.39,TRF,Transmission,FR,France,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00115,Blaregnies L,,,Jun  5 2024  6:23PM
+FR,ITP-00152,Blaregnies (BE) / Taisnières (H) (FR) (Segeo/Troll),False,-62.67,-20.63,TRF,Transmission,FR,France,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00114,Blaregnies Segeo,,,Jun  5 2024  6:23PM
+FR,ITP-00152,Blaregnies (BE) / Taisnières (H) (FR) (Segeo/Troll),False,-62.67,-20.63,TRF,Transmission,FR,France,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00147,Blaregnies Troll,,,Jun  5 2024  6:23PM
+FR,ITP-00281,Jura,False,-50.62,-46.59,TRF,Transmission,FR,France,Switzerland,Transmission,CH,Switzerland,CH-DSO-0003,Gaznat,ITP-00281,Jura,,,Jun  5 2024  6:23PM
+FR,ITP-00304,VIP PIRINEOS,False,-90.13,-60.09,TRF,Transmission,FR,France,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,ITP-00304,VIP PIRINEOS,,,Jun  5 2024  6:23PM
+FR,ITP-00526,VIRTUALYS,False,-66.62,-16.76,TRF,Transmission,FR,France,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00526,Virtualys,,,Jun  5 2024  6:23PM
+FR,ITP-00540,VIP France - Germany,False,-45.88,-28.84,TRF,Transmission,FR,France,DE THE BZ,Transmission,DE,Germany,DE-TSO-0004,GRTD,ITP-00540,VIP France - Germany,,,Jun  5 2024  6:23PM
+FR,LNG-00005,Alveringem,False,-69.26,-14.71,TRF,Transmission,FR,France,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,LNG-00005,Alveringem-Maldegem,,,Jun  5 2024  6:23PM
+FR,ITP-00541,Atlantique,False,-76.11,-39.61,TRF,Transmission,FR,France,Storage,Storage,FR,France,FR-SSO-0002,Storengy,ITP-00541,Atlantique,,,Jun  5 2024  6:23PM
+FR,ITP-00541,Atlantique,False,-76.11,-39.61,Storage,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00541,Atlantique,,,Jun  5 2024  6:23PM
+FR,LNG-00047,Dunkerque LNG,False,-72.64,-14.6,LNG Terminals,LNG Terminals,FR,France,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00519,Dunkirk LNG Terminal,,,Jun  5 2024  6:23PM
+FR,UGS-00017,Lussagnet,False,-85.03,-57.68,Storage,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0002,TERÉGA,UGS-00017,LUSSAGNET,,,Jun  5 2024  6:23PM
+FR,LNG-00029,Fos (Tonkin/Cavaou),False,-58.05,-59.18,LNG Terminals,LNG Terminals,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,LNG-00029,FOS (CAVAOU and TONKIN),,,Jun  5 2024  6:23PM
+FR,LNG-00029,Fos (Tonkin/Cavaou),False,-58.05,-59.18,TRF,Transmission,FR,France,LNG Terminals,LNG Terminals,FR,France,FR-LSO-0003,Elengy,LNG-00025,Fos Tonkin,,,Jun  5 2024  6:23PM
+FR,LNG-00047,Dunkerque LNG,False,-72.64,-14.6,TRF,Transmission,FR,France,LNG Terminals,LNG Terminals,FR,France,FR-LSO-0001,Dunkerque LNG,LNG-00047,Dunkerque LNG,,,Jun  5 2024  6:23PM
+FR,LNG-00024,Montoir de Bretagne,False,-94.39,-40.65,LNG Terminals,LNG Terminals,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,LNG-00024,MONTOIR,,,Jun  5 2024  6:23PM
+FR,LNG-00047,Dunkerque LNG,False,-72.64,-14.6,LNG Terminals,LNG Terminals,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,LNG-00003,Dunkerque GNL,,,Jun  5 2024  6:23PM
+FR,UGS-00017,Lussagnet,False,-85.03,-57.68,TRF,Transmission,FR,France,Storage,Storage,FR,France,FR-SSO-0001,TERÉGA (SSO),UGS-00017,Lussagnet,,,Jun  5 2024  6:23PM
+FR,LNG-00024,Montoir de Bretagne,False,-94.39,-40.65,TRF,Transmission,FR,France,LNG Terminals,LNG Terminals,FR,France,FR-LSO-0003,Elengy,LNG-00024,Montoir de Bretagne,,,Jun  5 2024  6:23PM
+FR,LNG-00029,Fos (Tonkin/Cavaou),False,-58.05,-59.18,LNG Terminals,LNG Terminals,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,LNG-00029,FOS (CAVAOU and TONKIN),,,Jun  5 2024  6:23PM
+FR,LNG-00029,Fos (Tonkin/Cavaou),False,-58.05,-59.18,TRF,Transmission,FR,France,LNG Terminals,LNG Terminals,FR,France,FR-LSO-0004,Fosmax LNG,LNG-00020,Fos Cavaou,,,Jun  5 2024  6:23PM
+FR,UGS-00287,Sud-Atlantique,False,-74.24851191,-36.88183707,Storage,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,UGS-00287,Sud Atlantique,,,Jun  5 2024  6:23PM
+FR,UGS-00284,Nord-Ouest / SEDIANE,False,-75.92621189,-28.65810057,Storage,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,UGS-00284,Nord Ouest,,,Jun  5 2024  6:23PM
+FR,UGS-00284,Nord-Ouest / SEDIANE,False,-75.92621189,-28.65810057,TRF,Transmission,FR,France,Storage,Storage,FR,France,FR-SSO-0002,Storengy,UGS-00284,Nord-Ouest / SEDIANE,,,Jun  5 2024  6:23PM
+FR,UGS-00286,Nord-Est / SERENE Nord,False,-61.94478386,-24.20168342,Storage,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,UGS-00286,Nord Est,,,Jun  5 2024  6:23PM
+FR,UGS-00288,Sud-Est / SALINE,False,-55.83414996,-49.2331757,Storage,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,UGS-00288,Sud Est,,,Jun  5 2024  6:23PM
+FR,UGS-00287,Sud-Atlantique,False,-74.24851191,-36.88183707,TRF,Transmission,FR,France,Storage,Storage,FR,France,FR-SSO-0002,Storengy,UGS-00287,Sud-Atlantique,,,Jun  5 2024  6:23PM
+FR,UGS-00288,Sud-Est / SALINE,False,-55.83414996,-49.2331757,TRF,Transmission,FR,France,Storage,Storage,FR,France,FR-SSO-0002,Storengy,UGS-00288,Sud-Est / SALINE,,,Jun  5 2024  6:23PM
+FR,UGS-00285,Nord-B / SEDIANE B,False,-70.80523205,-19.55380806,TRF,Transmission,FR,France,TRF,Storage,FR,France,FR-SSO-0002,Storengy,UGS-00285,Nord-B / SEDIANE B,,,Jun  5 2024  6:23PM
+FR,UGS-00285,Nord-B / SEDIANE B,False,-70.80523205,-19.55380806,TRF,Storage,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,UGS-00285,Nord B,,,Jun  5 2024  6:23PM
+FR,UGS-00286,Nord-Est / SERENE Nord,False,-61.94478386,-24.20168342,TRF,Transmission,FR,France,Storage,Storage,FR,France,FR-SSO-0002,Storengy,UGS-00286,Nord-Est / SERENE Nord,,,Jun  5 2024  6:23PM
+FR,VTP-00010,Point Exchange Gas - TEREGA,False,0.0,0.0,TRF,Transmission,FR,France,TRF,Transmission,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,VTP-00009,PEG SUD,False,0.0,0.0,TRF,Transmission,FR,France,TRF,Transmission,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,VTP-00039,PEG,True,-66.62,-45.49,TRF,Transmission,FR,France,TRF,Transmission,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,VTP-00009,PEG SUD,False,0.0,0.0,TRF,Transmission,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,VTP-00009,PEG SUD,,,Jun  5 2024  6:23PM
+FR,VTP-00010,Point Exchange Gas - TEREGA,False,0.0,0.0,TRF,Transmission,FR,France,TRF,Transmission,FR,France,FR-TSO-0002,TERÉGA,VTP-00010,Point Exchange Gas - TEREGA,,,Jun  5 2024  6:23PM
+FR,VTP-00030,TRADING REGION SOUTH (GRTgaz-TEREGA) France,False,-53.79,-33.99,TRF,Transmission,FR,France,TRF,Transmission,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,VTP-00030,TRADING REGION SOUTH (GRTgaz-TEREGA) France,False,-53.79,-33.99,TRF,Transmission,FR,France,TRF,Transmission,FR,France,FR-TSO-0002,TERÉGA,VTP-00030,TRADING REGION SOUTH (GRTgaz-TEREGA) France,,,Jun  5 2024  6:23PM
+FR,VTP-00039,PEG,True,-66.62,-45.49,TRF,Transmission,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,VTP-00039,PEG,,,Jun  5 2024  6:23PM
+FR,ITP-00137,Obergailbach (FR) / Medelsheim (DE),False,-44.96,-28.81,TRF,Transmission,FR,France,,,,,,,,,,,Jun  5 2024  6:23PM
+FR,LNG-00071,Le Havre (FR),False,-82.88,-26.19,LNG Terminals,LNG Terminals,FR,France,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,LNG-00071,LE HAVRE,,,Jun  5 2024  6:23PM
+FR,LNG-00071,Le Havre (FR),False,-82.88,-26.19,TRF,Transmission,FR,France,LNG Terminals,LNG Terminals,FR,France,,,,,,,Jun  5 2024  6:23PM
+FR,ITP-00137,Obergailbach (FR) / Medelsheim (DE),False,-44.96,-28.81,TRF,Transmission,FR,France,,,,,,,,,,,Jun  5 2024  6:23PM
+DE,DIS-00061,Final Consumers (DE) (GUD) L-Gas-Summe Letztverbraucher,False,-20.65,2.81,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,DIS-00060,Final Consumers (DE) (GUD) H-Gas-Summe Letztverbraucher,False,-21.8,3.1,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,FNC-00042,Final Consumers aggregated,False,-19.07,-34.29,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00025,Bocholtz-Vetschau,False,-50.89,-14.29,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00025,Bocholtz Vetschau,,,Jun  5 2024  6:23PM
+DE,ITP-00010,Brandov-OPAL (DE),False,-11.87,-17.28,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00010,Brandov OPAL,,,Jun  5 2024  6:23PM
+DE,ITP-00015,Hora Svaté Kateřiny (CZ) / Deutschneudorf (Sayda) (DE),False,-12.57,-17.12,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00015,Hora Sv. Kateriny Sayda,,,Jun  5 2024  6:23PM
+DE,ITP-00010,Brandov-OPAL (DE),False,-11.87,-17.28,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00010,Brandov OPAL,,,Jun  5 2024  6:23PM
+DE,FNC-00046,Final Consumers Aggregated (exit) (DE),True,-31.77,-12.49,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00019,Überackern ABG (AT) / Überackern (DE),False,-15.25,-34.07,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00019,Überackern ABG,,,Jun  5 2024  6:23PM
+DE,FNC-00031,Aggregate Consumers L-Gas (Thyssengas),False,-33.02,-25.06,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00010,Brandov-OPAL (DE),False,-11.87,-17.28,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00010,Brandov OPAL,,,Jun  5 2024  6:23PM
+DE,FNC-00032,Final Consumers (DE) (OGE),False,-33.5,-26.13,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,FNC-00199,Nowega Aggregation Customer,True,0.0,0.0,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,FNC-00029,Aggregate NAP (industrial consumers) (ONTRAS),False,-20.32,4.43,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,FNC-00030,Aggregate Consumers H-Gas (Thyssengas),False,-33.35,-25.06,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,FNC-00045,Final Consumers DE GTG Nord L Gas,False,-45.62,2.79,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00007,Überackern SUDAL (AT) / Überackern 2 (DE),False,-16.48,-34.79,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00007,Überackern SUDAL,,,Jun  5 2024  6:23PM
+DE,ITP-00019,Überackern ABG (AT) / Überackern (DE),False,-15.25,-34.07,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00019,Überackern ABG,,,Jun  5 2024  6:23PM
+DE,FNC-00203,Aggregated Final Consumers DE (GASCADE),False,-27.47,-7.64,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,FNC-00206,Final Consumers DE GTG Nord H Gas,True,-45.48,3.67,DE THE BZ,Transmission,DE,Germany,Final Consumers,Final Consumers,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00070,Kiefersfelden,False,-19.78,-37.7,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0004,TIGAS,ITP-00070,Kiefersfelden,,,Jun  5 2024  6:23PM
+DE,ITP-00072,Remich,False,-49.97,-25.74,DE THE BZ,Transmission,DE,Germany,BeLux,Transmission,LU,Luxemburg,LU-TSO-0001,CREOS,ITP-00072,Entry Point Germany,,,Jun  5 2024  6:23PM
+DE,ITP-00071,Haanrade,False,-51.37,-13.64,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00071,Haanrade,,,Jun  5 2024  6:23PM
+DE,ITP-00076,Bunde (DE) / Oude Statenzijl (H) (NL) (GASCADE),False,-46.1,0.69,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00076,Oude Statenzijl,,,Jun  5 2024  6:23PM
+DE,ITP-00096,Mallnow,False,-7.12,-1.58,DE THE BZ,Transmission,DE,Germany,TGPS (YAMAL),Transmission,PL,Poland,PL-TSO-0001,GAZ-SYSTEM (ISO),ITP-00096,Mallnow,,,Jun  5 2024  6:23PM
+DE,ITP-00102,Bunde (DE) / Oude Statenzijl (H) (NL) (GUD),False,-46.1,0.69,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00102,Oude Statenzijl,,,Jun  5 2024  6:23PM
+DE,ITP-00120,Greifswald,False,-13.01,11.65,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,RU,Russia,RU-TSO-0002,Nord Stream,ITP-00120,Greifswald,,,Jun  5 2024  6:23PM
+DE,ITP-00135,Ellund,False,-34.5,17.85,DE THE BZ,Transmission,DE,Germany,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,ITP-00135,Ellund,,,Jun  5 2024  6:23PM
+DE,ITP-00135,Ellund,False,-34.5,17.85,DE THE BZ,Transmission,DE,Germany,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,ITP-00135,Ellund,,,Jun  5 2024  6:23PM
+DE,ITP-00137,Obergailbach (FR) / Medelsheim (DE),False,-44.96,-28.81,DE THE BZ,Transmission,DE,Germany,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00137,OBERGAILBACH,,,Jun  5 2024  6:23PM
+DE,ITP-00103,Bunde (DE) / Oude Statenzijl (H) (NL) I (OGE),False,-46.1,0.69,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00103,Oude Statenzijl 1,,,Jun  5 2024  6:23PM
+DE,ITP-00107,Bunde (DE) / Oude Statenzijl (L) (NL) (GUD),False,-46.1,0.69,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00107,Oude Statenzijl GUD-G,,,Jun  5 2024  6:23PM
+DE,ITP-00112,Eynatten 1 (BE) // Lichtenbusch / Raeren (DE),False,-51.06,-18.02,DE THE BZ,Transmission,DE,Germany,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00112,Eynatten 1,,,Jun  5 2024  6:23PM
+DE,ITP-00137,Obergailbach (FR) / Medelsheim (DE),False,-44.96,-28.81,DE THE BZ,Transmission,DE,Germany,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00137,OBERGAILBACH,,,Jun  5 2024  6:23PM
+DE,ITP-00118,Bunde (DE) / Oude Statenzijl (L) (NL) (GTG Nord),False,-46.1,0.69,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00118,Oude Statenzijl GTG Nord-G),,,Jun  5 2024  6:23PM
+DE,ITP-00140,Oberkappel,False,-11.0,-33.0,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00140,Oberkappel,,,Jun  5 2024  6:23PM
+DE,ITP-00151,Vlieghuis,False,-47.86,-0.83,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00151,Vlieghuis,,,Jun  5 2024  6:23PM
+DE,ITP-00140,Oberkappel,False,-11.0,-33.0,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00140,Oberkappel,,,Jun  5 2024  6:23PM
+DE,ITP-00159,Eynatten 2 (BE) // Lichtenbusch / Raeren (DE),False,-51.06,-18.02,DE THE BZ,Transmission,DE,Germany,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00159,Eynatten 2 (BE) // Lichtenbusch / Raeren (DE),,,Jun  5 2024  6:23PM
+DE,ITP-00169,Bocholtz,False,-51.55,-14.86,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00169,Bocholtz,,,Jun  5 2024  6:23PM
+DE,ITP-00190,Kienbaum,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00190,Kienbaum ,,,Jun  5 2024  6:23PM
+DE,ITP-00192,Emsbüren-Berge,False,-45.44,3.16,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00192,EMSBUEREN-BERGE,,,Jun  5 2024  6:23PM
+DE,ITP-00150,Olbernhau (DE) / Hora Svaté Kateřiny (CZ),False,-13.45,-17.81,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00150,Hora Sv. Kateriny Olbernhau,,,Jun  5 2024  6:23PM
+DE,ITP-00159,Eynatten 2 (BE) // Lichtenbusch / Raeren (DE),False,-51.06,-18.02,DE THE BZ,Transmission,DE,Germany,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00159,Eynatten 2 (BE) // Lichtenbusch / Raeren (DE),,,Jun  5 2024  6:23PM
+DE,ITP-00190,Kienbaum,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00192,Emsbüren-Berge,False,-45.44,3.16,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00192,Emsbüren-Berge,,,Jun  5 2024  6:23PM
+DE,ITP-00209,Emden (EPT1),False,-45.04,7.23,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00209,Emden (EPT1),,,Jun  5 2024  6:23PM
+DE,ITP-00227,RC Lindau,False,-32.26,-39.1,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-DSO-0001,Vorarlberger Erdgas,ITP-00227,RC Lindau,,,Jun  5 2024  6:23PM
+DE,ITP-00259,Zevenaar,False,-51.02,-7.67,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00259,Zevenaar,,,Jun  5 2024  6:23PM
+DE,ITP-00294,Wallbach,False,-42.01,-39.03,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-TSO-0002,FluxSwiss,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+DE,ITP-00294,Wallbach,False,-42.01,-39.03,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-TSO-0002,FluxSwiss,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+DE,ITP-00194,Wardenburg RG,False,-40.69,4.61,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00194,WARDENBURG RG,,,Jun  5 2024  6:23PM
+DE,ITP-00203,Lampertheim IV,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0014,TNBW,ITP-00203,Lampertheim IV,,,Jun  5 2024  6:23PM
+DE,ITP-00209,Emden (EPT1),False,-45.04,7.23,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00209,Emden (EPT1),,,Jun  5 2024  6:23PM
+DE,ITP-00227,RC Lindau,False,-32.26,-39.1,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-DSO-0001,Vorarlberger Erdgas,ITP-00227,RC Lindau,,,Jun  5 2024  6:23PM
+DE,ITP-00291,VIP Kiefersfelden-Pfronten,False,-17.84,-37.3,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00194,Wardenburg RG,False,-40.69,4.61,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00195,Steinitz,False,-25.93,0.88,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00206,Pfronten,False,-27.16,-39.37,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,AT-TSO-0008,EVA,ITP-00206,Pfronten,,,Jun  5 2024  6:23PM
+DE,ITP-00294,Wallbach,False,-42.01,-39.03,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-TSO-0001,Swissgas,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+DE,ITP-00196,Broichweiden Süd,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00196,Broichweiden Süd,,,Jun  5 2024  6:23PM
+DE,ITP-00196,Broichweiden Süd,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00196,Broichweiden Süd ,,,Jun  5 2024  6:23PM
+DE,ITP-00208,Dornum (EPT1 & EPT2),False,-43.95,7.71,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00208,Dornum (EPT1 & EPT2),,,Jun  5 2024  6:23PM
+DE,ITP-00209,Emden (EPT1),False,-45.04,7.23,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00209,Emden (EPT1),,,Jun  5 2024  6:23PM
+DE,ITP-00210,Emden (NPT),False,-45.79,6.75,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00210,Emden (NPT),,,Jun  5 2024  6:23PM
+DE,ITP-00229,RC Thayngen-Fallentor,False,-37.84,-38.13,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-DSO-0002,Erdgas Ostschweiz,ITP-00229,RC Thayngen-Fallentor,,,Jun  5 2024  6:23PM
+DE,ITP-00210,Emden (NPT),False,-45.79,6.75,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00210,Emden (NPT),,,Jun  5 2024  6:23PM
+DE,ITP-00294,Wallbach,False,-42.01,-39.03,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-TSO-0001,Swissgas,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+DE,ITP-00294,Wallbach,False,-42.01,-39.03,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-TSO-0001,Swissgas,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+DE,ITP-00195,Steinitz,False,-25.93,0.88,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0003,ONTRAS Gastransport GmbH,ITP-00195,Steinitz (until 1.10.2021 6:00 a.m.),,,Jun  5 2024  6:23PM
+DE,ITP-00203,Lampertheim IV,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00203,Lampertheim IV,,,Jun  5 2024  6:23PM
+DE,ITP-00228,RC Basel,False,-39.99,-37.86,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-DSO-0001,GVM,ITP-00228,RC Basel,,,Jun  5 2024  6:23PM
+DE,ITP-00294,Wallbach,False,-42.01,-39.03,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,CH-TSO-0002,FluxSwiss,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+DE,ITP-00208,Dornum (EPT1 & EPT2),False,-43.95,7.71,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00208,Dornum (EPT1 & EPT2),,,Jun  5 2024  6:23PM
+DE,ITP-00308,Haiming 2-RAGES/bn,False,-13.32,-33.94,DE THE BZ,Transmission,DE,Germany,Storage,Storage,AT,Austria,AT-SSO-0001,RAG,ITP-00308,Haiming 2-RAGES/bn,,,Jun  5 2024  6:23PM
+DE,ITP-00305,Dinxperlo,False,-49.17,-7.58,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00305,Dinxperlo,,,Jun  5 2024  6:23PM
+DE,ITP-00497,GCP GAZ-SYSTEM/ONTRAS,False,-5.32,-13.15,DE THE BZ,Transmission,DE,Germany,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-00497,GCP GAZ-SYSTEM/ONTRAS,,,Jun  5 2024  6:23PM
+DE,ITP-00499,Zone GASCADE / OGE,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00513,Vitzeroda MÜP,False,-30.32,-16.51,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00535,Deutschneudorf EUGAL Brandov ,False,-12.08,-18.06,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00535,Deutschneudorf EUGAL Brandov,,,Jun  5 2024  6:23PM
+DE,ITP-00499,Zone GASCADE / OGE,False,0.0,0.0,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00499,Zone OGE,,,Jun  5 2024  6:23PM
+DE,ITP-00517,Achim II,False,-37.05,7.75,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0018,Fluxys Deutschland,ITP-00517,Achim II - Entry,,,Jun  5 2024  6:23PM
+DE,ITP-00523,Ronneburg,False,-19.82,-16.51,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00525,Dornum GASPOOL,False,-44.21,7.36,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,NO,Norway,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00535,Deutschneudorf EUGAL Brandov ,False,-12.08,-18.06,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00535,Deutschneudorf EUGAL Brandov,,,Jun  5 2024  6:23PM
+DE,ITP-00513,Vitzeroda MÜP,False,-30.32,-16.51,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00513,Vitzeroda MÜP,,,Jun  5 2024  6:23PM
+DE,ITP-00517,Achim II,False,-37.05,7.75,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00523,Ronneburg,False,-19.82,-16.51,DE THE BZ,Transmission,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00523,Ronneburg OGE,,,Jun  5 2024  6:23PM
+DE,ITP-00535,Deutschneudorf EUGAL Brandov ,False,-12.08,-18.06,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00535,Deutschneudorf EUGAL Brandov,,,Jun  5 2024  6:23PM
+DE,ITP-00501,Lubmin II,False,-12.35,11.31,DE THE BZ,Transmission,DE,Germany,Transmission,Transmission,RU,Russia,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00516,Zone Oude Statenzijl H,False,-46.1,0.69,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00516,Zone Oude Statenzijl H,,,Jun  5 2024  6:23PM
+DE,ITP-10011,VIP DK-THE,False,-36.08,18.4,DE THE BZ,Transmission,DE,Germany,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,ITP-10011,VIP DK-THE,,,Jun  5 2024  6:23PM
+DE,ITP-00542,VIP Belgium - NCG,False,-51.06,-18.02,DE THE BZ,Transmission,DE,Germany,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00542,Eynatten 2/VIP Belgium-NCG,,,Jun  5 2024  6:23PM
+DE,ITP-00537,VIP Brandov,False,-12.79,-17.06,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00537,VIP Brandov-GASPOOL,,,Jun  5 2024  6:23PM
+DE,ITP-00540,VIP France - Germany,False,-45.88,-28.84,DE THE BZ,Transmission,DE,Germany,TRF,Transmission,FR,France,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00544,VIP Germany-CH,False,-40.78,-38.93,DE THE BZ,Transmission,DE,Germany,Switzerland,Transmission,CH,Switzerland,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-00538,VIP Waidhaus,False,-18.85,-25.13,DE THE BZ,Transmission,DE,Germany,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00538,VIP Waidhaus,,,Jun  5 2024  6:23PM
+DE,ITP-00539,VIP Oberkappel,False,-11.0,-33.0,DE THE BZ,Transmission,DE,Germany,Austria,Transmission,AT,Austria,,,,,,,Jun  5 2024  6:23PM
+DE,ITP-10010,VIP TTF-THE-L,False,-46.01,-5.0,DE THE BZ,Transmission,DE,Germany,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-10010,VIP TTF-THE-L,,,Jun  5 2024  6:23PM
+DE,PRD-00155,Nowega Zone Production,False,-30.26908556,-1.474961701,Production,Production,DE,Germany,DE THE BZ,Transmission,DE,Germany,DE-TSO-0008,Nowega,PRD-00155,Zone_Produktion,,,Jun  5 2024  6:23PM
+NL,FNC-00013,Industrial Consumers (NL),False,-54.27,-4.36,Final Consumers,Final Consumers,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,FNC-00013,Aggregated Industry,,,Jun  5 2024  6:23PM
+NL,FNC-00013,Industrial Consumers (NL),False,-54.27,-4.36,Netherlands,Transmission,NL,Netherlands,Final Consumers,Final Consumers,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,ITP-00025,Bocholtz-Vetschau,False,-50.89,-14.29,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00025,Bocholtz - Vetschau,,,Jun  5 2024  6:23PM
+NL,FNC-00014,Private Distribution Companies (PDC) (NL),False,-54.93,-1.47,Netherlands,Transmission,NL,Netherlands,Final Consumers,Final Consumers,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,DIS-00187,Local Distribution Companies (LDC) (NL),False,-56.12,-1.49,Netherlands,Transmission,NL,Netherlands,Distribution,Distribution,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,ITP-00038,Hilvarenbeek,False,-56.56,-11.26,Netherlands,Transmission,NL,Netherlands,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00038,Hilvarenbeek,,,Jun  5 2024  6:23PM
+NL,ITP-00063,Julianadorp (GTS) /Balgzand (BBL),False,-58.54,1.04,Netherlands,Transmission,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,UK-TSO-0004,BBL,ITP-00063,Julianadorp (BBL),,,Jun  5 2024  6:23PM
+NL,ITP-00063,Julianadorp (GTS) /Balgzand (BBL),False,-58.54,1.04,Netherlands,Transmission,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00063,Julianadorp,,,Jun  5 2024  6:23PM
+NL,ITP-00076,Bunde (DE) / Oude Statenzijl (H) (NL) (GASCADE),False,-46.1,0.69,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00076,Bunde,,,Jun  5 2024  6:23PM
+NL,ITP-00088,Zandvliet H-gas,False,-61.0,-11.48,Netherlands,Transmission,NL,Netherlands,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00088,Zandvliet H,,,Jun  5 2024  6:23PM
+NL,ITP-00071,Haanrade,False,-51.37,-13.64,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00071,Haanrade,,,Jun  5 2024  6:23PM
+NL,ITP-00078,Winterswijk,False,-47.55,-6.18,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00078,Vreden,,,Jun  5 2024  6:23PM
+NL,ITP-00118,Bunde (DE) / Oude Statenzijl (L) (NL) (GTG Nord),False,-46.1,0.69,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0006,GTG,ITP-00118,Oude Statenzijl,,,Jun  5 2024  6:23PM
+NL,ITP-00101,Zelzate,False,-63.11,-12.94,Netherlands,Transmission,NL,Netherlands,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00101,Zelzate 1,,,Jun  5 2024  6:23PM
+NL,ITP-00107,Bunde (DE) / Oude Statenzijl (L) (NL) (GUD),False,-46.1,0.69,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00107,OUDE STATENZIJL L,,,Jun  5 2024  6:23PM
+NL,ITP-00110,Zelzate (Zebra Pijpleiding),False,-63.94,-12.68,Netherlands,Transmission,NL,Netherlands,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00110,Zelzate 2,,,Jun  5 2024  6:23PM
+NL,ITP-00102,Bunde (DE) / Oude Statenzijl (H) (NL) (GUD),False,-46.1,0.69,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00102,OUDE STATENZIJL H,,,Jun  5 2024  6:23PM
+NL,ITP-00169,Bocholtz,False,-51.55,-14.86,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00066,Bocholtz,,,Jun  5 2024  6:23PM
+NL,ITP-00151,Vlieghuis,False,-47.86,-0.83,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-ESO-0087,RWE,ITP-00151,Vlieghuis,,,Jun  5 2024  6:23PM
+NL,ITP-00169,Bocholtz,False,-51.55,-14.86,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0007,Fluxys TENP GmbH,ITP-00068,Bocholtz,,,Jun  5 2024  6:23PM
+NL,ITP-00207,Bacton (BBL),False,-75.45,1.17,Netherlands,Transmission,NL,Netherlands,UK,Transmission,UK,United Kingdom,UK-TSO-0001,National Gas TSO,ITP-00207,Bacton (BBL),,,Jun  5 2024  6:23PM
+NL,ITP-00259,Zevenaar,False,-51.02,-7.67,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00060,Zevenaar (OGE),,,Jun  5 2024  6:23PM
+NL,ITP-00209,Emden (EPT1),False,-45.04,7.23,Netherlands,Transmission,NL,Netherlands,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00209,Emden (EPT1),,,Jun  5 2024  6:23PM
+NL,ITP-00210,Emden (NPT),False,-45.79,6.75,Netherlands,Transmission,NL,Netherlands,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00210,Emden (NPT),,,Jun  5 2024  6:23PM
+NL,ITP-00244,Tegelen,False,-50.58,-12.08,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00244,Tegelen,,,Jun  5 2024  6:23PM
+NL,ITP-00259,Zevenaar,False,-51.02,-7.67,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00026,Zevenaar,,,Jun  5 2024  6:23PM
+NL,ITP-00258,'s Gravenvoeren Dilsen (BE) // 's Gravenvoeren/Obbicht (NL),False,-52.51,-16.93,Netherlands,Transmission,NL,Netherlands,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00258,'s Gravenvoeren,,,Jun  5 2024  6:23PM
+NL,ITP-00305,Dinxperlo,False,-49.17,-7.58,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-ESO-0087,RWE,ITP-00305,Dinxperlo,,,Jun  5 2024  6:23PM
+NL,ITP-00507,Bunde (DE) / Oude Statenzijl (H) (NL) (GTG Nord),False,-46.1,0.69,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0006,GTG,ITP-00507,Bunde-West,,,Jun  5 2024  6:23PM
+NL,ITP-00555,VIP BENE,False,-59.37,-11.18,Netherlands,Transmission,NL,Netherlands,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00555,VIP-BENE,,,Jun  5 2024  6:23PM
+NL,ITP-10010,VIP TTF-THE-L,False,-46.01,-5.0,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-10010,VIP TTF-THE-L,,,Jun  5 2024  6:23PM
+NL,LNG-00027,Gate Terminal (I),False,-62.14,-6.8,LNG Terminals,LNG Terminals,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,LNG-00027,Rotterdam (GATE),,,Jun  5 2024  6:23PM
+NL,LNG-00027,Gate Terminal (I),False,-62.14,-6.8,Netherlands,Transmission,NL,Netherlands,LNG Terminals,LNG Terminals,NL,Netherlands,NL-LSO-0001,Gate Terminal,LNG-00027,Gate Terminal (I),,,Jun  5 2024  6:23PM
+NL,PRD-00196,Production (NL),False,-53.84301363,-4.37769602,Netherlands,Transmission,NL,Netherlands,Production,Production,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00001,Nüttermoor (DE) (EWE) H / Oude Statenzijl (H) (NL),False,-45.18,5.31,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,PRD-00196,Production (NL),False,-53.84301363,-4.37769602,Production,Production,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,PRD-00196,Aggregated Production,,,Jun  5 2024  6:23PM
+NL,UGS-00265,Etzel (DE) (EKB) / Oude Statenzijl Etzel (NL),False,-41.7,6.36,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00266,Etzel (DE) (Crystal) / Oude Statenzijl (NL),False,-41.7,6.36,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00272,Vlieghuis (NL) / Kalle (DE) (RWE),False,-47.86,-0.83,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00160,Alkmaar,False,-58.71,-2.02,Netherlands,Transmission,NL,Netherlands,Storage,Storage,NL,Netherlands,NL-SSO-0002,TAQA Gas Storage,UGS-00160,Alkmaar,,,Jun  5 2024  6:23PM
+NL,UGS-00268,Nüttermoor H1 and H4 (DE) (EWE) Renato / Oude Statenzijl (NL),False,-45.18,5.31,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,DE-ESO-0005,EWE Gasspeicher,UGS-00268,Nüttermoor H1 and H4 (DE) (EWE) Renato / Oude Statenzijl (NL),,,Jun  5 2024  6:23PM
+NL,UGS-00138,Zuidwending,False,-47.02,-0.57,Netherlands,Transmission,NL,Netherlands,Storage,Storage,NL,Netherlands,NL-SSO-0003,Energystock BV,UGS-00138,Zuidwending,,,Jun  5 2024  6:23PM
+NL,UGS-00138,Zuidwending,False,-47.02,-0.57,Storage,Storage,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,UGS-00138,Zuidwending (UGS),,,Jun  5 2024  6:23PM
+NL,UGS-00146,Norg (UGS),False,-48.78,3.07,Netherlands,Transmission,NL,Netherlands,Storage,Storage,NL,Netherlands,NL-PSO-0001,NAM,UGS-00146,Norg (UGS),,,Jun  5 2024  6:23PM
+NL,UGS-00267,Etzel (DE) (OMV) Freya / Oude Statenzijl Etzel,False,-41.7,6.36,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00145,Grijpskerk,False,-50.45,4.65,Storage,Storage,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,UGS-00145,Grijpskerk UGS,,,Jun  5 2024  6:23PM
+NL,UGS-00149,Bergermeer,False,-57.81853611,-1.61836749,Storage,Storage,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,UGS-00149,Bergermeer UGS,,,Jun  5 2024  6:23PM
+NL,UGS-00271,Epe (DE) (Eneco) / Enschede (NL),False,-45.79,-3.82,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,DE-SSO-0012,Eneco,UGS-00271,Epe (DE) (Eneco) / Enschede (NL),,,Jun  5 2024  6:23PM
+NL,UGS-00145,Grijpskerk,False,-50.45,4.65,Netherlands,Transmission,NL,Netherlands,Storage,Storage,NL,Netherlands,NL-PSO-0001,NAM,UGS-00145,Grijpskerk,,,Jun  5 2024  6:23PM
+NL,UGS-00160,Alkmaar,False,-58.71,-2.02,Storage,Storage,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,UGS-00160,Alkmaar (PGI),,,Jun  5 2024  6:23PM
+NL,UGS-00146,Norg (UGS),False,-48.78,3.07,Storage,Storage,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,UGS-00146,Norg (UGS),,,Jun  5 2024  6:23PM
+NL,UGS-00149,Bergermeer,False,-57.81853611,-1.61836749,Netherlands,Transmission,NL,Netherlands,Storage,Storage,NL,Netherlands,NL-SSO-0002,TAQA Gas Storage,UGS-00149,Bergermeer,,,Jun  5 2024  6:23PM
+NL,UGS-00269,Epe (DE) / Enschede (NL),False,-45.79,-3.82,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,DE-SSO-0014,RWE Gas Storage West,UGS-00269,Epe (DE) / Enschede (NL),,,Jun  5 2024  6:23PM
+NL,UGS-00270,Epe (DE) (Nuon) / Enschede (NL),False,-45.79,-3.82,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00395,Jemgum (DE) (astora) / Oude Statenzijl (NL),False,-45.79,4.87,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00396,Jemgum (DE) (EWE) / Oude Statenzijl (NL),False,-45.79,4.87,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,VTP-00002,TTF,False,-56.47,-4.83,Netherlands,Transmission,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,VTP-00002,TTF,False,-56.47,-4.83,Netherlands,Transmission,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,VTP-00002,TTF,,,Jun  5 2024  6:23PM
+NL,ITP-10012,VIP TTF-THE-H,False,-46.32,-3.0,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-10012,VIP TTF-THE-H,,,Jun  5 2024  6:23PM
+NL,DIS-00201,Local Distribution Companies (LDC) L-gas (NL),True,-56.12,-1.49,Netherlands,Transmission,NL,Netherlands,Distribution,Distribution,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,DIS-00202,Local Distribution Companies (LDC) H-gas (NL),True,-56.12,-1.49,Netherlands,Transmission,NL,Netherlands,Distribution,Distribution,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,FNC-00208,Industrial Consumers H-gas (NL),True,-52.6,-3.79,Netherlands,Transmission,NL,Netherlands,Final Consumers,Final Consumers,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,FNC-00209,Industrial Consumers L-gas (NL),True,-56.12,-1.49,Netherlands,Transmission,NL,Netherlands,Final Consumers,Final Consumers,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,FNC-00210,Industrial Consumers Power H-gas (NL),True,-56.12,-1.49,Netherlands,Transmission,NL,Netherlands,Final Consumers,Final Consumers,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,FNC-00211,Industrial Consumers Power L-gas (NL),True,-56.12,-1.49,Netherlands,Transmission,NL,Netherlands,Final Consumers,Final Consumers,NL,Netherlands,,,,,,,Jun  5 2024  6:23PM
+NL,PRD-00268,Production Green Gas (NL),True,-56.12,-1.49,Production,Production,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,PRD-00268,Aggregated Production (Green Gas),,,Jun  5 2024  6:23PM
+NL,ITP-00103,Bunde (DE) / Oude Statenzijl (H) (NL) I (OGE),False,-46.1,0.69,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NL,ITP-00551,VIP TTF-NCG H,False,-39.0,4.74,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00551,VIP TTF-NCG H,,,Jun  5 2024  6:23PM
+NL,ITP-00554,VIP TTF-GASPOOL H,False,-39.0,4.74,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00554,VIP TTF-GASPOOL-H,,,Jun  5 2024  6:23PM
+NL,LNG-00068,Eems Energy Terminal,False,-48.87,6.1,LNG Terminals,LNG Terminals,NL,Netherlands,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,LNG-00068,Eems Energy Terminal,,,Jun  5 2024  6:23PM
+NL,LNG-00068,Eems Energy Terminal,False,-48.87,6.1,Netherlands,Transmission,NL,Netherlands,LNG Terminals,LNG Terminals,NL,Netherlands,NL-LSO-0002,EemsEnergy Terminal,LNG-00068,Eems Energy Terminal,,,Jun  5 2024  6:23PM
+NL,ITP-00552,VIP TTF-NCG L,False,-39.0,4.74,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00552,VIP-TTF-NCG-L,,,Jun  5 2024  6:23PM
+NL,ITP-00553,VIP TTF-GASPOOL L,False,-39.0,4.74,Netherlands,Transmission,NL,Netherlands,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00553,VIP TTF-GASPOOL-L,,,Jun  5 2024  6:23PM
+NL,ITP-00648,VIP BENE-L,False,-58.0,-9.0,Netherlands,Transmission,NL,Netherlands,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00648,VIP BENE-L,,,Jun  5 2024  6:23PM
+NL,ITP-00254,Poppel (BE) / Zandvliet-L (NL),False,-34.85,8.93,Netherlands,Transmission,NL,Netherlands,L-Zone,Transmission,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+NL,UGS-00499,Epe (DE) (RWE-L) / Enschede (NL) (GTS),False,-45.79,-3.82,Netherlands,Transmission,NL,Netherlands,Storage,Storage,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+NO,ITP-00022,St. Fergus,False,-92.86,40.63,Transmission,Transmission,NO,Norway,UK,Transmission,UK,United Kingdom,UK-TSO-0001,National Gas TSO,ITP-00022,St. Fergus,,,Jun  5 2024  6:23PM
+NO,ITP-00045,Dunkerque,False,-70.58,-14.58,Transmission,Transmission,NO,Norway,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00045,DUNKERQUE,,,Jun  5 2024  6:23PM
+NO,ITP-00091,Easington,False,-82.49,7.93,Transmission,Transmission,NO,Norway,UK,Transmission,UK,United Kingdom,UK-TSO-0001,National Gas TSO,ITP-00091,Easington,,,Jun  5 2024  6:23PM
+NO,ITP-00106,Zeebrugge ZPT,False,-66.93,-11.5,Transmission,Transmission,NO,Norway,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00106,Zeebrugge ZPT,,,Jun  5 2024  6:23PM
+NO,ITP-00209,Emden (EPT1),False,-45.04,7.23,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00105,Emden EMS/ EPT,,,Jun  5 2024  6:23PM
+NO,ITP-00209,Emden (EPT1),False,-45.04,7.23,Transmission,Transmission,NO,Norway,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00160,Emden (EPT1),,,Jun  5 2024  6:23PM
+NO,ITP-00209,Emden (EPT1),False,-45.04,7.23,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00081,EMDEN - EPT1,,,Jun  5 2024  6:23PM
+NO,ITP-00209,Emden (EPT1),False,-45.04,7.23,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00080,Emden EPT,,,Jun  5 2024  6:23PM
+NO,ITP-00208,Dornum (EPT1 & EPT2),False,-43.95,7.71,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00188,DORNUM,,,Jun  5 2024  6:23PM
+NO,ITP-00208,Dornum (EPT1 & EPT2),False,-43.95,7.71,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00126,Dornum,,,Jun  5 2024  6:23PM
+NO,ITP-00210,Emden (NPT),False,-45.79,6.75,Transmission,Transmission,NO,Norway,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00161,Emden (NPT),,,Jun  5 2024  6:23PM
+NO,ITP-00210,Emden (NPT),False,-45.79,6.75,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00075,Emden PPC/ NPT,,,Jun  5 2024  6:23PM
+NO,ITP-00210,Emden (NPT),False,-45.79,6.75,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0005,GUD,ITP-00086,EMDEN - NPT,,,Jun  5 2024  6:23PM
+NO,ITP-00525,Dornum GASPOOL,False,-44.21,7.36,Transmission,Transmission,NO,Norway,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00525,Dornum GASPOOL,,,Jun  5 2024  6:23PM
+NO,ITP-00630,North Sea Entry,True,-50.0,27.0,Transmission,Transmission,NO,Norway,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,ITP-00630,North Sea Entry,,,Jun  5 2024  6:23PM
+AL,ITP-00008,Melendugno - IT / TAP,False,10.5,-67.7,Transmission,Transmission,AL,Albania,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,ITP-00008,MELENDUGNO,,,Jun  5 2024  6:23PM
+PL,DIS-00013,Aggregated Distribution - H-gas (PL),False,25.49,-4.87,Poland H-gas,Transmission,PL,Poland,Distribution,Distribution,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,DIS-00013,Aggregated Distribution - H-gas (PL),False,25.49,-4.87,Distribution,Distribution,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,DIS-00013,Aggregated Distribution - H-gas,,,Jun  5 2024  6:23PM
+PL,FNC-00002,Final Consumers H-gas (PL),False,19.34,-10.51,Poland H-gas,Transmission,PL,Poland,Final Consumers,Final Consumers,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,DIS-00193,Aggregated Distribution - L-gas (PL),False,-0.13,-6.64,Distribution,Distribution,PL,Poland,Poland L-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,DIS-00193,Aggregated Distribution - L-gas  (PL),,,Jun  5 2024  6:23PM
+PL,FNC-00007,Gas mixing facilities (PL),False,20.61,-10.31,Poland H-gas,Transmission,PL,Poland,Final Consumers,Final Consumers,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,FNC-00008,Nitrogen Removal Plants (PL),False,20.7,-10.31,Production,Production,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,FNC-00008,Nitrogen removal plants,,,Jun  5 2024  6:23PM
+PL,FNC-00040,Final Consumers - L-gas (PL),False,-0.43,-6.64,Poland L-gas,Transmission,PL,Poland,Final Consumers,Final Consumers,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,DIS-00193,Aggregated Distribution - L-gas (PL),False,-0.13,-6.64,Poland L-gas,Transmission,PL,Poland,Distribution,Distribution,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,ITP-00096,Mallnow,False,-7.12,-1.58,TGPS (YAMAL),Transmission,PL,Poland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00096,Mallnow,,,Jun  5 2024  6:23PM
+PL,ITP-00158,Cieszyn (PL) / Český Těšín (CZ),False,13.84,-24.49,Poland H-gas,Transmission,PL,Poland,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,ITP-00158,Český Těšín,,,Jun  5 2024  6:23PM
+PL,ITP-00293,Point of Interconnection (PWP) (PL),False,7.78,-1.41,Poland H-gas,Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,PL-TSO-0001,GAZ-SYSTEM (ISO),ITP-00293,Point of Interconnection (PWP),,,Jun  5 2024  6:23PM
+PL,ITP-00293,Point of Interconnection (PWP) (PL),False,7.78,-1.41,TGPS (YAMAL),Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-00293,Point of Interconnection (PWP),,,Jun  5 2024  6:23PM
+PL,ITP-00497,GCP GAZ-SYSTEM/ONTRAS,False,-5.32,-13.15,Poland H-gas,Transmission,PL,Poland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0003,ONTRAS Gastransport GmbH,ITP-00497,GCP GAZ-SYSTEM/ONTRAS,,,Jun  5 2024  6:23PM
+PL,LNG-00006,Swinoujscie,False,-7.91,10.01,LNG Terminals,LNG Terminals,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,LNG-00006,Terminal LNG,,,Jun  5 2024  6:23PM
+PL,ITP-00543,Compulsory Stocks Exit Point (PL) (WPWYzo),True,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,ITP-10008,GCP GAZ-SYSTEM/UA TSO,False,36.39,-24.21,Poland H-gas,Transmission,PL,Poland,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-10008,GCP GAZ-SYSTEM/UA TSO ,,,Jun  5 2024  6:23PM
+PL,PRD-00218,Domestic Gas Fields - L-gas (PL),False,-4.788815591,-8.367874762,Production,Production,PL,Poland,Poland L-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,PRD-00218,Domestic Gas Fields - L-gas (PL),,,Jun  5 2024  6:23PM
+PL,PRD-00219,Nitrogen Removal Plants - L-gas (PL),False,-3.679127848,-8.294151388,Poland L-gas,Transmission,PL,Poland,Production,Production,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,PRD-00153,Domestic Gas Fields (PL),False,19.66467777,-10.65570161,Production,Production,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,PRD-00153,Domestic gas fields,,,Jun  5 2024  6:23PM
+PL,UGS-00322,Magazyn LNG Janowice,False,2.42,-14.09,Storage,Storage,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,UGS-00322,Magazyn LNG Janowice,,,Jun  5 2024  6:23PM
+PL,UGS-00424,GIM Kawerna,False,14.41,1.01,Poland H-gas,Transmission,PL,Poland,,,,,,,,,,,Jun  5 2024  6:23PM
+PL,UGS-00425,GIM Sanok ,False,31.6,-22.8,Poland H-gas,Transmission,PL,Poland,,,,,,,,,,,Jun  5 2024  6:23PM
+PL,UGS-00426,IM Wierzchowice,False,7.34,-11.39,Poland H-gas,Transmission,PL,Poland,,,,,,,,,,,Jun  5 2024  6:23PM
+PL,UGS-00424,GIM Kawerna,False,14.41,1.01,,,,,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,UGS-00424,GIM Kawerna withdrawal,,,Jun  5 2024  6:23PM
+PL,UGS-00426,IM Wierzchowice,False,7.34,-11.39,,,,,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,UGS-00426,IM Wierzchowice withdrawal,,,Jun  5 2024  6:23PM
+PL,UGS-00425,GIM Sanok ,False,31.6,-22.8,,,,,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,UGS-00425,GIM Sanok withdrawal,,,Jun  5 2024  6:23PM
+PL,VTP-00020,VTP - OTC - H-gas (PL),False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00028,VTP - GAZ-SYSTEM,False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00028,VTP - GAZ-SYSTEM,,,Jun  5 2024  6:23PM
+PL,VTP-00035,VTP - OTC - TGPS (PL),True,24.05,3.12,TGPS (YAMAL),Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00037,Aggregated PPG - L-gas (PL),False,1.54,-8.02,Poland L-gas,Transmission,PL,Poland,Poland L-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00037,Aggregated PPG - L-gas (PL),,,Jun  5 2024  6:23PM
+PL,VTP-00040,VTP - Gas Exchange - L-gas,True,1.54,-8.02,Poland L-gas,Transmission,PL,Poland,Poland L-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00018,VTP - Gas Exchange H-gas (PL),False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00018,VTP - Gas Exchange H-gas,,,Jun  5 2024  6:23PM
+PL,VTP-00020,VTP - OTC - H-gas (PL),False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00020,VTP - OTC - H-gas,,,Jun  5 2024  6:23PM
+PL,VTP-00032,VTP - OTC - L-gas (PL),True,1.54,-8.02,Poland L-gas,Transmission,PL,Poland,Poland L-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00032,VTP - OTC - L-gas (PL),True,1.54,-8.02,Poland L-gas,Transmission,PL,Poland,Poland L-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00032,VTP - OTC - L gas (PL),,,Jun  5 2024  6:23PM
+PL,VTP-00036,Aggregated PPG - H gas (PL),False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00036,Aggregated PPG - H-gas (PL),,,Jun  5 2024  6:23PM
+PL,VTP-00018,VTP - Gas Exchange H-gas (PL),False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00034,VTP - Gas Exchange TGPS (PL),True,24.05,3.12,TGPS (YAMAL),Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00034,VTP - Gas Exchange TGPS (PL),True,24.05,3.12,TGPS (YAMAL),Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,PL-TSO-0001,GAZ-SYSTEM (ISO),VTP-00034,Virtual Trading Point - PWE Gas Exchange TGPS (PL),,,Jun  5 2024  6:23PM
+PL,VTP-00036,Aggregated PPG - H gas (PL),False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00040,VTP - Gas Exchange - L-gas,True,1.54,-8.02,Poland L-gas,Transmission,PL,Poland,Poland L-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,VTP-00040,VTP - Gas Exchange - L-gas,,,Jun  5 2024  6:23PM
+PL,VTP-00028,VTP - GAZ-SYSTEM,False,19.47,-10.53,Poland H-gas,Transmission,PL,Poland,Poland H-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00035,VTP - OTC - TGPS (PL),True,24.05,3.12,TGPS (YAMAL),Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,PL-TSO-0001,GAZ-SYSTEM (ISO),VTP-00035,Virtual Trading Point - PWE OTC - TGPS (PL),,,Jun  5 2024  6:23PM
+PL,VTP-00037,Aggregated PPG - L-gas (PL),False,1.54,-8.02,Poland L-gas,Transmission,PL,Poland,Poland L-gas,Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00038,Aggregated PPG - TGPS (PL),False,24.05,3.12,TGPS (YAMAL),Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,,,,,,,Jun  5 2024  6:23PM
+PL,VTP-00038,Aggregated PPG - TGPS (PL),False,24.05,3.12,TGPS (YAMAL),Transmission,PL,Poland,TGPS (YAMAL),Transmission,PL,Poland,PL-TSO-0001,GAZ-SYSTEM (ISO),VTP-00038,Aggregated PPG - TGPS (PL),,,Jun  5 2024  6:23PM
+PL,ITP-00556,Santaka,False,38.0,12.73,Poland H-gas,Transmission,PL,Poland,Lithuania,Transmission,LT,Lithuania,LT-TSO-0001,Amber Grid,ITP-00556,Santaka,,,Jun  5 2024  6:23PM
+PL,ITP-10009,Faxe,False,-20.13,20.96,Poland H-gas,Transmission,PL,Poland,Joint Bal Zone DK/SE,Transmission,DK,Denmark,DK-TSO-0001,Energinet,ITP-10009,Faxe,,,Jun  5 2024  6:23PM
+PL,ITP-00177,Vyrava,False,31.64,-28.42,Poland H-gas,Transmission,PL,Poland,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00177,Vyrava,,,Jun  5 2024  6:23PM
+PL,DIS-00204,Zlate Hory,False,1.54,-19.39,Poland H-gas,Transmission,PL,Poland,Distribution,Distribution,CZ,Czechia,CZ-DSO-0002,GasNet s.r.o.,DIS-00204,Zlate Hory,,,Jun  5 2024  6:23PM
+ES,FNC-00043,Aggregated Distribution + Final Customers Exits (ES),True,-104.06,-64.97,Spain,Transmission,ES,Spain,Final Consumers,Final Consumers,ES,Spain,,,,,,,Jun  5 2024  6:23PM
+ES,ITP-00018,Larrau,False,-87.98,-60.49,Spain,Transmission,ES,Spain,TRF,Transmission,FR,France,FR-TSO-0002,TERÉGA,ITP-00018,PITT-LARRAU,,,Jun  5 2024  6:23PM
+ES,ITP-00033,Biriatou (FR) / Irun (ES),False,-92.24,-59.41,Spain,Transmission,ES,Spain,TRF,Transmission,FR,France,FR-TSO-0002,TERÉGA,ITP-00033,PITT-BIRIATOU,,,Jun  5 2024  6:23PM
+ES,ITP-00064,Badajoz (ES) / Campo Maior (PT),False,-119.66,-71.61,Spain,Transmission,ES,Spain,Portugal,Transmission,PT,Portugal,PT-TSO-0001,REN,ITP-00064,Campo Maior,,,Jun  5 2024  6:23PM
+ES,ITP-00052,Valença do Minho (PT) / Tuy (ES),False,-128.23,-63.63,Spain,Transmission,ES,Spain,Portugal,Transmission,PT,Portugal,PT-TSO-0001,REN,ITP-00052,Valença do Minho,,,Jun  5 2024  6:23PM
+ES,ITP-00286,VIP IBERICO,False,-119.36,-68.64,Spain,Transmission,ES,Spain,Portugal,Transmission,PT,Portugal,PT-TSO-0001,REN,ITP-00286,VIP-IBERICO,,,Jun  5 2024  6:23PM
+ES,ITP-00304,VIP PIRINEOS,False,-90.13,-60.09,Spain,Transmission,ES,Spain,TRF,Transmission,FR,France,FR-TSO-0002,TERÉGA,ITP-00304,PITT-PIRINEOS,,,Jun  5 2024  6:23PM
+ES,LNG-00012,Barcelona,True,-72.77,-66.56,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00012,BARCELONA,,,Jun  5 2024  6:23PM
+ES,LNG-00013,Bilbao,False,-99.23,-59.54,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00013,BILBAO,,,Jun  5 2024  6:23PM
+ES,LNG-00018,Huelva,True,-119.27,-74.87,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00018,HUELVA,,,Jun  5 2024  6:23PM
+ES,LNG-00021,Mugardos,False,-125.42,-59.18,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00021,MUGARDOS,,,Jun  5 2024  6:23PM
+ES,LNG-00022,Cartagena,True,-87.89,-74.19,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00022,CARTAGENA,,,Jun  5 2024  6:23PM
+ES,PRD-00231,Aggregated Production Sites (ES),True,-97.08806853,-67.15217667,Production,Production,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,PRD-00231,PRODUCTION SITES ENAGAS Spain PRODUCTION-ES - Agregado de Yacimientos,,,Jun  5 2024  6:23PM
+ES,LNG-00023,Sagunto,False,-84.02,-69.93,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00023,SAGUNTO,,,Jun  5 2024  6:23PM
+ES,UGS-00024,BASIC UGS - AASS Unificado,True,-110.019322,-68.2,Spain,Transmission,ES,Spain,,,,,,,,,,,Jun  5 2024  6:23PM
+ES,UGS-00024,BASIC UGS - AASS Unificado,True,-110.019322,-68.2,,,,,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,UGS-00024,BASIC UGS - AASS Unificado,,,Jun  5 2024  6:23PM
+ES,VTP-00043,TVB,False,-100.37,-68.24,Spain,Transmission,ES,Spain,LNG Terminals,LNG Terminals,ES,Spain,,,,,,,Jun  5 2024  6:23PM
+ES,VTP-00007,PVB,False,-106.74,-64.97,Spain,Transmission,ES,Spain,Spain,Transmission,ES,Spain,,,,,,,Jun  5 2024  6:23PM
+ES,VTP-00007,PVB,False,-106.74,-64.97,Spain,Transmission,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,VTP-00007,PVB,,,Jun  5 2024  6:23PM
+ES,VTP-00043,TVB,False,-100.37,-68.24,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,VTP-00043,TVB (Virtual balancing LNG tank),,,Jun  5 2024  6:23PM
+ES,ITP-00082,Tarifa,False,-113.64,-76.39,Spain,Transmission,ES,Spain,Transmission,Transmission,MA,Morocco,MA-TSO-0001,ONHYM,ITP-00082,Tarifa,,,Jun  5 2024  6:23PM
+ES,LNG-00016,Musel,True,-113.0,-58.65,LNG Terminals,LNG Terminals,ES,Spain,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,LNG-00016,MUSEL,,,Jun  5 2024  6:23PM
+EE,FNC-00037,Estonia Final Consumers Point,False,53.39,49.43,Joint Bal Zone EE/LV,Transmission,EE,Estonia,Final Consumers,Final Consumers,EE,Estonia,,,,,,,Jun  5 2024  6:23PM
+EE,ITP-00053,Karksi,False,57.91951176,44.86563868,Joint Bal Zone EE/LV,Transmission,EE,Estonia,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,ITP-00053,Karksi - virtual entry,,,Jun  5 2024  6:23PM
+EE,ITP-00100,Korneti,False,63.9,43.23,Transmission,Transmission,EE,Estonia,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,ITP-00100,Korneti - entry,,,Jun  5 2024  6:23PM
+EE,ITP-00187,Värska,False,60.69,42.03,Joint Bal Zone EE/LV,Transmission,EE,Estonia,Transmission,Transmission,RU,Russia,RU-TSO-0001,Gazprom,ITP-00187,Värska,,,Jun  5 2024  6:23PM
+EE,ITP-00243,Narva,False,63.59,52.75,Joint Bal Zone EE/LV,Transmission,EE,Estonia,Transmission,Transmission,RU,Russia,RU-TSO-0001,Gazprom,ITP-00243,Narva,,,Jun  5 2024  6:23PM
+EE,ITP-00493,Luhamaa,False,59.5,40.04,Transmission,Transmission,EE,Estonia,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,ITP-00493,Luhamaa,,,Jun  5 2024  6:23PM
+EE,ITP-00493,Luhamaa,False,59.5,40.04,Transmission,Transmission,EE,Estonia,Transmission,Transmission,RU,Russia,RU-TSO-0001,Gazprom,ITP-00493,Luhamaa,,,Jun  5 2024  6:23PM
+EE,ITP-00494,Misso / Estonia,True,64.64,43.55,Transmission,Transmission,EE,Estonia,Joint Bal Zone EE/LV,Transmission,EE,Estonia,EE-TSO-0001,Elering,ITP-00494,Misso / Estonia,,,Jun  5 2024  6:23PM
+EE,ITP-00550,BALTICCONNECTOR,False,42.41,53.49,Joint Bal Zone EE/LV,Transmission,EE,Estonia,Finland,Transmission,FI,Finland,FI-TSO-0003,Gasgrid Finland,ITP-00550,Balticconnector,,,Jun  5 2024  6:23PM
+EE,PRD-00209,Estonia Production Point,False,49.48,50.68,Production,Production,EE,Estonia,Joint Bal Zone EE/LV,Transmission,EE,Estonia,EE-TSO-0001,Elering,PRD-00209,Estonia Production Point,,,Jun  5 2024  6:23PM
+HR,FNC-00018,Final Consumers and Distribution (HR),False,-2.59,-50.72,Croatia,Transmission,HR,Croatia,Final Consumers,Final Consumers,HR,Croatia,,,,,,,Jun  5 2024  6:23PM
+HR,ITP-00011,Dravaszerdahely,False,12.08,-48.79,Croatia,Transmission,HR,Croatia,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-00011,Drávaszerdahely (CR>HU),,,Jun  5 2024  6:23PM
+HR,ITP-00042,Rogatec,False,-2.02,-46.96,Croatia,Transmission,HR,Croatia,Slovenia,Transmission,SI,Slovenia,SI-TSO-0001,Plinovodi,ITP-00042,Rogatec,,,Jun  5 2024  6:23PM
+HR,PRD-00197,Production (HR),False,-2.645344842,-53.30700845,Production,Production,HR,Croatia,Croatia,Transmission,HR,Croatia,HR-TSO-0001,Plinacro,PRD-00197,Production,,,Jun  5 2024  6:23PM
+HR,LNG-00032,Croatia LNG,False,-8.263811821,-51.56061479,LNG Terminals,LNG Terminals,HR,Croatia,Croatia,Transmission,HR,Croatia,HR-TSO-0001,Plinacro,LNG-00032,LNG Terminals,,,Jun  5 2024  6:23PM
+HR,UGS-00028,UGS Croatia,False,-3.98922525,-53.39589181,Croatia,Transmission,HR,Croatia,Storage,Storage,HR,Croatia,HR-SSO-0001,PSP Ltd,UGS-00028,UGS Croatia,,,Jun  5 2024  6:23PM
+HR,UGS-00028,UGS Croatia,False,-3.98922525,-53.39589181,Storage,Storage,HR,Croatia,Croatia,Transmission,HR,Croatia,HR-TSO-0001,Plinacro,UGS-00028,Storage,,,Jun  5 2024  6:23PM
+HU,ITP-00027,Balassagyarmat (HU) / Velké Zlievce (SK),False,17.93,-36.21,Hungary,Transmission,HU,Hungary,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00027,Velké Zlievce,,,Jun  5 2024  6:23PM
+HU,ITP-00027,Balassagyarmat (HU) / Velké Zlievce (SK),False,17.93,-36.21,,,,,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00027,Velké Zlievce,,,Jun  5 2024  6:23PM
+HU,DIS-00196,Aggregated Distribution (HU),True,13.05,-41.97,Hungary,Transmission,HU,Hungary,Distribution,Distribution,HU,Hungary,,,,,,,Jun  5 2024  6:23PM
+HU,ITP-00011,Dravaszerdahely,False,12.08,-48.79,Hungary,Transmission,HU,Hungary,Croatia,Transmission,HR,Croatia,HR-TSO-0001,Plinacro,ITP-00011,Drávaszerdahely,,,Jun  5 2024  6:23PM
+HU,ITP-00032,Csanadpalota,False,25.14,-47.02,Hungary,Transmission,HU,Hungary,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00032,Csanadpalota,,,Jun  5 2024  6:23PM
+HU,ITP-00055,Kiskundorozsma (HU>RS),False,22.06,-46.75,Hungary,Transmission,HU,Hungary,Transmission,Transmission,RS,Serbia,RS-TSO-0001,Srbijagas,ITP-00055,Kiskundorozsma (HU>RS),,,Jun  5 2024  6:23PM
+HU,ITP-00043,Mosonmagyarovar,False,6.15,-36.96,Hungary,Transmission,HU,Hungary,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00043,Mosonmagyarovar,,,Jun  5 2024  6:23PM
+HU,ITP-00307,Beregdaróc 800 (HU) - Beregovo (UA) (HU>UA),False,34.5,-35.35,Hungary,Transmission,HU,Hungary,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00307,Beregdaróc 800 (HU) - Beregovo (UA) (HU>UA),,,Jun  5 2024  6:23PM
+HU,ITP-10006,VIP Bereg (HU) / VIP Bereg (UA),False,34.45,-33.87,Hungary,Transmission,HU,Hungary,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-10006,VIP Bereg,,,Jun  5 2024  6:23PM
+HU,ITP-10013,Kiskundorozsma-2 (HU) / Horgos (RS),False,22.24,-47.07,Hungary,Transmission,HU,Hungary,Transmission,Transmission,RS,Serbia,RS-TSO-0003,GASTRANS,ITP-10013,Kiskundorozsma-2 (HU) / Horgos (RS),,,Jun  5 2024  6:23PM
+HU,PRD-00157,Production H-Gas MOL,False,13.83043581,-43.86802027,Production,Production,HU,Hungary,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,PRD-00157,Production_L-Gas_MOL_(Entry),,,Jun  5 2024  6:23PM
+HU,UGS-00020,UGS-1-Aggregated Storage (HU),False,14.96035205,-43.2206932,Hungary,Transmission,HU,Hungary,Storage,Storage,HU,Hungary,HU-SSO-0001,MFGT Storage,UGS-00020,UGS-1-Aggregated Storage (HU),,,Jun  5 2024  6:23PM
+HU,PRD-00235,Exit for Blending (HU),True,16.8280799,-38.42133433,Hungary,Transmission,HU,Hungary,Production,Production,HU,Hungary,,,,,,,Jun  5 2024  6:23PM
+HU,PRD-00236,Aggregated Single Production (HU),True,14.76768865,-39.51201755,Production,Production,HU,Hungary,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,PRD-00236,Aggregated single production,,,Jun  5 2024  6:23PM
+HU,UGS-00021,UGS-2-SZOREG (HU),False,16.4527682,-43.0550957,Storage,Storage,HU,Hungary,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,UGS-00021,UGS-2-SZOREG (UGS>TSO),,,Jun  5 2024  6:23PM
+HU,UGS-00020,UGS-1-Aggregated Storage (HU),False,14.96035205,-43.2206932,Storage,Storage,HU,Hungary,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,UGS-00020,UGS-1-Aggregated Storage HU (UGS>TSO),,,Jun  5 2024  6:23PM
+HU,UGS-00021,UGS-2-SZOREG (HU),False,16.4527682,-43.0550957,Hungary,Transmission,HU,Hungary,Storage,Storage,HU,Hungary,HU-SSO-0002,MMBF Storage,UGS-00021,UGS-2-SZOREG (HU),,,Jun  5 2024  6:23PM
+HU,VTP-00015,MGP,False,12.35,-45.49,,,,,Hungary,Transmission,HU,Hungary,,,,,,,Jun  5 2024  6:23PM
+HU,VTP-00015,MGP,False,12.35,-45.49,Hungary,Transmission,HU,Hungary,,,,,,,,,,,Jun  5 2024  6:23PM
+HU,UGS-00021,UGS-2-SZOREG (HU),False,16.4527682,-43.0550957,,,,,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,UGS-00021,UGS-2-SZOREG (UGS>TSO),,,Jun  5 2024  6:23PM
+HU,UGS-00021,UGS-2-SZOREG (HU),False,16.4527682,-43.0550957,Hungary,Transmission,HU,Hungary,,,,,,,,,,,Jun  5 2024  6:23PM
+HU,FNC-00200,Aggregated Final Consumers (HU),True,11.56,-41.55,Hungary,Transmission,HU,Hungary,Final Consumers,Final Consumers,HU,Hungary,,,,,,,Jun  5 2024  6:23PM
+IT,DIS-00005,Distribution (IT),False,-20.0,-59.49,Italy,Transmission,IT,Italy,Distribution,Distribution,IT,Italy,,,,,,,Jun  5 2024  6:23PM
+IT,FNC-00005,Industrial Consumers (IT),False,-20.74,-59.47,Italy,Transmission,IT,Italy,Final Consumers,Final Consumers,IT,Italy,,,,,,,Jun  5 2024  6:23PM
+IT,FNC-00006,Thermal Plants (IT),False,-22.19,-59.45,Italy,Transmission,IT,Italy,Final Consumers,Final Consumers,IT,Italy,,,,,,,Jun  5 2024  6:23PM
+IT,ITP-00008,Melendugno - IT / TAP,False,10.5,-67.7,Italy,Transmission,IT,Italy,Transmission,Transmission,AL,Albania,AL-TSO-0001,TAP AG,ITP-00008,Melendugno ,,,Jun  5 2024  6:23PM
+IT,ITP-00040,Tarvisio (IT) / Arnoldstein (AT),False,-11.87,-45.01,Italy,Transmission,IT,Italy,Austria,Transmission,AT,Austria,AT-TSO-0003,TAG GmbH,ITP-00040,Arnoldstein,,,Jun  5 2024  6:23PM
+IT,ITP-00049,Gorizia (IT) /Šempeter (SI),False,-12.17,-48.18,Italy,Transmission,IT,Italy,Slovenia,Transmission,SI,Slovenia,SI-TSO-0001,Plinovodi,ITP-00049,Gorizia_Sempeter,,,Jun  5 2024  6:23PM
+IT,ITP-00136,Griespass (CH) / Passo Gries (IT),False,-39.77,-45.92,Italy,Transmission,IT,Italy,Switzerland,Transmission,CH,Switzerland,CH-TSO-0002,FluxSwiss,ITP-00125,Griespass (CH) / Passo Gries (IT) (FluxSwiss),,,Jun  5 2024  6:23PM
+IT,ITP-00136,Griespass (CH) / Passo Gries (IT),False,-39.77,-45.92,Italy,Transmission,IT,Italy,Switzerland,Transmission,CH,Switzerland,CH-TSO-0001,Swissgas,ITP-00131,Griespass (CH) / Passo Gries (IT) (Swissgas),,,Jun  5 2024  6:23PM
+IT,ITP-00278,Bizzarone,False,-36.43,-48.6,Italy,Transmission,IT,Italy,Switzerland,Transmission,CH,Switzerland,,,,,,,Jun  5 2024  6:23PM
+IT,ITP-00283,Rep. San Marino,False,-18.72,-56.97,Italy,Transmission,IT,Italy,Transmission,Transmission,SM,San Marino,,,,,,,Jun  5 2024  6:23PM
+IT,ITP-00288,SRG Delivery to other transmission networks,False,-6.94,-63.57,Italy,Transmission,IT,Italy,Transmission,Transmission,IT,Italy,IT-TSO-0003,S.G.I. S.p.A.,ITP-00288,SRG Delivery to other transmission networks,,,Jun  5 2024  6:23PM
+IT,LNG-00004,OLT LNG / Livorno,False,-29.75,-58.33,LNG Terminals,LNG Terminals,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,LNG-00004,LIVORNO,,,Jun  5 2024  6:23PM
+IT,LNG-00015,Cavarzere (Porto Levante / Adriatic LNG),False,-17.41774013,-52.02540398,LNG Terminals,LNG Terminals,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0004,Infrastrutture Trasporto Gas,LNG-00015,CAVARZERE,,,Jun  5 2024  6:23PM
+IT,LNG-00019,Panigaglia,False,-32.21,-56.46,LNG Terminals,LNG Terminals,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,LNG-00019,PANIGAGLIA,,,Jun  5 2024  6:23PM
+IT,PRD-00154,IT - Indigenous Production,False,-14.17380598,-60.98603687,Production,Production,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,PRD-00154,SRG NATIONAL PRODUCTION INPUT,,,Jun  5 2024  6:23PM
+IT,LNG-00059,Sardinia LNG,False,0.0,0.0,LNG Terminals,LNG Terminals,IT,Italy,Transmission,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,LNG-00059,Sardinia LNG,,,Jun  5 2024  6:23PM
+IT,LNG-00059,Sardinia LNG,False,0.0,0.0,LNG Terminals,LNG Terminals,IT,Italy,Transmission,Transmission,IT,Italy,IT-TSO-0005,ENURA,LNG-00059,Sardinia LNG,,,Jun  5 2024  6:23PM
+IT,LNG-00015,Cavarzere (Porto Levante / Adriatic LNG),False,-17.41774013,-52.02540398,LNG Terminals,LNG Terminals,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,LNG-00015,CAVARZERE,,,Jun  5 2024  6:23PM
+IT,UGS-00008,UGS - IT - Snam Rete Gas/STOGIT,False,-17.15942804,-61.18335232,Italy,Transmission,IT,Italy,Storage,Storage,IT,Italy,IT-SSO-0001,STOGIT,UGS-00008,UGS - IT - Snam Rete Gas/STOGIT,,,Jun  5 2024  6:23PM
+IT,PRD-00154,IT - Indigenous Production,False,-14.17380598,-60.98603687,,,,,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,PRD-00154,SRG NATIONAL PRODUCTION INPUT,,,Jun  5 2024  6:23PM
+IT,UGS-00008,UGS - IT - Snam Rete Gas/STOGIT,False,-17.15942804,-61.18335232,Storage,Storage,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,UGS-00008,STOGIT,,,Jun  5 2024  6:23PM
+IT,UGS-00023,UGS - IT - Snam Rete Gas/Edison,False,-15.65666494,-61.08403688,Italy,Transmission,IT,Italy,Storage,Storage,IT,Italy,IT-SSO-0002,Edison Stoccagio,UGS-00023,UGS - IT - Snam Rete Gas/Edison,,,Jun  5 2024  6:23PM
+IT,UGS-00023,UGS - IT - Snam Rete Gas/Edison,False,-15.65666494,-61.08403688,Storage,Storage,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,UGS-00023,EDISON STOCCAGGIO,,,Jun  5 2024  6:23PM
+IT,UGS-00475,Italgasstorage (IT),False,-32.7,-51.69,Italy,Transmission,IT,Italy,Storage,Storage,IT,Italy,,,,,,,Jun  5 2024  6:23PM
+IT,UGS-00475,Italgasstorage (IT),False,-32.7,-51.69,Storage,Storage,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,UGS-00475,Ital Gas Storage,,,Jun  5 2024  6:23PM
+IT,VTP-00013,PSV,False,-24.35,-59.29,Italy,Transmission,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,VTP-00013,PUNTO DI SCAMBIO VIRTUALE,,,Jun  5 2024  6:23PM
+IT,VTP-00013,PSV,False,-24.35,-59.29,Italy,Transmission,IT,Italy,Italy,Transmission,IT,Italy,,,,,,,Jun  5 2024  6:23PM
+IT,VTP-00013,PSV,False,-24.35,-59.29,,,,,Italy,Transmission,IT,Italy,,,,,,,Jun  5 2024  6:23PM
+IT,PRD-00154,IT - Indigenous Production,False,-14.17380598,-60.98603687,Production,Production,IT,Italy,,,,,,,,,,,Jun  5 2024  6:23PM
+IT,LNG-00069,FSRU ITALIA_PIOMBINO TERMINAL,False,-27.0,-60.0,LNG Terminals,LNG Terminals,IT,Italy,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,LNG-00069,GNL PIOMBINO FSRU ITALIA SRL,,,Jun  5 2024  6:23PM
+UA,ITP-00095,Beregdaróc 1400 (HU) - Beregovo (UA) (UA>HU),False,33.71,-35.03,Transmission,Transmission,UA,Ukraine,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-00095,Beregdaróc (UA>HU),,,Jun  5 2024  6:23PM
+UA,ITP-00117,Uzhhorod (UA) - Velké Kapušany (SK),False,32.92,-31.99,Transmission,Transmission,UA,Ukraine,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00117,Velke Kapusany,,,Jun  5 2024  6:23PM
+UA,ITP-00299,Isaccea (RO) - Orlovka (UA) II,False,65.61,-51.23,Transmission,Transmission,UA,Ukraine,RO_DTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00299,Isaccea II,,,Jun  5 2024  6:23PM
+UA,ITP-00300,Isaccea (RO) - Orlovka (UA) III,False,65.61,-51.23,Transmission,Transmission,UA,Ukraine,RO_DTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00300,Isaccea III,,,Jun  5 2024  6:23PM
+UA,ITP-00428,Grebenyky,False,71.54,-43.26,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,MD,Moldavia,MD-TSO-0001,Moldovatransgaz LLC,ITP-00428,Grebenyky,,,Jun  5 2024  6:23PM
+UA,ITP-00444,Lymanske (UA) / (MD),False,0.0,0.0,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,MD,Moldavia,MD-TSO-0001,Moldovatransgaz LLC,ITP-00444,Lymanske (UA) / (MD),,,Jun  5 2024  6:23PM
+UA,ITP-00438,VIP Mediesu Aurit - Isaccea (RO-UA),False,47.11,-38.13,Transmission,Transmission,UA,Ukraine,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00438,VIP Mediesu Aurit - Isaccea (RO - UA),,,Jun  5 2024  6:23PM
+UA,ITP-00421,Budince,False,33.0,-33.0,Transmission,Transmission,UA,Ukraine,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00421,Budince,,,Jun  5 2024  6:23PM
+UA,ITP-00429,Oleksiivka,False,57.61,-34.09,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,MD,Moldavia,MD-TSO-0001,Moldovatransgaz LLC,ITP-00429,Oleksiivka,,,Jun  5 2024  6:23PM
+UA,ITP-00440,GMS Caushany,False,69.48,-45.4,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,MD,Moldavia,,,,,,,Jun  5 2024  6:23PM
+UA,ITP-00557,Ananiv (UA) (MD),False,69.26,-38.17,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,MD,Moldavia,,,,,,,Jun  5 2024  6:23PM
+UA,ITP-10008,GCP GAZ-SYSTEM/UA TSO,False,36.39,-24.21,Transmission,Transmission,UA,Ukraine,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-10008,GCP GAZ-SYSTEM/UA TSO,,,Jun  5 2024  6:23PM
+UA,ITP-10006,VIP Bereg (HU) / VIP Bereg (UA),False,34.45,-33.87,Transmission,Transmission,UA,Ukraine,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-10006,VIP Bereg,,,Jun  5 2024  6:23PM
+UA,UGS-00434,UGS Solokhivske,True,96.86,-25.64,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00434,UGS Solokhivske,,,Jun  5 2024  6:23PM
+UA,UGS-00434,UGS Solokhivske,True,96.86,-25.64,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00437,UGS Chervonopartyzanske,True,86.13,-12.94,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00437,UGS Chervonopartyzanske,,,Jun  5 2024  6:23PM
+UA,UGS-00430,UGS Olyshivske,True,79.18097777,-1.242811105,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00430,UGS Olyshivske,,,Jun  5 2024  6:23PM
+UA,UGS-00436,UGS Kehychivske,True,105.47,-27.45,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00436,UGS Kehychivske,,,Jun  5 2024  6:23PM
+UA,UGS-00438,UGS Bilche-Volytsko-Uherske,True,41.53,-28.88,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00429,UGS Krasnopopivske,True,120.19,-26.19,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00429,UGS Krasnopopivske,,,Jun  5 2024  6:23PM
+UA,UGS-00431,UGS Bohorodchanske,True,44.01976964,-24.35624593,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00433,UGS Oparske,True,41.66,-25.32,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00433,UGS Oparske,,,Jun  5 2024  6:23PM
+UA,UGS-00430,UGS Olyshivske,True,79.18097777,-1.242811105,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00432,UGS Uherske (XIV-XV),True,42.0,-25.0,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00435,UGS Dashavske,True,56.56,-9.97,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00435,UGS Dashavske,,,Jun  5 2024  6:23PM
+UA,UGS-00439,UGS Proletarske ,True,98.53,-30.75,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00433,UGS Oparske,True,41.66,-25.32,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00436,UGS Kehychivske,True,105.47,-27.45,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00437,UGS Chervonopartyzanske,True,86.13,-12.94,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00440,UGS Verhunske,True,121.38,-32.06,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00440,UGS Verhunske,,,Jun  5 2024  6:23PM
+UA,UGS-00429,UGS Krasnopopivske,True,120.19,-26.19,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00432,UGS Uherske (XIV-XV),True,42.0,-25.0,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00432,UGS Uherske (XIV-XV),,,Jun  5 2024  6:23PM
+UA,UGS-00435,UGS Dashavske,True,56.56,-9.97,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00438,UGS Bilche-Volytsko-Uherske,True,41.53,-28.88,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00438,UGS Bilche-Volytsko-Uherske,,,Jun  5 2024  6:23PM
+UA,UGS-00439,UGS Proletarske ,True,98.53,-30.75,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00439,UGS Proletarske ,,,Jun  5 2024  6:23PM
+UA,UGS-00440,UGS Verhunske,True,121.38,-32.06,Transmission,Transmission,UA,Ukraine,Storage,Storage,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+UA,UGS-00431,UGS Bohorodchanske,True,44.01976964,-24.35624593,Storage,Storage,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,UGS-00431,UGS Bohorodchanske,,,Jun  5 2024  6:23PM
+UA,ITP-00167,Isaccea (RO) - Orlovka (UA),False,65.61,-51.23,Transmission,Transmission,UA,Ukraine,RO_NTS,Transmission,RO,Romania,,,,,,,Jun  5 2024  6:23PM
+UA,ITP-00084,Mediesu Aurit (RO) - Tekovo (UA),False,36.52,-37.02,Transmission,Transmission,UA,Ukraine,RO_NTS,Transmission,RO,Romania,,,,,,,Jun  5 2024  6:23PM
+UA,ITP-00649,VIP Exit to Final Consumers (UA) / (MD),False,67.98,-47.99,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,MD,Moldavia,,,,,,,Jun  5 2024  6:23PM
+UA,ITP-00428,Grebenyky,False,71.54,-43.26,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00428,GMS Grebenyky,,,Jun  5 2024  6:23PM
+UA,ITP-00429,Oleksiivka,False,57.61,-34.09,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00429,Oleksiivka,,,Jun  5 2024  6:23PM
+UA,ITP-00444,Lymanske (UA) / (MD),False,0.0,0.0,Transmission,Transmission,UA,Ukraine,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00444,Lymanske,,,Jun  5 2024  6:23PM
+UA,ITP-00087,Isaccea (RO) - Orlovka (UA) I,False,65.61,-51.23,Transmission,Transmission,UA,Ukraine,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00087,Isaccea I,,,Jun  5 2024  6:23PM
+RS,ITP-00035,Zvornik,False,16.83,-54.28,Transmission,Transmission,RS,Serbia,Transmission,Transmission,BA,Bosnia Herzegovina,BA-TSO-0001,BH Gas,ITP-00035,Zvornik,,,Jun  5 2024  6:23PM
+RS,ITP-00529,Kireevo (BG) / Zaychar (RS),False,33.13,-56.97,Transmission,Transmission,RS,Serbia,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00529,Kireevo (BG) / Zaychar (RS),,,Jun  5 2024  6:23PM
+RS,ITP-10013,Kiskundorozsma-2 (HU) / Horgos (RS),False,22.24,-47.07,Transmission,Transmission,RS,Serbia,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-10013,Kiskundorozsma 2 (RS>HU),,,Jun  5 2024  6:23PM
+RS,UGS-00052,UGS Banatski Dvor (RS),False,20.21,-48.57,Storage,Storage,RS,Serbia,Transmission,Transmission,RS,Serbia,RS-TSO-0001,Srbijagas,UGS-00052,UGS Banatski Dvor (RS),,,Jun  5 2024  6:23PM
+RS,UGS-00052,UGS Banatski Dvor (RS),False,20.21,-48.57,Transmission,Transmission,RS,Serbia,Storage,Storage,RS,Serbia,RS-SSO-0001,Srbijagas (SSO),UGS-00052,UGS Banatski Dvor (RS),,,Jun  5 2024  6:23PM
+RS,ITP-00134,Kalotina (BG)/ Dimitrovgrad (RS),False,35.77,-60.57,Transmission,Transmission,RS,Serbia,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00134,Kalotina (BG)/ Dimitrovgrad (RS),,,Jun  5 2024  6:23PM
+LU,DIS-00194,Public Distribution (LU),False,-51.2,-23.56,Distribution,Distribution,LU,Luxemburg,BeLux,Transmission,LU,Luxemburg,LU-TSO-0001,CREOS,DIS-00194,Public Distribution (LU),,,Jun  5 2024  6:23PM
+LU,DIS-00194,Public Distribution (LU),False,-51.2,-23.56,BeLux,Transmission,LU,Luxemburg,Distribution,Distribution,LU,Luxemburg,,,,,,,Jun  5 2024  6:23PM
+LU,FNC-00041,Industrial Clients (LU),False,-51.64,-23.58,BeLux,Transmission,LU,Luxemburg,Final Consumers,Final Consumers,LU,Luxemburg,,,,,,,Jun  5 2024  6:23PM
+LU,FNC-00041,Industrial Clients (LU),False,-51.64,-23.58,Final Consumers,Final Consumers,LU,Luxemburg,BeLux,Transmission,LU,Luxemburg,LU-TSO-0001,CREOS,FNC-00041,Industrial Clients (LU),,,Jun  5 2024  6:23PM
+LU,ITP-00072,Remich,False,-49.97,-25.74,BeLux,Transmission,LU,Luxemburg,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00072,Remich,,,Jun  5 2024  6:23PM
+LU,ITP-00113,GDLux (BE) / Bras Petange (LU),False,-52.51,-25.48,BeLux,Transmission,LU,Luxemburg,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00113,GDLux,,,Jun  5 2024  6:23PM
+LU,FNC-00213,Luxembourg Power Plants (LU),True,-51.0,-24.0,Final Consumers,Final Consumers,LU,Luxemburg,BeLux,Transmission,LU,Luxemburg,LU-TSO-0001,CREOS,FNC-00213,Creos Power Plants,,,Jun  5 2024  6:23PM
+LU,FNC-00213,Luxembourg Power Plants (LU),True,-51.0,-24.0,BeLux,Transmission,LU,Luxemburg,Final Consumers,Final Consumers,LU,Luxemburg,,,,,,,Jun  5 2024  6:23PM
+MD,ITP-00154,Ungheni,False,61.35,-40.38,Transmission,Transmission,MD,Moldavia,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,ITP-00154,Ungheni,,,Jun  5 2024  6:23PM
+MD,ITP-00440,GMS Caushany,False,69.48,-45.4,Transmission,Transmission,MD,Moldavia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00440,Kaushany,,,Jun  5 2024  6:23PM
+MD,ITP-00429,Oleksiivka,False,57.61,-34.09,Transmission,Transmission,MD,Moldavia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00429,Oleksiivka,,,Jun  5 2024  6:23PM
+MD,ITP-00444,Lymanske (UA) / (MD),False,0.0,0.0,Transmission,Transmission,MD,Moldavia,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00444,Lymanske,,,Jun  5 2024  6:23PM
+BE,FNC-00035,Final consumers (BE) (Fluxys) Power Plants H-zone,False,-61.22,-14.77,Final Consumers,Final Consumers,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,FNC-00035,Power Plants H-zone,,,Jun  5 2024  6:23PM
+BE,FNC-00036,Final consumers (BE) (Fluxys) Power Plants L-zone,False,-58.32,-13.8,L-Zone,Transmission,BE,Belgium,Final Consumers,Final Consumers,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,DIS-00191,Distribution (BE) H-zone,False,-61.22,-14.77,BeLux,Transmission,BE,Belgium,Distribution,Distribution,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,DIS-00192,Distribution (BE) L-zone,False,-58.32,-13.8,L-Zone,Transmission,BE,Belgium,Distribution,Distribution,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,FNC-00035,Final consumers (BE) (Fluxys) Power Plants H-zone,False,-61.22,-14.77,BeLux,Transmission,BE,Belgium,Final Consumers,Final Consumers,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,FNC-00033,Final consumers (BE) (Fluxys) Industrial clients H-zone,False,-61.22,-14.77,BeLux,Transmission,BE,Belgium,Final Consumers,Final Consumers,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,FNC-00033,Final consumers (BE) (Fluxys) Industrial clients H-zone,False,-61.22,-14.77,Final Consumers,Final Consumers,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,FNC-00033,Industrial clients H-zone,,,Jun  5 2024  6:23PM
+BE,FNC-00034,Final consumers (BE) (Fluxys) Industrial clients L-zone,False,-58.32,-13.8,L-Zone,Transmission,BE,Belgium,Final Consumers,Final Consumers,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,DIS-00191,Distribution (BE) H-zone,False,-61.22,-14.77,Distribution,Distribution,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,DIS-00191,Distribution H-Zone,,,Jun  5 2024  6:23PM
+BE,DIS-00192,Distribution (BE) L-zone,False,-58.32,-13.8,Distribution,Distribution,BE,Belgium,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,DIS-00192,Distribution L-Zone,,,Jun  5 2024  6:23PM
+BE,FNC-00034,Final consumers (BE) (Fluxys) Industrial clients L-zone,False,-58.32,-13.8,Final Consumers,Final Consumers,BE,Belgium,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,FNC-00034,Industrial clients L-zone,,,Jun  5 2024  6:23PM
+BE,FNC-00036,Final consumers (BE) (Fluxys) Power Plants L-zone,False,-58.32,-13.8,Final Consumers,Final Consumers,BE,Belgium,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,FNC-00036,Final consumers (BE) (Fluxys) Power Plants L-zone,,,Jun  5 2024  6:23PM
+BE,ITP-00061,Zeebrugge IZT,False,-67.33,-11.5,BeLux,Transmission,BE,Belgium,IUK,Transmission,UK,United Kingdom,UK-TSO-0003,Interconnector,ITP-00061,Zeebrugge FTS,,,Jun  5 2024  6:23PM
+BE,ITP-00088,Zandvliet H-gas,False,-61.0,-11.48,BeLux,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00088,Zandvliet-H,,,Jun  5 2024  6:23PM
+BE,ITP-00038,Hilvarenbeek,False,-56.56,-11.26,L-Zone,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00038,Hilvarenbeek,,,Jun  5 2024  6:23PM
+BE,ITP-00101,Zelzate,False,-63.11,-12.94,BeLux,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00101,Zelzate,,,Jun  5 2024  6:23PM
+BE,ITP-00106,Zeebrugge ZPT,False,-66.93,-11.5,BeLux,Transmission,BE,Belgium,Transmission,Transmission,NO,Norway,NO-TSO-0001,Gassco,ITP-00106,Zeebrugge ZPT,,,Jun  5 2024  6:23PM
+BE,ITP-00112,Eynatten 1 (BE) // Lichtenbusch / Raeren (DE),False,-51.06,-18.02,BeLux,Transmission,BE,Belgium,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00112,Eynatten,,,Jun  5 2024  6:23PM
+BE,ITP-00113,GDLux (BE) / Bras Petange (LU),False,-52.51,-25.48,BeLux,Transmission,BE,Belgium,BeLux,Transmission,LU,Luxemburg,LU-TSO-0001,CREOS,ITP-00113,Entry Point Belgium,,,Jun  5 2024  6:23PM
+BE,ITP-00115,Blaregnies L (BE) / Taisnières B (FR),False,-63.37,-20.39,L-Zone,Transmission,BE,Belgium,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00115,TAISNIERES B,,,Jun  5 2024  6:23PM
+BE,ITP-00110,Zelzate (Zebra Pijpleiding),False,-63.94,-12.68,BeLux,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00110,Zelzate 2,,,Jun  5 2024  6:23PM
+BE,ITP-00152,Blaregnies (BE) / Taisnières (H) (FR) (Segeo/Troll),False,-62.67,-20.63,BeLux,Transmission,BE,Belgium,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00152,TAISNIERES H,,,Jun  5 2024  6:23PM
+BE,ITP-00159,Eynatten 2 (BE) // Lichtenbusch / Raeren (DE),False,-51.06,-18.02,BeLux,Transmission,BE,Belgium,DE THE BZ,Transmission,DE,Germany,DE-TSO-0002,Thyssengas,ITP-00034,Lichtenbusch,,,Jun  5 2024  6:23PM
+BE,ITP-00152,Blaregnies (BE) / Taisnières (H) (FR) (Segeo/Troll),False,-62.67,-20.63,BeLux,Transmission,BE,Belgium,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00152,TAISNIERES H,,,Jun  5 2024  6:23PM
+BE,ITP-00159,Eynatten 2 (BE) // Lichtenbusch / Raeren (DE),False,-51.06,-18.02,BeLux,Transmission,BE,Belgium,DE THE BZ,Transmission,DE,Germany,DE-TSO-0007,Fluxys TENP GmbH,ITP-00057,Eynatten,,,Jun  5 2024  6:23PM
+BE,ITP-00289,BE Quality Conversion Point H-Zone,True,-60.64,-14.2,BeLux,Transmission,BE,Belgium,L-Zone,Transmission,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,ITP-00290,BE Quality Conversion Point L-Zone,True,-57.3,-13.8,BeLux,Transmission,BE,Belgium,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00290,Quality Conversion L,,,Jun  5 2024  6:23PM
+BE,ITP-00290,BE Quality Conversion Point L-Zone,True,-57.3,-13.8,L-Zone,Transmission,BE,Belgium,BeLux,Transmission,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,ITP-00258,'s Gravenvoeren Dilsen (BE) // 's Gravenvoeren/Obbicht (NL),False,-52.51,-16.93,BeLux,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00258,'s Gravenvoeren,,,Jun  5 2024  6:23PM
+BE,ITP-00289,BE Quality Conversion Point H-Zone,True,-60.64,-14.2,L-Zone,Transmission,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,ITP-00289,Quality Conversion H,,,Jun  5 2024  6:23PM
+BE,ITP-00526,VIRTUALYS,False,-66.62,-16.76,BeLux,Transmission,BE,Belgium,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00526,Virtualys,,,Jun  5 2024  6:23PM
+BE,ITP-00555,VIP BENE,False,-59.37,-11.18,BeLux,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00555,VIP BENE,,,Jun  5 2024  6:23PM
+BE,LNG-00005,Alveringem,False,-69.26,-14.71,BeLux,Transmission,BE,Belgium,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,LNG-00005,Alveringem (BE-FR),,,Jun  5 2024  6:23PM
+BE,ITP-00542,VIP Belgium - NCG,False,-51.06,-18.02,BeLux,Transmission,BE,Belgium,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00542,VIP Belgium - NCG,,,Jun  5 2024  6:23PM
+BE,UGS-00002,Loenhout Storage,False,-56.36513162,-13.86418024,BeLux,Transmission,BE,Belgium,Storage,Storage,BE,Belgium,BE-SSO-0001,Fluxys SSO,UGS-00002,Loenhout Storage,,,Jun  5 2024  6:23PM
+BE,UGS-00002,Loenhout Storage,False,-56.36513162,-13.86418024,Storage,Storage,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,UGS-00002,Loenhout Storage,,,Jun  5 2024  6:23PM
+BE,LNG-00047,Dunkerque LNG,False,-72.64,-14.6,BeLux,Transmission,BE,Belgium,LNG Terminals,LNG Terminals,FR,France,FR-LSO-0001,Dunkerque LNG,LNG-00047,Dunkerque LNG,,,Jun  5 2024  6:23PM
+BE,LNG-00017,Zeebrugge LNG,False,-66.53,-11.5,LNG Terminals,LNG Terminals,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,LNG-00017,Zeebrugge LNG Terminal,,,Jun  5 2024  6:23PM
+BE,LNG-00017,Zeebrugge LNG,False,-66.53,-11.5,BeLux,Transmission,BE,Belgium,LNG Terminals,LNG Terminals,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,VTP-00025,Zeebrugge Trading Point L-Zone,False,-58.32,-13.8,L-Zone,Transmission,BE,Belgium,L-Zone,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,VTP-00025,Zeebrugge Trading Point L-Zone,,,Jun  5 2024  6:23PM
+BE,VTP-00029,Zeebrugge Beach,False,-66.49,-14.52,BeLux,Transmission,BE,Belgium,BeLux,Transmission,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,VTP-00029,Zeebrugge Beach,False,-66.49,-14.52,BeLux,Transmission,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,VTP-00029,Zeebrugge Beach,,,Jun  5 2024  6:23PM
+BE,VTP-00016,ZTP (Zeebrugge Trading Point H-Zone),False,-61.22,-14.77,BeLux,Transmission,BE,Belgium,BeLux,Transmission,BE,Belgium,BE-TSO-0001,Fluxys Belgium,VTP-00016,ZTP (Zeebrugge Trading Point H-Zone),,,Jun  5 2024  6:23PM
+BE,VTP-00025,Zeebrugge Trading Point L-Zone,False,-58.32,-13.8,L-Zone,Transmission,BE,Belgium,L-Zone,Transmission,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,VTP-00016,ZTP (Zeebrugge Trading Point H-Zone),False,-61.22,-14.77,BeLux,Transmission,BE,Belgium,BeLux,Transmission,BE,Belgium,,,,,,,Jun  5 2024  6:23PM
+BE,ITP-00614,VIP THE-ZTP,False,-50.89,-16.64,BeLux,Transmission,BE,Belgium,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00614,VIP THE-ZTP	,,,Jun  5 2024  6:23PM
+BE,ITP-00648,VIP BENE-L,False,-58.0,-9.0,L-Zone,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00648,VIP BENE-L,,,Jun  5 2024  6:23PM
+BE,ITP-00254,Poppel (BE) / Zandvliet-L (NL),False,-34.85,8.93,L-Zone,Transmission,BE,Belgium,Netherlands,Transmission,NL,Netherlands,NL-TSO-0001,GTS,ITP-00254,Zandvliet L-gas,,,Jun  5 2024  6:23PM
+CZ,ITP-00010,Brandov-OPAL (DE),False,-11.87,-17.28,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0016,OPAL,ITP-00452,Brandov / OPAL,,,Jun  5 2024  6:23PM
+CZ,ITP-00015,Hora Svaté Kateřiny (CZ) / Deutschneudorf (Sayda) (DE),False,-12.57,-17.12,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0003,ONTRAS Gastransport GmbH,ITP-00015,"Deutschneudorf (valid until 01.04.2024, 6:00 a.m.)",,,Jun  5 2024  6:23PM
+CZ,ITP-00010,Brandov-OPAL (DE),False,-11.87,-17.28,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00452,Brandov / OPAL,,,Jun  5 2024  6:23PM
+CZ,ITP-00051,Lanžhot,False,5.36,-31.84,Czech,Transmission,CZ,Czechia,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,ITP-00051,Lanzhot,,,Jun  5 2024  6:23PM
+CZ,ITP-00123,Brandov STEGAL (CZ) / Stegal (DE),False,-11.87,-17.28,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00123,Brandov-STEGAL,,,Jun  5 2024  6:23PM
+CZ,ITP-00158,Cieszyn (PL) / Český Těšín (CZ),False,13.84,-24.49,Czech,Transmission,CZ,Czechia,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-00158,Cieszyn,,,Jun  5 2024  6:23PM
+CZ,ITP-00535,Deutschneudorf EUGAL Brandov ,False,-12.08,-18.06,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0018,Fluxys Deutschland,ITP-00535,Deutschneudorf-EUGAL Brandov,,,Jun  5 2024  6:23PM
+CZ,ITP-00538,VIP Waidhaus,False,-18.85,-25.13,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00538,VIP Waidhaus,,,Jun  5 2024  6:23PM
+CZ,ITP-00537,VIP Brandov,False,-12.79,-17.06,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0001,GASCADE,ITP-00537,VIP Brandov,,,Jun  5 2024  6:23PM
+CZ,UGS-00003,UGS MND (MNG Gas Storage),False,7.43,-30.26,Czech,Transmission,CZ,Czechia,Storage,Storage,CZ,Czechia,CZ-SSO-0001,MND Gas Storage,UGS-00003,UGS MND (MNG Gas Storage),,,Jun  5 2024  6:23PM
+CZ,UGS-00004,UGS innogy (innogy Gas Storage excl. UGS Haje),False,-7.91,-20.47,Czech,Transmission,CZ,Czechia,Storage,Storage,CZ,Czechia,CZ-SSO-0002,RWE Gas Storage,UGS-00004,UGS innogy (innogy Gas Storage excl. UGS Haje),,,Jun  5 2024  6:23PM
+CZ,UGS-00003,UGS MND (MNG Gas Storage),False,7.43,-30.26,Storage,Storage,CZ,Czechia,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,UGS-00003,VGS MND,,,Jun  5 2024  6:23PM
+CZ,UGS-00004,UGS innogy (innogy Gas Storage excl. UGS Haje),False,-7.91,-20.47,Storage,Storage,CZ,Czechia,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,UGS-00004,VGS RWE,,,Jun  5 2024  6:23PM
+CZ,UGS-00069,Dolni Bojanovice,False,11.56,-30.18,Storage,Storage,CZ,Czechia,Slovakia,Transmission,SK,Slovakia,SK-TSO-0001,Eustream,UGS-00253,Dolni Bojanovice (CZ) / Brodské (SK),,,Jun  5 2024  6:23PM
+CZ,UGS-00446,VGS Moravia,False,4.53,-28.84,Czech,Transmission,CZ,Czechia,Storage,Storage,CZ,Czechia,CZ-SSO-0001,MND Gas Storage,UGS-00446,VGS Moravia,,,Jun  5 2024  6:23PM
+CZ,UGS-00446,VGS Moravia,False,4.53,-28.84,Storage,Storage,CZ,Czechia,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,UGS-00446,VGS Moravia,,,Jun  5 2024  6:23PM
+CZ,UGS-00446,VGS Moravia,False,4.53,-28.84,Czech,Transmission,CZ,Czechia,Storage,Storage,CZ,Czechia,CZ-SSO-0004,Moravia Gas Storage,UGS-00446,VGS Moravia,,,Jun  5 2024  6:23PM
+CZ,UGS-00446,VGS Moravia,False,4.53,-28.84,Storage,Storage,CZ,Czechia,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,UGS-00446,VGS Moravia,,,Jun  5 2024  6:23PM
+CZ,VTP-00003,OTE,False,-8.09,-21.7,Czech,Transmission,CZ,Czechia,Czech,Transmission,CZ,Czechia,,,,,,,Jun  5 2024  6:23PM
+CZ,VTP-00003,OTE,False,-8.09,-21.7,Czech,Transmission,CZ,Czechia,Czech,Transmission,CZ,Czechia,CZ-TSO-0001,N4G,VTP-00003,Virtualni obchodni bod,,,Jun  5 2024  6:23PM
+CZ,ITP-00150,Olbernhau (DE) / Hora Svaté Kateřiny (CZ),False,-13.45,-17.81,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,,,,,,,Jun  5 2024  6:23PM
+CZ,DIS-00195,Branice Czechy,False,9.4,-22.43,Distribution,Distribution,CZ,Czechia,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,DIS-00195,Branice Czechy ,,,Jun  5 2024  6:23PM
+CZ,DIS-00204,Zlate Hory,False,1.54,-19.39,Distribution,Distribution,CZ,Czechia,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,DIS-00204,Zlate Hory,,,Jun  5 2024  6:23PM
+CZ,ITP-00139,Waidhaus,False,-17.89,-25.28,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0004,GRTD,ITP-00073,Waidhaus,,,Jun  5 2024  6:23PM
+CZ,ITP-00139,Waidhaus,False,-17.89,-25.28,Czech,Transmission,CZ,Czechia,DE THE BZ,Transmission,DE,Germany,DE-TSO-0009,OGE,ITP-00069,Waidhaus,,,Jun  5 2024  6:23PM
+GR,DIS-00021,Aloyminion,False,35.42,-72.76,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00023,Aloyminion III,False,35.42,-72.76,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00041,Motor Oil,False,37.05,-73.64,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00030,Karditsa,False,31.86,-70.6,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00042,Motor Oil II,False,37.05,-73.64,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00046,SALFA Anthousa,False,41.88,-73.2,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00053,VFL,False,44.52,-66.46,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00037,Komotini(PPC),False,48.47,-66.23,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00056,Xanthi,False,46.8,-66.2,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00045,SALFA Ano Liossia,False,40.69,-72.93,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00018,Agioi Theodoroi,False,37.53,-73.59,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00020,Aliveri (PPC),False,43.07,-72.98,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00031,Katerini,False,34.37,-68.72,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00035,Kokkina,False,35.51,-70.35,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00038,Lamia,False,35.33,-71.51,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00022,Aloyminion II,False,35.42,-72.76,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00026,ELPE,False,35.6,-67.11,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00032,Kavala,False,42.89,-66.79,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00044,Platy,False,35.38,-67.61,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00047,Serres,False,39.86,-66.05,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00050,Thisvi,False,36.96,-67.68,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00054,VIPE Larissa,False,34.15,-69.78,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00025,Drama,False,42.1,-66.2,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00034,Kilkis,False,36.47,-67.2,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00036,Komotini,False,48.47,-66.23,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00043,Oinofyta,False,39.55,-72.69,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00055,Volos,False,36.91,-70.44,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00028,Heron II,False,38.85,-72.69,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00029,Heronas,False,38.85,-72.69,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00039,Larissa,False,34.15,-69.78,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00040,Lavrio(PPC),False,42.32,-74.02,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00048,Spata,False,41.79,-73.45,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00049,Thessaloniki,False,36.96,-67.68,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00051,Thriassio,False,40.03,-73.45,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00052,Trikala,False,29.97,-70.07,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00019,Alexandroupolis,False,52.12,-66.94,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00024,Athens,False,41.66,-73.37,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00027,Energiaki Thess. (ELPE),False,35.99,-67.54,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00033,Keratsini(PPC),False,40.17,-73.45,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,FNC-00038,Megalopoli (PPC),False,32.17,-74.51,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,FNC-00204,ELPE-VEE,True,39.24,-73.3,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00198,FARSALA,False,33.31,-70.8,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,FNC-00039,ELPE (HAR),False,40.39,-72.99,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,ITP-00046,Kipi (TR) / Kipi (GR),False,53.92,-66.68,Greece,Transmission,GR,Greece,Transmission,Transmission,TR,Turkey,TR-TSO-0001,Botas,ITP-00046,Kipi (TR) / Kipi (GR),,,Jun  5 2024  6:23PM
+GR,ITP-00128,Kulata (BG) / Sidirokastron (GR),False,37.9,-65.4,Greece,Transmission,GR,Greece,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00128,Kulata (BG) / Sidirokastron (GR),,,Jun  5 2024  6:23PM
+GR,LNG-00014,Agia Triada,True,39.16,-73.62,LNG Terminals,LNG Terminals,GR,Greece,Greece,Transmission,GR,Greece,GR-TSO-0001,DESFA S.A.,LNG-00014,Agia Triada,,,Jun  5 2024  6:23PM
+GR,VTP-00042,HTP (Hellenic Trading Point),True,32.87,-71.57,Greece,Transmission,GR,Greece,Greece,Transmission,GR,Greece,GR-TSO-0001,DESFA S.A.,VTP-00042,HTP (Hellenic Trading Point),,,Jun  5 2024  6:23PM
+GR,VTP-00042,HTP (Hellenic Trading Point),True,32.87,-71.57,Greece,Transmission,GR,Greece,Greece,Transmission,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00199,KOSMIO-GR,True,48.47,-66.23,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00200,MEGALOPOLI,True,48.6,-69.81,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,ITP-00274,Kipoi,False,53.92,-66.68,Greece,Transmission,GR,Greece,Transmission,Transmission,TR,Turkey,,,,,,,Jun  5 2024  6:23PM
+GR,ITP-00275,Komotini - TAP / IGB,False,49.44,-66.27,Greece,Transmission,GR,Greece,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0003,ICGB,ITP-00275,Komotini,,,Jun  5 2024  6:23PM
+GR,ITP-00427,Nea Mesimvria,False,35.46,-67.36,Greece,Transmission,GR,Greece,Greece,Transmission,GR,Greece,GR-TSO-0001,DESFA S.A.,ITP-00427,Nea Mesimvria,,,Jun  5 2024  6:23PM
+GR,ITP-00427,Nea Mesimvria,False,35.46,-67.36,Greece,Transmission,GR,Greece,Greece,Transmission,GR,Greece,AL-TSO-0001,TAP AG,ITP-00427,Nea Mesimvria,,,Jun  5 2024  6:23PM
+GR,VTP-00044,TAP Virtual Trading Point ,True,30.89,-67.54,Greece,Transmission,GR,Greece,Greece,Transmission,GR,Greece,AL-TSO-0001,TAP AG,VTP-00044,TAP Virtual Trading Point,,,Jun  5 2024  6:23PM
+GR,VTP-00044,TAP Virtual Trading Point ,True,30.89,-67.54,Greece,Transmission,GR,Greece,Greece,Transmission,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00203,TRIPOLI,True,34.63,-74.48,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,FNC-00212,ALOYMINION IV,True,32.42,-72.76,Greece,Transmission,GR,Greece,Final Consumers,Final Consumers,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,DIS-00205,KAVALA (CITY),True,42.89,-66.79,Greece,Transmission,GR,Greece,Distribution,Distribution,GR,Greece,,,,,,,Jun  5 2024  6:23PM
+GR,ITP-00450,Komotini-DESFA/ICGB (GR/BG),False,49.44,-66.27,Greece,Transmission,GR,Greece,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0003,ICGB,ITP-00450,Komotini-DESFA/ICGB (GR/BG),,,Jun  5 2024  6:23PM
+GR,ITP-00450,Komotini-DESFA/ICGB (GR/BG),False,49.44,-66.27,Greece,Transmission,GR,Greece,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0003,ICGB,ITP-00450,Komotini-DESFA/ICGB (GR/BG),,,Jun  5 2024  6:23PM
+SE,UGS-00014,UGS Skallen (SE),False,-14.24,33.58,Storage,Storage,SE,Sweden,Joint Bal Zone DK/SE,Transmission,SE,Sweden,SE-TSO-0001,Swedegas,UGS-00014,UGS Skallen (SE),,,Jun  5 2024  6:23PM
+SE,UGS-00014,UGS Skallen (SE),False,-14.24,33.58,Joint Bal Zone DK/SE,Transmission,SE,Sweden,Storage,Storage,SE,Sweden,SE-SSO-0002,Swedegas (SSO),UGS-00014,UGS Skallen (SE),,,Jun  5 2024  6:23PM
+PT,DIS-00001,Distribution (PT),False,-128.19,-69.5,Portugal,Transmission,PT,Portugal,Distribution,Distribution,PT,Portugal,,,,,,,Jun  5 2024  6:23PM
+PT,FNC-00001,Final Consumers (PT),False,-126.87,-69.36,Portugal,Transmission,PT,Portugal,Final Consumers,Final Consumers,PT,Portugal,,,,,,,Jun  5 2024  6:23PM
+PT,ITP-00064,Badajoz (ES) / Campo Maior (PT),False,-119.66,-71.61,Portugal,Transmission,PT,Portugal,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,ITP-00064,BADAJOZ,,,Jun  5 2024  6:23PM
+PT,ITP-00052,Valença do Minho (PT) / Tuy (ES),False,-128.23,-63.63,Portugal,Transmission,PT,Portugal,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,ITP-00052,TUY,,,Jun  5 2024  6:23PM
+PT,ITP-00286,VIP IBERICO,False,-119.36,-68.64,Portugal,Transmission,PT,Portugal,Spain,Transmission,ES,Spain,ES-TSO-0006,Enagas,ITP-00286,VIP IBERICO,,,Jun  5 2024  6:23PM
+PT,LNG-00026,Sines,False,-129.11,-73.3,Portugal,Transmission,PT,Portugal,LNG Terminals,LNG Terminals,PT,Portugal,PT-TSO-0002,REN Atlantico,LNG-00026,Sines,,,Jun  5 2024  6:23PM
+PT,LNG-00026,Sines,False,-129.11,-73.3,LNG Terminals,LNG Terminals,PT,Portugal,Portugal,Transmission,PT,Portugal,PT-TSO-0001,REN,LNG-00026,Sines,,,Jun  5 2024  6:23PM
+PT,UGS-00010,Carriço,False,-129.51,-68.78,Portugal,Transmission,PT,Portugal,Storage,Storage,PT,Portugal,PT-SSO-0001,REN Armazenagem,UGS-00010,Carriço,,,Jun  5 2024  6:23PM
+PT,UGS-00010,Carriço,False,-129.51,-68.78,Storage,Storage,PT,Portugal,Portugal,Transmission,PT,Portugal,PT-TSO-0001,REN,UGS-00010,Carriço,,,Jun  5 2024  6:23PM
+TR,ITP-00046,Kipi (TR) / Kipi (GR),False,53.92,-66.68,Transmission,Transmission,TR,Turkey,Greece,Transmission,GR,Greece,GR-TSO-0001,DESFA S.A.,ITP-00046,Kipi,,,Jun  5 2024  6:23PM
+TR,ITP-00046,Kipi (TR) / Kipi (GR),False,53.92,-66.68,Transmission,Transmission,TR,Turkey,Greece,Transmission,GR,Greece,GR-TSO-0002,IGI Poseidon,ITP-00046,Kipi (TR) / Kipi (GR),,,Jun  5 2024  6:23PM
+TR,ITP-00549,Strandzha 2 (BG) / Malkoclar (TR),False,58.32,-63.61,Transmission,Transmission,TR,Turkey,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00549,Strandzha 2 (BG) / Malkoclar (TR),,,Jun  5 2024  6:23PM
+TR,ITP-00041,Strandzha (BG) / Malkoclar (TR),False,57.5,-63.6,Transmission,Transmission,TR,Turkey,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00041,Strandzha (BG) / Malkoclar (TR),,,Jun  5 2024  6:23PM
+TR,ITP-00274,Kipoi,False,53.92,-66.68,Transmission,Transmission,TR,Turkey,Greece,Transmission,GR,Greece,AL-TSO-0001,TAP AG,ITP-00274,Kipoi,,,Jun  5 2024  6:23PM
+CH,ITP-00039,Oltingue (FR) / Rodersdorf (CH),False,-43.9,-38.97,Switzerland,Transmission,CH,Switzerland,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00039,OLTINGUE,,,Jun  5 2024  6:23PM
+CH,ITP-00039,Oltingue (FR) / Rodersdorf (CH),False,-43.9,-38.97,Switzerland,Transmission,CH,Switzerland,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00039,OLTINGUE,,,Jun  5 2024  6:23PM
+CH,ITP-00136,Griespass (CH) / Passo Gries (IT),False,-39.77,-45.92,Switzerland,Transmission,CH,Switzerland,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,ITP-00136,GRIESPASS,,,Jun  5 2024  6:23PM
+CH,ITP-00136,Griespass (CH) / Passo Gries (IT),False,-39.77,-45.92,Switzerland,Transmission,CH,Switzerland,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,ITP-00136,GRIESPASS,,,Jun  5 2024  6:23PM
+CH,ITP-00281,Jura,False,-50.62,-46.59,Switzerland,Transmission,CH,Switzerland,TRF,Transmission,FR,France,FR-TSO-0003,GRTgaz,ITP-00281,Jura,,,Jun  5 2024  6:23PM
+CH,ITP-00228,RC Basel,False,-39.99,-37.86,Switzerland,Transmission,CH,Switzerland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0014,TNBW,ITP-00228,RC Basel,,,Jun  5 2024  6:23PM
+CH,ITP-00294,Wallbach,False,-42.01,-39.03,Switzerland,Transmission,CH,Switzerland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0019,Fluxys TENP & OGE,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+CH,ITP-00229,RC Thayngen-Fallentor,False,-37.84,-38.13,Switzerland,Transmission,CH,Switzerland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0014,TNBW,ITP-00229,RC Thayngen-Fallentor,,,Jun  5 2024  6:23PM
+CH,ITP-00294,Wallbach,False,-42.01,-39.03,Switzerland,Transmission,CH,Switzerland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0007,Fluxys TENP GmbH,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+CH,ITP-00544,VIP Germany-CH,False,-40.78,-38.93,Switzerland,Transmission,CH,Switzerland,DE THE BZ,Transmission,DE,Germany,DE-TSO-0007,Fluxys TENP GmbH,ITP-00544,VIP Germany-CH,,,Jun  5 2024  6:23PM
+CH,ITP-00294,Wallbach,False,-42.01,-39.03,,,,,DE THE BZ,Transmission,DE,Germany,DE-TSO-0007,Fluxys TENP GmbH,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+CH,ITP-00294,Wallbach,False,-42.01,-39.03,,,,,DE THE BZ,Transmission,DE,Germany,DE-TSO-0019,Fluxys TENP & OGE,ITP-00294,Wallbach,,,Jun  5 2024  6:23PM
+BY,ITP-00085,Kotlovka,False,51.15,16.93,Transmission,Transmission,BY,Belarus,Lithuania,Transmission,LT,Lithuania,LT-TSO-0001,Amber Grid,ITP-00085,Kotlovka,,,Jun  5 2024  6:23PM
+BY,ITP-00445,Kobryn,False,44.03,-4.52,Transmission,Transmission,BY,Belarus,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00445,Kobryn,,,Jun  5 2024  6:23PM
+BY,ITP-00446,Mozyr,False,69.3,-6.4,Transmission,Transmission,BY,Belarus,Transmission,Transmission,UA,Ukraine,UA-TSO-0001,Gas TSO UA,ITP-00446,Mozyr,,,Jun  5 2024  6:23PM
+LT,ITP-00050,Sakiai,False,35.11,18.8,Lithuania,Transmission,LT,Lithuania,Transmission,Transmission,RU,Russia,RU-TSO-0001,Gazprom,ITP-00050,Sakiai,,,Jun  5 2024  6:23PM
+LT,ITP-00054,Kiemenai,False,43.29,29.65,Lithuania,Transmission,LT,Lithuania,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,ITP-00054,Kiemenai - entry,,,Jun  5 2024  6:23PM
+LT,LNG-00030,Klaipeda (LNG),False,27.07,25.36,LNG Terminals,LNG Terminals,LT,Lithuania,Lithuania,Transmission,LT,Lithuania,LT-TSO-0001,Amber Grid,LNG-00030,Klaipeda LNG,,,Jun  5 2024  6:23PM
+LT,ITP-00556,Santaka,False,38.0,12.73,Lithuania,Transmission,LT,Lithuania,Poland H-gas,Transmission,PL,Poland,PL-TSO-0002,GAZ-SYSTEM,ITP-00556,Santaka,,,Jun  5 2024  6:23PM
+MK,ITP-00036,Kyustendil (BG) / Zidilovo (MK),False,33.71,-63.02,Transmission,Transmission,MK,North Macedonia,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00036,Kyustendil (BG) / Zidilovo (MK),,,Jun  5 2024  6:23PM
+SI,DIS-00059,Distribution (SI),False,-7.34,-47.13,Slovenia,Transmission,SI,Slovenia,Distribution,Distribution,SI,Slovenia,,,,,,,Jun  5 2024  6:23PM
+SI,ITP-00079,Murfeld (AT) / Ceršak (SI),False,-2.15,-44.27,Slovenia,Transmission,SI,Slovenia,Austria,Transmission,AT,Austria,AT-TSO-0001,GCA,ITP-00079,Murfeld,,,Jun  5 2024  6:23PM
+SI,ITP-00049,Gorizia (IT) /Šempeter (SI),False,-12.17,-48.18,Slovenia,Transmission,SI,Slovenia,Italy,Transmission,IT,Italy,IT-TSO-0001,SNAM RETE GAS,ITP-00049,GORIZIA,,,Jun  5 2024  6:23PM
+SI,ITP-00042,Rogatec,False,-2.02,-46.96,Slovenia,Transmission,SI,Slovenia,Croatia,Transmission,HR,Croatia,HR-TSO-0001,Plinacro,ITP-00042,Rogatec,,,Jun  5 2024  6:23PM
+RO,DIS-00058,Distribution (RO),False,47.94,-48.41,RO_NTS,Transmission,RO,Romania,Distribution,Distribution,RO,Romania,,,,,,,Jun  5 2024  6:23PM
+RO,FNC-00010,Final Consumers (RO),False,48.65,-48.41,RO_NTS,Transmission,RO,Romania,Final Consumers,Final Consumers,RO,Romania,,,,,,,Jun  5 2024  6:23PM
+RO,ITP-00032,Csanadpalota,False,25.14,-47.02,RO_NTS,Transmission,RO,Romania,Hungary,Transmission,HU,Hungary,HU-TSO-0001,FGSZ,ITP-00032,Csanádpalota (RO>HU),,,Jun  5 2024  6:23PM
+RO,ITP-00087,Isaccea (RO) - Orlovka (UA) I,False,65.61,-51.23,RO_NTS,Transmission,RO,Romania,Transmission,Transmission,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+RO,ITP-00059,"Negru Voda II, III (RO) / Kardam (BG)",False,62.8,-57.35,RO_DTS,Transmission,RO,Romania,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00059,"Negru Voda 2,3 (RO) / Kardam (BG)",,,Jun  5 2024  6:23PM
+RO,ITP-00058,Negru Voda I (RO) / Kardam (BG),False,63.5,-57.35,RO_NTS,Transmission,RO,Romania,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00058,Negru Voda 1 (RO) / Kardam (BG),,,Jun  5 2024  6:23PM
+RO,ITP-00059,"Negru Voda II, III (RO) / Kardam (BG)",False,62.8,-57.35,RO_DTS,Transmission,RO,Romania,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00059,"Negru Voda 2,3 (RO) / Kardam (BG)",,,Jun  5 2024  6:23PM
+RO,ITP-00084,Mediesu Aurit (RO) - Tekovo (UA),False,36.52,-37.02,RO_NTS,Transmission,RO,Romania,Transmission,Transmission,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+RO,ITP-00154,Ungheni,False,61.35,-40.38,RO_NTS,Transmission,RO,Romania,Transmission,Transmission,MD,Moldavia,RO-TSO-0004,Vestmoldtransgaz,ITP-00154,Ungheni,,,Jun  5 2024  6:23PM
+RO,ITP-00153,Ruse (BG) / Giurgiu (RO),False,52.56,-56.85,RO_NTS,Transmission,RO,Romania,Bulgaria,Transmission,BG,Bulgaria,BG-TSO-0001,Bulgartransgaz,ITP-00153,Ruse (BG) / Giurgiu (RO),,,Jun  5 2024  6:23PM
+RO,ITP-00300,Isaccea (RO) - Orlovka (UA) III,False,65.61,-51.23,RO_DTS,Transmission,RO,Romania,Transmission,Transmission,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+RO,ITP-00299,Isaccea (RO) - Orlovka (UA) II,False,65.61,-51.23,RO_DTS,Transmission,RO,Romania,Transmission,Transmission,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+RO,ITP-00438,VIP Mediesu Aurit - Isaccea (RO-UA),False,47.11,-38.13,RO_NTS,Transmission,RO,Romania,Transmission,Transmission,UA,Ukraine,,,,,,,Jun  5 2024  6:23PM
+RO,PRD-00162,Production (RO),False,50.16942361,-44.83163449,Production,Production,RO,Romania,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,PRD-00162,Production,,,Jun  5 2024  6:23PM
+RO,UGS-00013,VIP Romgaz UGS (RO),False,52.09958038,-46.61283459,RO_NTS,Transmission,RO,Romania,Storage,Storage,RO,Romania,RO-SSO-0004,DEPOGAZ PLOIESTI,UGS-00013,VIP Romgaz UGS (RO),,,Jun  5 2024  6:23PM
+RO,UGS-00013,VIP Romgaz UGS (RO),False,52.09958038,-46.61283459,Storage,Storage,RO,Romania,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,UGS-00013,VIP Romgaz UGS (RO),,,Jun  5 2024  6:23PM
+RO,UGS-00332,UGS Targu Mures,False,46.09927119,-39.34581777,Storage,Storage,RO,Romania,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,UGS-00332,Targu Mures UGS,,,Jun  5 2024  6:23PM
+RO,UGS-00332,UGS Targu Mures,False,46.09927119,-39.34581777,RO_NTS,Transmission,RO,Romania,Storage,Storage,RO,Romania,RO-SSO-0002,Depomures,UGS-00332,UGS Targu Mures,,,Jun  5 2024  6:23PM
+RO,UGS-00327,UGS Cetatea de Balta,False,43.16146408,-43.76834184,Storage,Storage,RO,Romania,RO_NTS,Transmission,RO,Romania,RO-TSO-0001,Transgaz,UGS-00327,UGS Cetatea de Balta,,,Jun  5 2024  6:23PM
+LV,FNC-00205,Latvia domestic consumption,False,52.82,35.8,Joint Bal Zone EE/LV,Transmission,LV,Latvia,Final Consumers,Final Consumers,LV,Latvia,,,,,,,Jun  5 2024  6:23PM
+LV,ITP-00054,Kiemenai,False,43.29,29.65,Joint Bal Zone EE/LV,Transmission,LV,Latvia,Lithuania,Transmission,LT,Lithuania,LT-TSO-0001,Amber Grid,ITP-00054,Kiemenai,,,Jun  5 2024  6:23PM
+LV,ITP-00053,Karksi,False,57.91951176,44.86563868,Joint Bal Zone EE/LV,Transmission,LV,Latvia,Joint Bal Zone EE/LV,Transmission,EE,Estonia,,,,,,,Jun  5 2024  6:23PM
+LV,ITP-00100,Korneti,False,63.9,43.23,Joint Bal Zone EE/LV,Transmission,LV,Latvia,Transmission,Transmission,EE,Estonia,,,,,,,Jun  5 2024  6:23PM
+LV,ITP-00493,Luhamaa,False,59.5,40.04,Joint Bal Zone EE/LV,Transmission,LV,Latvia,Transmission,Transmission,EE,Estonia,EE-TSO-0001,Elering,ITP-00493,Luhamaa,,,Jun  5 2024  6:23PM
+LV,ITP-00493,Luhamaa,False,59.5,40.04,Joint Bal Zone EE/LV,Transmission,LV,Latvia,Transmission,Transmission,RU,Russia,RU-TSO-0001,Gazprom,ITP-00493,Luhamaa,,,Jun  5 2024  6:23PM
+LV,UGS-00029,Incukalns (LV),True,41.26160892,34.0,Joint Bal Zone EE/LV,Transmission,LV,Latvia,,,,,,,,,,,Jun  5 2024  6:23PM
+LV,UGS-00029,Incukalns (LV),True,41.26160892,34.0,,,,,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,UGS-00029,Incukalns - entry,,,Jun  5 2024  6:23PM
+LV,PRD-00242,Latvia production point,False,46.35888056,25.09363643,Production,Production,LV,Latvia,Joint Bal Zone EE/LV,Transmission,LV,Latvia,LV-TSO-0001,Conexus Baltic Grid JSC,PRD-00242,LV domestic production,,,Jun  5 2024  6:23PM

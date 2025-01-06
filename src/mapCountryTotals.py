@@ -5,17 +5,16 @@ import os
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-
-
+from dash import Dash, dcc, html, Input, Output
 
 current_dir = os.getcwd()
 DIR = f"{current_dir}"
 
 
-# # Load the Agg dataset
-# agg_pairs_df = pd.read_csv(f'{DIR}/data/perCountry/agg_data_pairs_{DATE}.csv')
 
 # MAPPINGS
+slider_labels = ['Jan','Feb','Mar','Apr','Mai','Jun','Jul','Aug','Sep','Oct','Nov','Dec','All year']
+
 countries = ['Italy', 'Austria', 'Germany', 'Hungary', 'Slovakia', 'Slovenia', 
              'Belgium', 'France', 'Luxemburg', 'Netherlands', 'Norway', 
              'United Kingdom', 'Bulgaria', 'Greece', 'North Macedonia', 'Romania', 
@@ -162,13 +161,8 @@ def info_per_country(country,total_flow_df):
     print(f'Total entries for {country}: {total_entries}')
     print(f'Total exits for {country}: {total_exits}')
     print(f'Total flow for {country}: {total_flow}')
-################
-#  MAPS        #
-################
 
-
-
-def create_choropleth(data, column,min_value,max_value, title,default_color_scale="Viridis",zero_color="grey"):
+def create_choropleth(data, column,min_value,max_value, title,default_color_scale="Spectral",zero_color="grey"):
     fig = px.choropleth(
         data,
         locations="countryISO",
@@ -180,7 +174,6 @@ def create_choropleth(data, column,min_value,max_value, title,default_color_scal
         title=title,
         projection="natural earth"
     )
-
     # Manually set zero-value countries to grey
     zero_value_indices = data.index[data[column] == 0].tolist()
     for idx in zero_value_indices:
@@ -203,7 +196,9 @@ def create_choropleth(data, column,min_value,max_value, title,default_color_scal
     return fig
 
 def update_combined(title,fig_combined,length_data,min,max):
-    # Update the layout with buttons
+    """
+    Update each map's layout depending on the month and year. This function is used to update the layout of the combined maps.
+    """
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     buttons = [
             dict(
@@ -227,18 +222,17 @@ def update_combined(title,fig_combined,length_data,min,max):
             center={"lat": 50.5, "lon": 15.2551},  # Updated center coordinates
             projection_scale=2.5  # Zoom level (adjust as necessary)
         ),
-        coloraxis=dict(
-            colorscale="Inferno",
-            cmin=min,
-            cmax=max,
-            colorbar=dict(title="Flow (kWh/d)")
-        )
+        # coloraxis=dict(
+        #     colorscale="Inferno",
+        #     cmin=min,
+        #     cmax=max,
+        #     colorbar=dict(title="Flow (kWh/d)")
+        # )
     )
     # Set the initial view to Total Entries
     fig_combined.update_traces(visible=False)
     for trace in fig_combined.data[:length_data]:
         trace.visible = True
-        
 
 def combined_maps(year):
     """ 
@@ -252,7 +246,7 @@ def combined_maps(year):
     global_max = 0
 
     for date in year:
-        df = pd.read_csv(f'{DIR}/data/PerCountry/agg_data_countries_{date}.csv')
+        df = pd.read_csv(f'{DIR}/data/perCountry/agg_data_countries_{date}.csv')
         total_flow_df = build_total_flow_df(df)
 
         # Get the maximum value of total entries
@@ -260,15 +254,14 @@ def combined_maps(year):
         max_exits = total_flow_df['totalExits'].max()
         max_flow = total_flow_df['totalFlow'].max()
 
-        global_min = min(global_min, total_flow_df['totalFlow'].min())
+        # global_min = min(global_min, total_flow_df['totalFlow'].min())
         global_max = max(global_max, max_entries, max_exits, max_flow)
+        global_min = -global_max # Symmetric color scale
 
-        default_color_scale = "Viridis"
-        zero_color = "grey"
 
-        fig_entries = create_choropleth(total_flow_df, "totalEntries", title="Total Gas Flow Entries in Europe",max_value=global_max,min_value=global_min)
-        fig_exits = create_choropleth(total_flow_df, "totalExits", title="Total Gas Flow Exits in Europe",max_value=global_max,min_value=global_min)
-        fig_total = create_choropleth(total_flow_df, "totalFlow", title="Total Gas Flow in Europe",max_value=global_max,min_value=global_min)
+        fig_entries = create_choropleth(total_flow_df, "totalEntries", title="Total Gas Flow Entries in Europe",max_value=global_max,min_value=global_min,default_color_scale="YlGnBu")
+        fig_exits = create_choropleth(total_flow_df, "totalExits", title="Total Gas Flow Exits in Europe",max_value=global_max,min_value=global_min,default_color_scale="YlOrRd")
+        fig_total = create_choropleth(total_flow_df, "totalFlow", title="Total Gas Flow in Europe",max_value=global_max,min_value=global_min,default_color_scale="RdYlBu")
 
         # print(f"Len fig entries : {len(fig_entries.data)}")
         # print(f"Len fig exits : {len(fig_exits.data)}")
@@ -286,23 +279,96 @@ def combined_maps(year):
     update_combined(f"Total exits flow {year}",fig_exits_comb,len(fig_exits.data),global_min,global_max)
     update_combined(f"Total flow {year}",fig_total_comb,len(fig_total.data),global_min,global_max)
 
-    return fig_entries_comb, fig_exits_comb, fig_total_comb
+    # Aggregate data over the year
+    year_agg_data = aggregate_yearly_data(year)
 
+    # Create maps for aggregated data
+    fig_year_entries = create_choropleth(year_agg_data, "totalEntries", year_agg_data['totalEntries'].min(), year_agg_data['totalEntries'].max(), "Total Yearly Gas Flow Entries in Europe",default_color_scale="YlGnBu")
+    fig_year_exits = create_choropleth(year_agg_data, "totalExits", year_agg_data['totalExits'].min(), year_agg_data['totalExits'].max(), "Total Yearly Gas Flow Exits in Europe",default_color_scale="YlOrRd")
+    range_max = max(abs(year_agg_data['totalFlow'].min()), year_agg_data['totalFlow'].max()) # Symmetric min-max to have a centered color scale
+    fig_year_total = create_choropleth(year_agg_data, "totalFlow",-range_max, range_max, "Total Yearly Gas Flow in Europe",default_color_scale="Spectral")
+
+
+    return fig_entries_comb, fig_exits_comb, fig_total_comb, fig_year_entries, fig_year_exits, fig_year_total
+
+def aggregate_yearly_data(year):
+    """
+    Aggregate data for each country over the entire year.
+    """
+    all_data = []
+    for date in year:
+        df = pd.read_csv(f'{DIR}/data/perCountry/agg_data_countries_{date}.csv')
+        total_flow_df = build_total_flow_df(df)
+        all_data.append(total_flow_df)
+    
+    aggregated_data = pd.concat(all_data).groupby('countryName').sum().reset_index()
+    aggregated_data['countryISO'] = aggregated_data['countryName'].map(country_iso)
+    
+    return aggregated_data
+
+
+#################
+#   App layout  #
+#################
+
+app = Dash(__name__)
+
+app.layout = html.Div([
+    dcc.Dropdown(
+        id='year-dropdown',
+        options=[
+            {'label': '2019', 'value': '2019'},
+            {'label': '2023', 'value': '2023'}
+        ],
+        value='2019'
+    ),
+    dcc.Slider(
+        id='month-slider',
+        min=0,
+        max=12,
+        value=0,
+        marks={i: f'{slider_labels[i]}' for i in range(13)},
+        step=None
+    ),
+    dcc.Graph(id='entries-map'),
+    dcc.Graph(id='exits-map'),
+    dcc.Graph(id='total-map')
+])
+
+@app.callback(
+    [Output('entries-map', 'figure'),
+     Output('exits-map', 'figure'),
+     Output('total-map', 'figure')],
+    [Input('year-dropdown', 'value'),
+     Input('month-slider', 'value')]
+)
+def update_maps(selected_year, selected_month):
+
+    if selected_year == '2019':
+        year = ["2019_01", "2019_02", "2019_03", "2019_04", "2019_05", "2019_06", "2019_07", "2019_08", "2019_09", "2019_10", "2019_11", "2019_12"]
+    else:
+        year = ["2023_01", "2023_02", "2023_03", "2023_04", "2023_05", "2023_06", "2023_07", "2023_08", "2023_09", "2023_10", "2023_11", "2023_12"]
+    
+    if selected_month == 12:
+        _, _, _, fig_agg_entries, fig_agg_exits, fig_agg_total = combined_maps(year)
+        return fig_agg_entries, fig_agg_exits, fig_agg_total
+
+    selected_date = year[selected_month]
+    df = pd.read_csv(f'{DIR}/data/perCountry/agg_data_countries_{selected_date}.csv')
+    total_flow_df = build_total_flow_df(df)
+    
+    max_entries = total_flow_df['totalEntries'].max()
+    max_exits = total_flow_df['totalExits'].max()
+    max_flow = total_flow_df['totalFlow'].max()
+    global_min = total_flow_df['totalFlow'].min()
+    global_max = max(max_entries, max_exits, max_flow,abs(global_min))
+    global_min = -global_max # Symmetric color scale
+    
+    fig_entries = create_choropleth(total_flow_df, "totalEntries", title=f"Total Gas Flow Entries in Europe - {selected_year} Month {slider_labels[selected_month]}", max_value=global_max, min_value=0, default_color_scale="YlGnBu")
+    fig_exits = create_choropleth(total_flow_df, "totalExits", title=f"Total Gas Flow Exits in Europe - {selected_year} Month {slider_labels[selected_month]}", max_value=global_max, min_value=0,default_color_scale="YlOrRd")
+    fig_total = create_choropleth(total_flow_df, "totalFlow", title=f"Total Gas Flow in Europe - {selected_year} Month {slider_labels[selected_month]}", max_value=global_max, min_value=global_min,default_color_scale="RdYlBu")
+    
+    return fig_entries, fig_exits, fig_total
 
 if __name__ == "__main__":
-    # Define the year array
-    year_19 = ["2019_01", "2019_02", "2019_03", "2019_04", "2019_05", "2019_06", "2019_07", "2019_08", "2019_09", "2019_10", "2019_11", "2019_12"]
-    year_23 = ["2023_01", "2023_02", "2023_03", "2023_04", "2023_05", "2023_06", "2023_07", "2023_08", "2023_09", "2023_10", "2023_11", "2023_12"]
-
-    # Generate the combined maps
-    fig_entries_comb_19, fig_exits_comb_19, fig_total_comb_19 = combined_maps(year_19)
-    fig_entries_comb_23, fig_exits_comb_23, fig_total_comb_23 = combined_maps(year_23)
-
-    # Show the combined maps
-    fig_entries_comb_19.show()
-    fig_exits_comb_19.show()
-    fig_total_comb_19.show()
-    fig_entries_comb_23.show()
-    fig_exits_comb_23.show()
-    fig_total_comb_23.show()
-
+    app.run_server(debug=True)

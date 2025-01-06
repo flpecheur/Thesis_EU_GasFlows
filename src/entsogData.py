@@ -39,6 +39,7 @@ COLUMN_MAPPING = {
 # Ensure the data directory exists
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
+    os.makedirs(f"{DATA_DIR}/opData")
 
 # Initialize the Entsog client
 client = EntsogPandasClient()
@@ -53,7 +54,7 @@ def collect_points_data(client, data_dir, to_csv=True):
     point_data = client.query_connection_points()
     if to_csv:
         point_data.to_csv(os.path.join(data_dir, "points_data.csv"))
-    print("Points data collected")
+    print("Points data collected. File saved to data/points_data.csv.")
 
 
 
@@ -137,7 +138,7 @@ def collect_interconnections_data(data_dir, to_csv=False):
     # Save the data to a CSV file
     df.to_csv(f"{data_dir}/interconnections_data.csv", index=False)
 
-    print("Data collection complete. Data saved to interconnections_data.csv.")
+    print("Interconnection data collected. File saved to data/interconnections_data.csv.")
 
 
 ######################

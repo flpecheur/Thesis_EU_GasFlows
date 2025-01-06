@@ -1,419 +1,240 @@
-import pandas as pd
 import plotly.express as px
-from plotly.colors import sequential
-
-import plotly.express as px
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+import pandas as pd
 
-# DOES NOT WORK ANYMOREEEE
+from utils import compute_bearing
+from buildPairs import COUNTRY_COORDS, build_dict
 
-DATE = "2019_01"
+app = dash.Dash(__name__)
 
+DATES_19 = ['2019_01','2019_02','2019_03','2019_04','2019_05', '2019_06', '2019_07', '2019_08', '2019_09', '2019_10', '2019_11', '2019_12']
+DATES_23 = ['2023_01', '2023_02', '2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12' ]
 
-# Load the Agg dataset : source : FINAL/data/perCountry/agg_data_pairs_{DATE}.csv
-agg_pairs_df = pd.read_csv(f'FINAL/data/perCountry_V2/aggregated_data_{DATE}.csv')
+DICT_19 = build_dict(DATES_19)
+DICT_23 = build_dict(DATES_23)
 
-# MAPPINGS
-# TODO : Source
-# Cfr perplexity
-countries = ['Italy', 'Austria', 'Germany', 'Hungary', 'Slovakia', 'Slovenia', 
-             'Belgium', 'France', 'Luxemburg', 'Netherlands', 'Norway', 
-             'United Kingdom', 'Bulgaria', 'Greece', 'North Macedonia', 'Romania', 
-             'Serbia', 'Turkey', 'Croatia', 'Czechia', 'Poland', 'Denmark', 
-             'Estonia', 'Finland', 'Latvia', 'Russia', 'Spain', 'Switzerland', 
-             'Ukraine', 'Ireland', 'Albania', 'Libya', 'San Marino', 'Lithuania', 
-             'Belarus', 'Portugal', 'Moldavia', 'Morocco']
-country_codes = {
-    'Italy': 'IT', 'Austria': 'AT', 'Germany': 'DE', 'Hungary': 'HU', 'Slovakia': 'SK', 
-    'Slovenia': 'SI', 'Belgium': 'BE', 'France': 'FR', 'Luxemburg': 'LU', 
-    'Netherlands': 'NL', 'Norway': 'NO', 'United Kingdom': 'UK', 'Bulgaria': 'BG', 
-    'Greece': 'GR', 'North Macedonia': 'MK', 'Romania': 'RO', 'Serbia': 'RS', 
-    'Turkey': 'TR', 'Croatia': 'HR', 'Czechia': 'CZ', 'Poland': 'PL', 'Denmark': 'DK', 
-    'Estonia': 'EE', 'Finland': 'FI', 'Latvia': 'LV', 'Russia': 'RU', 'Spain': 'ES', 
-    'Switzerland': 'CH', 'Ukraine': 'UA', 'Ireland': 'IE', 'Albania': 'AL', 
-    'Libya': 'LY', 'San Marino': 'SM', 'Lithuania': 'LT', 'Belarus': 'BY', 
-    'Portugal': 'PT', 'Moldavia': 'MD', 'Morocco': 'MA'
-}
-country_names = {v: k for k, v in country_codes.items()}
-country_iso = {
-    'Italy': 'ITA', 'Austria': 'AUT', 'Germany': 'DEU',
-    'Hungary': 'HUN', 'Slovakia': 'SVK', 'Slovenia': 'SVN',
-    'Belgium': 'BEL', 'France': 'FRA', 'Luxemburg': 'LUX',
-    'Netherlands': 'NLD', 'Norway': 'NOR', 'United Kingdom': 'GBR',
-    'Bulgaria': 'BGR', 'Greece': 'GRC', 'North Macedonia': 'MKD',
-    'Romania': 'ROU', 'Serbia': 'SRB', 'Turkey': 'TUR',
-    'Croatia': 'HRV', 'Czechia': 'CZE', 'Poland': 'POL',
-    'Denmark': 'DNK', 'Estonia': 'EST', 'Finland': 'FIN',
-    'Latvia': 'LVA', 'Russia': 'RUS', 'Spain': 'ESP',
-    'Switzerland': 'CHE', 'Ukraine': 'UKR', 'Ireland': 'IRL',
-    'Albania': 'ALB', 'Libya': 'LBY', 'San Marino': 'SMR',
-    'Lithuania': 'LTU', 'Belarus': 'BLR', 'Portugal': 'PRT',
-    'Moldavia': 'MDA', 'Morocco': 'MAR'
-}
-country_coords = {
-    'Italy': {'lat': 41.8719, 'lon': 12.5674},
-    'Austria': {'lat': 47.5162, 'lon': 14.5501},
-    'Germany': {'lat': 51.1657, 'lon': 10.4515},
-    'Hungary': {'lat': 47.1625, 'lon': 19.5033},
-    'Slovakia': {'lat': 48.6690, 'lon': 19.6990},
-    'Slovenia': {'lat': 46.1512, 'lon': 14.9955},
-    'Belgium': {'lat': 50.5039, 'lon': 4.4699},
-    'France': {'lat': 46.6034, 'lon': 1.8883},
-    'Luxemburg': {'lat': 49.8153, 'lon': 6.1296},
-    'Netherlands': {'lat': 52.1326, 'lon': 5.2913},
-    'Norway': {'lat': 60.4720, 'lon': 8.4689},
-    'United Kingdom': {'lat': 55.3781, 'lon': -3.4360},
-    'Bulgaria': {'lat': 42.7339, 'lon': 25.4858},
-    'Greece': {'lat': 39.0742, 'lon': 21.8243},
-    'North Macedonia': {'lat': 41.6086, 'lon': 21.7453},
-    'Romania': {'lat': 45.9432, 'lon': 24.9668},
-    'Serbia': {'lat': 44.0165, 'lon': 21.0059},
-    'Turkey': {'lat': 38.9637, 'lon': 35.2433},
-    'Croatia': {'lat': 45.1, 'lon': 15.2},
-    'Czechia': {'lat': 49.8175, 'lon': 15.4730},
-    'Poland': {'lat': 51.9194, 'lon': 19.1451},
-    'Denmark': {'lat': 56.2639, 'lon': 9.5018},
-    'Estonia': {'lat': 58.5953, 'lon': 25.0136},
-    'Finland': {'lat': 61.9241, 'lon': 25.7482},
-    'Latvia': {'lat': 56.8796, 'lon': 24.6032},
-    'Russia': {'lat': 55.4521, 'lon': 37.372}, # Moscow coordinates
-    'Spain': {'lat': 40.4637, 'lon': -3.7492},
-    'Switzerland': {'lat': 46.8182, 'lon': 8.2275},
-    'Ukraine': {'lat': 48.3794, 'lon': 31.1656},
-    'Ireland': {'lat': 53.1424, 'lon': -7.6921},
-    'Albania': {'lat': 41.1533, 'lon': 20.1683},
-    'Libya': {'lat': 26.3351, 'lon': 17.2283},
-    'San Marino': {'lat': 43.9424, 'lon': 12.4578},
-    'Lithuania': {'lat': 55.1694, 'lon': 23.8813},
-    'Belarus': {'lat': 53.7098, 'lon': 27.9534},
-    'Portugal': {'lat': 39.3999, 'lon': -8.2245},
-    'Moldavia': {'lat': 47.4116, 'lon': 28.3699},
-    'Morocco': {'lat': 31.7917, 'lon': -7.0926}
-}
-
-agg_pairs_df.rename(columns={'fromCountryLabel': 'countryA', 'toCountryLabel': 'countryB'}, inplace=True)
-agg_pairs_df.rename(columns={'entryValue':'totalEntries','exitValue':'totalExits','totalFlow':'totalFlow_init' })
-# Adding coordinates to the aggregated dataframe
-agg_pairs_df['LatA'] = agg_pairs_df['countryA'].map(lambda x: country_coords.get(x, {}).get('lat'))
-agg_pairs_df['LonA'] = agg_pairs_df['countryA'].map(lambda x: country_coords.get(x, {}).get('lon'))
-agg_pairs_df['LatB'] = agg_pairs_df['countryB'].map(lambda x: country_coords.get(x, {}).get('lat'))
-agg_pairs_df['LonB'] = agg_pairs_df['countryB'].map(lambda x: country_coords.get(x, {}).get('lon'))
-
-################
-#  Helpers     #
-################
-# Helper function to create the flow data for plotly express
-def create_flow_data(df, flow_column):
-    flow_data = []
-    for idx, row in df.iterrows():
-        if pd.notnull(row['LatA']) and pd.notnull(row['LatB'])and row[flow_column] > 0:
-            flow_data.append({
-                'countryA': row['countryA'],
-                'countryB': row['countryB'],
-                'flow': row[flow_column],
-                'lat': [row['LatA'], row['LatB']],
-                'lon': [row['LonA'], row['LonB']]
-            })
-    return flow_data
-
-# Function to normalize flow values to a 0-1 range
-def normalize(value, min_value, max_value):
-    return (value - min_value) / (max_value - min_value)
-
-# Adding a dummy trace for the color scale
-def add_color_scale(fig, min_flow, max_flow):
-    color_bar_trace = go.Scattergeo(
-        lon=[None],
-        lat=[None],
-        mode='markers',
-        marker=dict(
-            colorscale=color_scale,
-            cmin=min_flow,
-            cmax=max_flow,
-            colorbar=dict(
-                title="Flow (kWh/d)",
-                titleside="right",
-                tickmode="array",
-                tickvals=[min_flow, (min_flow + max_flow) / 2, max_flow],
-                ticktext=[str(min_flow), str((min_flow + max_flow) / 2), str(max_flow)]
-            ),
-        ),
-        hoverinfo='none'
-    )
-    fig.add_trace(color_bar_trace)
-
-def build_total_flow_df(df):
-    """ 
-    Input: A dataframe with information about country, entries and exits
-    
+def interpolate_coords(coord1, coord2, ratio=2/3):
     """
-    new_df = df.copy()
-    # new_df.rename(columns={'country': 'countryCode','total_entries':'totalEntries','total_exits':'totalExits'}, inplace=True)
-
-    # Add information about the total flow and country name
-    new_df['totalFlow'] = new_df['totalEntries'] - new_df['totalExits']
-    # new_df['countryName'] = new_df['countryCode'].map(country_names)
-    new_df['countryISO'] = new_df['countryName'].map(country_iso)
-
-    return new_df
-
-def info_per_country(country,total_flow_df):
-    
+    Interpolates coordinates between coord1 and coord2 based on the given ratio.
+    The ration sets the place of the arrow on the map.
     """
-    This function takes a country name as input and returns the total entries, total exits, and total flow for that country.
-    """
-    country_data = total_flow_df[total_flow_df['countryName'] == country]
-    total_entries = country_data['totalEntries'].values
-    total_exits = country_data['totalExits'].values
-    total_flow = country_data['totalFlow'].values
+    lon1, lat1 = coord1
+    lon2, lat2 = coord2
+    lon = lon1 + (lon2 - lon1) * ratio
+    lat = lat1 + (lat2 - lat1) * ratio
+    return (lon, lat)
 
-    print(f'Total entries for {country}: {total_entries}')
-    print(f'Total exits for {country}: {total_exits}')
-    print(f'Total flow for {country}: {total_flow}')
-################
-#  MAPS        #
-################
 
-##### MAP 1 #####
-# Define color scale
-color_scale = sequential.Viridis
+def create_global_map(year,selected_country=False,input_dict=None):
 
-entry_flow_data = create_flow_data(agg_pairs_df, 'entryFlow')
-exit_flow_data = create_flow_data(agg_pairs_df, 'exitFlow')
+    fig = go.Figure()
 
-# Get the min and max values for entry and exit flows
-min_flow = min(min([d['flow'] for d in entry_flow_data]), min([d['flow'] for d in exit_flow_data]))
-max_flow = max(max([d['flow'] for d in entry_flow_data]), max([d['flow'] for d in exit_flow_data]))
+    # If a country is selected, only show the flows involving that country 
+    # Input_dict is already filtered in this case (see create_selected_map)
+    if not selected_country :
+        input_dict = DICT_19 if year == '2019' else DICT_23
 
-# Create a Plotly Express scatter_geo figure for entry flows
-fig_entry = px.scatter_geo(
-    lat=[d['lat'][0] for d in entry_flow_data],
-    lon=[d['lon'][0] for d in entry_flow_data],
-    size=[d['flow'] for d in entry_flow_data],
-    hover_name=[f"{d['countryA']} to {d['countryB']:} (entry)" for d in entry_flow_data],
-    title='Total Gas Flow Entry in Europe'
-)
+    max_total_flow = max(abs(sum(data['totalFlow'])) for data in input_dict.values())
+    gradient_colors = px.colors.sequential.haline_r
 
-# Add the flow lines for entry with color scaling
-for d in entry_flow_data:
-    norm_flow = normalize(d['flow'], min_flow, max_flow)
-    color = color_scale[int(norm_flow * (len(color_scale) - 1))]
-    fig_entry.add_trace(go.Scattergeo(
-        locationmode='country names',
-        lon=d['lon'],
-        lat=d['lat'],
-        mode='lines',
-        line=dict(width=2, color=color),
-        opacity=0.6,
-        name=f"{d['countryA']} to {d['countryB']} : {d['flow']:.2e}(entry)",
-        text=f"{d['countryA']} to {d['countryB']} Entry Flow: {d['flow']:.2e} kWh/d",
-        hoverinfo='text'
-    ))
 
-# add_color_scale(fig_entry, min_flow, max_flow)
+    for pair_dict, data in input_dict.items():
 
-# Create a Plotly Express scatter_geo figure for exit flows
-fig_exit = px.scatter_geo(
-    lat=[d['lat'][0] for d in exit_flow_data],
-    lon=[d['lon'][0] for d in exit_flow_data],
-    size=[d['flow'] for d in exit_flow_data],
-    hover_name=[f"{d['countryB']} to {d['countryA']} (exit)" for d in exit_flow_data],
-    title='Total Gas Flow Exit in Europe'
-)
+        total_flow = sum(data['totalFlow']) # Total flow for the year
+        pair = (pair_dict[0], pair_dict[1])
+        fromCoords, toCoords = data['toCoords'], data['fromCoords']
 
-# Add the flow lines for exit with color scaling
-for d in exit_flow_data:
-    norm_flow = normalize(d['flow'], min_flow, max_flow)
-    color = color_scale[int(norm_flow * (len(color_scale) - 1))]
-    fig_exit.add_trace(go.Scattergeo(
-        locationmode='country names',
-        lon=d['lon'],
-        lat=d['lat'],
-        mode='lines',
-        line=dict(width=2, color=color),
-        opacity=0.6,
-        name=f"{d['countryB']} to {d['countryA']} : {d['flow']:.2e}(exit)",
-        text=f"{d['countryB']} to {d['countryA']} Exit Flow: {d['flow']:.2e} kWh/d",
-        hoverinfo='text'
-    ))
+        if total_flow < 0:
+            # Invert the countries and make the flow positive
+            pair = (pair_dict[1], pair_dict[0])
+            fromCoords,toCoords = data['toCoords'], data['fromCoords']
+            total_flow = -total_flow
 
-# Customize the layout to show country borders and coastlines
-for fig in [fig_entry, fig_exit]:
+        normalized_flow = total_flow / (max_total_flow * 1.5)  # Slightly above the max value
+        color_index = int(normalized_flow * (len(gradient_colors) - 1))
+        color = 'grey' if total_flow==0 else gradient_colors[color_index]
+
+        text=f"{pair[0]} - {pair[1]} : {total_flow:.3e} (kWh)",
+        angle = compute_bearing((fromCoords['lat'], fromCoords['lon']), (toCoords['lat'], toCoords['lon'])) # Angle of the arrow
+        mid_lon, mid_lat = interpolate_coords((fromCoords['lon'], fromCoords['lat']), (toCoords['lon'], toCoords['lat']))
+
+        # Create traces
+        fig.add_trace(go.Scattergeo(
+            lon=[fromCoords['lon'], toCoords['lon']],
+            lat=[fromCoords['lat'], toCoords['lat']],
+            mode='lines',
+            hoverinfo='none',
+            name=f"{pair[0]} - {pair[1]} : {total_flow:.3e} (kWh)",
+            line=dict(color=color),
+            showlegend=True
+        ))
+
+        # Add marker on the centrer of the line
+        fig.add_trace(go.Scattergeo(
+            lon=[mid_lon],
+            lat=[mid_lat],
+            mode='markers',
+            marker=dict(size=10, color=color, symbol='arrow-wide', angle=angle),
+            text=text,
+            hovertext=text,
+            hoverinfo='text',
+            showlegend=False
+        ))
+
     fig.update_layout(
+        title=f'Gas Flow Network in Europe ({year})',
         geo=dict(
-            scope='europe',
-            projection_type='natural earth',
+            projection_type='mercator',
             showland=True,
-            landcolor='whitesmoke',
-            countrycolor='black',
-            coastlinecolor='black',
-            showcoastlines=True,
             showcountries=True,
-            countrywidth=0.5,
+            landcolor='darkgrey',
+            subunitwidth=1,
+            countrywidth=1,
+            center={"lat": 50.5, "lon": 15.2551},  # Updated center coordinates
+            projection_scale=5,  # Zoom level (adjust as necessary)
+            subunitcolor='rgb(255, 255, 255)',
+            countrycolor='rgb(255, 255, 255)',
         ),
-        height=800,
-        width=1000,
+        showlegend=True,
+        coloraxis=dict(
+            cmin=-max_total_flow,
+            cmax=max_total_flow,
+            colorscale="viridis",
+            colorbar=dict(
+                title='Flow (kWh)',
+                tickvals=[-max_total_flow, 0, max_total_flow],
+                ticktext=[f"{-max_total_flow:.3e}", '0', f"{max_total_flow:.3e}"]
+            )
+        )
+        # dict1={'colorscale':gradient_colors}
+        # annotations=annotations
+    )
+#    if not selected_country:
+#        print("Global map updated to year ",year)
+#    else :
+#        print("Global map for select country updated to year ",year)
+
+    return fig
+
+def create_selected_map(country,year):
+
+#    print("Selected map updated to year ",year)
+
+    data_dict = DICT_19 if year == '2019' else DICT_23
+    country_data = {pair: data for pair, data in data_dict.items() if pair[0] == country or pair[1] == country}
+    fig = create_global_map(year,True,country_data)
+
+    color_map = px.colors.qualitative.Plotly
+    pair_colors = {pair: color_map[i % len(color_map)] for i, pair in enumerate(country_data.keys())}
+
+    # Create pie charts for entries and exits
+    entries = {pair[1]: sum(data['entries']) for pair, data in country_data.items() if pair[0] == country}
+    exits = {pair[0]: sum(data['exits']) for pair, data in country_data.items() if pair[1] == country}
+
+    fig_pie_entries = px.pie(values=list(entries.values()),
+                             color=[pair for pair in entries.keys()],
+                             color_discrete_map=pair_colors,
+                              names=[f"{key} : {value:.3e}" for key,value in entries.items()], title=f'Total Entries : {sum(entries.values()):.3e} (kWh)')
+    fig_pie_exits = px.pie(values=list(exits.values()),
+                            color=[pair for pair in exits.keys()],
+                            color_discrete_map=pair_colors,
+                            names=[f"{key} : {value:.3e}" for key,value in exits.items()], title=f'Total Exits : {sum(exits.values()):3e} (kWh)')
+
+    # Create line graph for flow evolution over the year
+    monthly_flows = []
+
+    for pair, data in country_data.items():
+        months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        for i in range(12):
+            monthly_flows.append({
+                'Month': months[i],
+                'Entries': data['entries'][i],
+                'Exits': -data['exits'][i],
+                'Total Flow': data['totalFlow'][i],
+                'Pair': f"{pair[0]} - {pair[1]}"
+            })
+
+    monthly_flows_df = pd.DataFrame(monthly_flows)
+
+    fig_bar = go.Figure()
+
+    for pair in monthly_flows_df['Pair'].unique():
+
+        # Create a bar chart for each country paired with the selected country
+        pair_data = monthly_flows_df[monthly_flows_df['Pair'] == pair]
+        pair_key = (pair.split(' - ')[0], pair.split(' - ')[1])
+        color = pair_colors[pair_key]
+        fig_bar.add_trace(go.Bar(
+            x=pair_data['Month'], 
+            y=pair_data['Entries'], 
+            name=f"{pair} Entries", 
+            hovertemplate=": %{y:.2e}%",
+            marker=dict(color=color)
+        ))
+        fig_bar.add_trace(go.Bar(
+            x=pair_data['Month'], 
+            y=pair_data['Exits'], 
+            name=f"{pair} Exits", 
+            hovertemplate=": %{y:.2e}%",
+            marker=dict(color=color)
+        ))
+        fig_bar.update_layout(
+        barmode='relative',  # This stacks the bars on top of each other
+        title='Flow Evolution Over the Year',
+        hovermode='x unified',
+        xaxis_title='Month',
+        yaxis_title='Flow (kWh)'
     )
 
-fig_entry.show()
-fig_exit.show()
 
-fig_combined1 = make_subplots(rows=1, cols=1)
-# Add all traces to the combined figure
-for trace in fig_entry.data:
-    fig_combined1.add_trace(trace)
-for trace in fig_exit.data:
-    fig_combined1.add_trace(trace)
+    return fig, fig_pie_entries, fig_pie_exits, fig_bar
 
-fig_combined1.update_layout(
-    updatemenus=[
-        dict(
-            type="buttons",
-            direction="down",
-            buttons=[
-                dict(
-                    args=["visible", [True] * len(fig_entry.data) + [False] * len(fig_exit.data)],
-                    label="Entries",
-                    method="restyle"
-                ),
-                dict(
-                    args=["visible", [False] * len(fig_entry.data) + [True] * len(fig_exit.data)],
-                    label="Exits",
-                    method="restyle"
-                ),
-            ],
-        )
-    ],
-    title="Gas Flow exchanges in Europe",
-    geo=dict(
-        showcountries=True,
-        countrycolor="black",
-        center={"lat": 50.5, "lon": 15.2551},  # Updated center coordinates
-        projection_scale=2.5  # Zoom level (adjust as necessary)
+
+app.layout = html.Div([
+    dcc.Dropdown(
+        id='year-dropdown',
+        options=[
+            {'label': '2019', 'value': '2019'},
+            {'label': '2023', 'value': '2023'}
+        ],
+        value='2019'
     ),
+    dcc.Dropdown(
+        id='country-dropdown',
+        options=[{'label': country, 'value': country} for country in COUNTRY_COORDS.keys()]+[{'label': 'All Countries', 'value': 'All Countries'}],
+        value='All Countries',
+        clearable=False
+    ),
+    #dcc.Graph(id='global-map', figure=create_global_map()),
+    dcc.Graph(id='global-map'),
+    html.Div(id='country-details')
+])
+
+
+@app.callback(
+    [Output('global-map', 'figure'),
+     Output('country-details', 'children')],
+    [Input('country-dropdown', 'value'),
+    Input('year-dropdown', 'value')]
 )
-# Set the initial view to Total Entries
-fig_combined1.update_traces(visible=False)
-for trace in fig_combined1.data[:len(fig_entry.data)]:
-    trace.visible = True
-fig_combined1.show()
+def update_output(selected_country, selected_year):
+    print("Current data selected: ",selected_country,selected_year)
 
-###############
-#   MAP 2     #
-###############
+    if not selected_country or selected_country == 'All Countries':
+        print("All Countries map updates to year ",selected_year)
+        return create_global_map(selected_year), []
 
-# df = pd.read_csv(f'FINAL/data/PerCountry/agg_data_countries_{DATE}.csv')
-# total_flow_df = build_total_flow_df(df)
-
-# # Get the maximum value of total entries
-# max_entries = total_flow_df['totalEntries'].max()
-# max_exits = total_flow_df['totalExits'].max()
-# max_flow = total_flow_df['totalFlow'].max()
-
-# global_max = max(max_entries, max_exits, max_flow)
-# print(f"Global Max: {global_max} kWh/d")
-# global_min = total_flow_df['totalFlow'].min()
-# print(f"Global Min: {global_min} kWh/d")
-
-# default_color_scale = "Viridis"
-# zero_color = "grey"
-
-# def create_choropleth(data, column,min_value,max_value, title):
-#     fig = px.choropleth(
-#         data,
-#         locations="countryISO",
-#         locationmode="ISO-3",
-#         color=column,
-#         hover_name="countryName",
-#         range_color=(min_value, max_value),
-#         color_continuous_scale=default_color_scale,
-#         title=title,
-#         projection="natural earth"
-#     )
-
-#     # Manually set zero-value countries to grey
-#     zero_value_indices = data.index[data[column] == 0].tolist()
-#     for idx in zero_value_indices:
-#         country_code = data.loc[idx, "countryISO"]
-#         fig.add_trace(go.Choropleth(
-#             locations=[country_code],
-#             z=[0],
-#             showscale=False,
-#             colorscale=[[0, zero_color], [1, zero_color]],
-#             hoverinfo='none'
-#         ))
-        
-#     fig.update_geos(
-#         showcountries=True,
-#         countrycolor="black",
-#         center={"lat": 50.5, "lon": 15.2551},  # Centered around Europe
-#         projection_scale=4.3  # Zoom level (adjust as necessary)
-#     )
-
-#     return fig
+    print("Updating selected country map to year ",selected_year)
+    fig,fig_pie_entries,fig_pie_exits,fig_line = create_selected_map(selected_country,selected_year)
+    
+    return fig, [
+        dcc.Graph(figure=fig_pie_entries),
+        dcc.Graph(figure=fig_pie_exits),
+        dcc.Graph(figure=fig_line)]
 
 
-# fig_entries = create_choropleth(total_flow_df, "totalEntries", title="Total Gas Flow Entries in Europe",max_value=global_max,min_value=global_min)
-# fig_exits = create_choropleth(total_flow_df, "totalExits", title="Total Gas Flow Exits in Europe",max_value=global_max,min_value=global_min)
-# fig_total = create_choropleth(total_flow_df, "totalFlow", title="Total Gas Flow in Europe",max_value=global_max,min_value=global_min)
-
-# # COMBINED MAP
-# # Create a combined figure with buttons to toggle between views
-# fig_combined = make_subplots(rows=1, cols=1)
-# # Add all traces to the combined figure
-# for trace in fig_entries.data:
-#     fig_combined.add_trace(trace)
-# for trace in fig_exits.data:
-#     fig_combined.add_trace(trace)
-# for trace in fig_total.data:
-#     fig_combined.add_trace(trace)
-
-# # Update the layout with buttons
-# fig_combined.update_layout(
-#     updatemenus=[
-#         dict(
-#             type="buttons",
-#             direction="down",
-#             buttons=[
-#                 dict(
-#                     args=["visible", [True] * len(fig_entries.data) + [False] * len(fig_exits.data) + [False] * len(fig_total.data)],
-#                     label="Total Entries",
-#                     method="restyle"
-#                 ),
-#                 dict(
-#                     args=["visible", [False] * len(fig_entries.data) + [True] * len(fig_exits.data) + [False] * len(fig_total.data)],
-#                     label="Total Exits",
-#                     method="restyle"
-#                 ),
-#                 dict(
-#                     args=["visible", [False] * len(fig_entries.data) + [False] * len(fig_exits.data) + [True] * len(fig_total.data)],
-#                     label="Total Flow",
-#                     method="restyle"
-#                 )
-#             ],
-#         )
-#     ],
-#     title="Gas Flow in Europe",
-#     geo=dict(
-#         showcountries=True,
-#         countrycolor="black",
-#         center={"lat": 50.5, "lon": 15.2551},  # Updated center coordinates
-#         projection_scale=2.5  # Zoom level (adjust as necessary)
-#     ),
-#     coloraxis=dict(
-#         colorscale="Inferno",
-#         cmin=global_min,
-#         cmax=global_max,
-#         colorbar=dict(title="Flow (kWh/d)")
-#     )
-# )
-# # Set the initial view to Total Entries
-# fig_combined.update_traces(visible=False)
-# for trace in fig_combined.data[:len(fig_entries.data)]:
-#     trace.visible = True
-
-
-
-# # Show the combined map
-# fig_combined.show()
+if __name__ == "__main__":
+    app.run_server(debug=True)

@@ -2,7 +2,7 @@ import pandas as pd
 import pandas as pd
 import os
 import json
-from buildDataPerCountry import add_country_info, filter_data, merge_data, rename_columns
+from buildDataPerCountry import  filter_data, merge_data, rename_columns
 
 # YEAR = 2019
 
@@ -79,9 +79,8 @@ def load_op_data(date):
 
 def load_points_data():
     points_df = pd.read_csv(f"{DATA_DIR}/points_data.csv")
-    operator_points_directions_df = pd.read_csv(f"{DATA_DIR}/operator_points_dir.csv")
     interconnections_df = pd.read_csv(f'{DATA_DIR}/interconnections_data.csv')
-    return points_df, operator_points_directions_df,interconnections_df
+    return points_df, [],interconnections_df
 
 def filter_keyword(keyword,df,column):
     return df[df[column].str.contains(keyword)]
