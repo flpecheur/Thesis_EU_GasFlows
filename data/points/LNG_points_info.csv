@@ -1,0 +1,48 @@
+Country,index,points_label,is_operational,LNG Entry Point,Latitude,Longitude
+Greece,390,Alexandroupolis LNG,False,Alexandroupolis,40833,25872.0
+Italy,458,OLT LNG / Livorno,True,Toscana,43067,10067.0
+Poland,460,Swinoujscie,True,Swinoujscie,53917,14250.0
+United Kingdom,462,Isle of Grain,True,Isle of Grain,51450,-0.75
+Estonia,463,Paldiski LNG,False,Paldiski LNG,59367,24050.0
+Spain,464,Barcelona,True,Barcelona,41350,2167.0
+Spain,465,Bilbao,True,Bilbao,43333,-3.0
+Greece,466,Agia Triada,True,Revithoussa entry point,37950,23550.0
+Italy,467,Cavarzere (Porto Levante / Adriatic LNG),True,Rovigo LNG,45067,12300.0
+Belgium,468,Zeebrugge LNG,True,Zeebrugge LNG,51333,3200.0
+Spain,469,Huelva,True,Huelva,37200,-6.95
+Italy,470,Panigaglia,True,Panigaglia,44100,9817.0
+Spain,471,Mugardos,True,El Ferrol,43483,-8.25
+Spain,72,Cartagena,True,Cartagena,37600,-0.983
+Spain,473,Sagunto,True,Sagunto,39667,-0.217
+France,474,Montoir de Bretagne,True,Montoir de Bretagne,47283,-2.117
+Portugal,475,Sines,True,Sines,37950,-8.867
+Netherlands,476,Gate Terminal (I),True,Gate Rotterdam,51950,4050.0
+France,477,Fos (Tonkin/Cavaou),True,Fos (Tonkin/Cavaou),43367,4950.0
+Lithuania,478,Klaipeda (LNG),True,Klaipeda (LNG),55700,21150.0
+Croatia,479,Croatia LNG,True,"Hrvatska, KrK",45150,14567.0
+Malta,480,Malta FSRU Offshore Terminal,True,Marsaxlokk,35833,14550.0
+Estonia,481,Tallinn LNG,False,Tallinn LNG,59467,24750.0
+Greece,482,Aegean LNG,False,Revithoussa,37950,23550.0
+Ireland,483,Shannon LNG,False,Shannon LNG,52567,-9.5
+Greece,484,Alexandroupolis Amphitriti,False,Alexandroupolis Amphitriti,40833,25872.0
+Sweden,485,Gothenburg LNG,False,Gothenburg LNG,57700,11867.0
+Italy,486,Zaule LNG (Trieste),False,Zaule LNG (Trieste),45650,13767.0
+Belgium,487,Dunkerque LNG,True,Dunkerque LNG,51050,2367.0
+United Kingdom,488,Milford Haven,True,Milford Haven,51700,-5.05
+Latvia,489,Skulte (LV),False,Riga,56950,24100.0
+Poland,490,FSRU Polish Baltic Sea Coast,True,Swinoujscie,53917,14250.0
+Ireland,491,Cork LNG (IE),False,Cork LNG,51883,-8.3
+Italy,492,Sardinia LNG,True,Sardinia LNG,39150,9100.0
+Germany,493,BRUNSBUETTEL HAFEN (FSRU) (DE),False,BRUNSBUETTEL HAFEN (FSRU),53850,9117.0
+Greece,494,Terminal 2 Vassiliko - Lemesos Port,False,Limassol,34667,33033.0
+Netherlands,741,Eems Energy Terminal,True,Eemshaven,53450,6850.0
+Finland,746,Hamina LNG,True,Hamina LNG,60567,27183.0
+Finland,747,Inkoo LNG (FI),True,Inkoo LNG (FI),60017,24017.0
+Germany,748,"Wilhelmshaven, LNG-Terminal 1 (DE)",True,"Wilhelmshaven, LNG-Terminal 1",53517,8117.0
+Germany,750,Baltic Energy Gate (Port) (DE),False,Lubmin FRSU,54117,13750.0
+Italy,758,FSRU ITALIA_PIOMBINO TERMINAL,False,Toscana,43067,10067.0
+France,759,Le Havre (FR),False,Le Havre,49483,0.117
+Spain,760,Musel,True,Musel,43550,-5.95
+Germany,768,STADE HAFEN (FSRU) - LNG,False,STADE HAFEN (FSRU),53600,9467.0
+Germany,770,Baltic Energy Gate,False,Baltic Energy Gate,54550,18517.0
+Germany,771,"Wilhelmshaven, LNG-Terminal 2",True,"Wilhelmshaven, LNG-Terminal 2",53517,8117.0
