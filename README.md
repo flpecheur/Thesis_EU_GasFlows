@@ -28,7 +28,9 @@ This code relies on the following packages :
 * numpy
 
 3. **Launch interactive setup script**
-Theyre are two scripts available to reduce user interaction with the codes. For Linux or mac users, a bash script can be launched using
+
+For testing purposes, the following scripts allow to launch each step of the process by only interacting with the command line. 
+There are two scripts available to reduce user interaction with the codes. For Linux or mac users, a bash script can be launched using
    ```sh
    chmod +x framework.sh
    ./framework.sh
