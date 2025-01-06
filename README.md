@@ -2,6 +2,8 @@
 
 This repository contains the code, data, and documentation for a master's thesis analyzing the changes in natural gas flow in Europe before and after the Russian invasion of Ukraine. The project involves data collection, processing, visualization, and analysis, with the aim of providing insights into the European natural gas framework during this critical period. The data collection is based around the entsog-py module.
 
+The entsog-py module can be found on https://github.com/nhcb/entsog-py
+ENTSOG-API documentation : https://transparency.entsog.eu/api/archiveDirectories/8/api-manual/TP_REG715_Documentation_TP_API%20-%20v2.1.pdf
 
 The dataflow and general architecture of the Software is represented in the following diagram :
 ![alt text](mémoire-app-design.jpg)
