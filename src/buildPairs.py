@@ -4,7 +4,7 @@ import os
 import json
 from buildDataPerCountry import add_country_info, filter_data, merge_data, rename_columns
 
-YEAR = 2019
+# YEAR = 2019
 
 current_dir = os.getcwd()
 DIR = f"{current_dir}"
@@ -13,7 +13,7 @@ DATA_DICT = {}
 DATES_2019 = ["2019_01",'2019_02','2019_03','2019_04','2019_05','2019_06','2019_07','2019_08','2019_09','2019_10','2019_11','2019_12']
 DATES_2023 = ["2023_01",'2023_02','2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12']
 
-dates = DATES_2019 if YEAR == 2019 else DATES_2023
+#dates = DATES_2019 if YEAR == 2019 else DATES_2023
 
 ###############
 #   MAPPINGS  #
@@ -119,8 +119,10 @@ def aggregate_data(filtered_df):
 
 def combine_pairs(aggregated_df):
     """ 
-    Args : aggregated_df is a dataframe with the columns formCountryLabel, toCountryLabel, entryValue, exitValue
+    Pre : aggregated_df is a dataframe with the columns formCountryLabel, toCountryLabel, entryValue, exitValue
     Remove inter-country pairs (country A to country A)
+    Post : Returns a dataframe with the columns ['fromCountryLabel', 'toCountryLabel', 'entryValue', 'exitValue', 'totalFlow']
+    from and to Country labels are sorted alphabetically
     """
     df = aggregated_df.copy()
     df['pairKey'] = df.apply(lambda row: tuple(sorted([row['fromCountryLabel'],row['toCountryLabel']])), axis=1)
@@ -181,15 +183,15 @@ def fill_dict(date,agg_pairs_df,data_dict):
     Given the final operational aggregated data,
     For each pair of 'fromCountryLabel', 'toCountryLabel' encountered,
     if not already in the dict:
-    - you must itinialize the key pair (a tuple of both labels)
+    - Itinialize the key (a tuple of both country labels)
     and create 3 parameters for total entries, exits and flow that each contain an array of 
     size 12.
     - Add the longitude and latitude of the two countries in the pair as 'fromCoords' and 'toCoords'
     For example, for month X we must set ['entries'][X] to agg_pairs_df['entriesValue']
-
+    Post : data_dict contains the data for each pair of countries for each month of the year
     """
     month_index = int(date[-2:])-1
-    print(f"... Saving data for {date} to data_dict")
+#    print(f"... Saving data for {date} to data_dict")
     for _, row in agg_pairs_df.iterrows():
         from_country = row['fromCountryLabel']
         to_country = row['toCountryLabel']
@@ -223,122 +225,25 @@ def build_dict(dates):
         agg_pairs_df = process_data(date,trans_points,interconnections_df)
 
         fill_dict(date,agg_pairs_df,data_dict)
+    print("Data processed into country pairs for dates : ",dates)
     return data_dict
 
+
+
 if __name__ == "__main__":
+    # NOTE : This script is not meant to be run as a standalone script
     points_df, _, interconnections_df = load_points_data()
     trans_points = filter_keyword('Transmission',points_df,'point_type')
     
     data_dict = {}
-    for date in dates:
+    for date in DATES_2019:
         agg_pairs_df = process_data(date,trans_points,interconnections_df)
 
         fill_dict(date,agg_pairs_df,data_dict)
+    print("2019 data processed into country pairs")
+    for date in DATES_2023:
+        agg_pairs_df = process_data(date,trans_points,interconnections_df)
+
+        fill_dict(date,agg_pairs_df,data_dict)
+    print("2023 data processed into country pairs")
         
-
-
-
-# # Expanded example data
-# data = {
-#     'fromCountryLabel': ['Estonia', 'Finland', 'Latvia', 'Russia', 'Russia', 'Russia', 'Russia', 'Russia', 'Ukraine',
-#                          'Germany', 'Germany', 'France', 'France', 'Italy', 'Italy', 'Spain', 'Spain'],
-#     'toCountryLabel': ['Russia', 'Russia', 'Russia', 'Estonia', 'Finland', 'Latvia', 'Lithuania', 'Ukraine', 'Russia',
-#                        'France', 'Poland', 'Germany', 'Italy', 'Germany', 'France', 'France', 'Italy'],
-#     'Entries': [2.270703e+08, 0.000000e+00, 7.496338e+07, 2.270703e+08, 1.087223e+09, 7.496338e+07, 0.000000e+00, 2.923028e+10, 0.000000e+00,
-#                 5.000000e+09, 2.000000e+09, 6.000000e+09, 4.000000e+09, 3.500000e+09, 2.500000e+09, 4.500000e+09, 3.000000e+09],
-#     'Exits': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -6.36912274e+08, 0.0, 0.0,
-#               -4.500000e+09, -1.500000e+09, -5.500000e+09, -3.500000e+09, -3.000000e+09, -2.000000e+09, -4.000000e+09, -2.500000e+09]
-# }
-# df = pd.DataFrame(data)
-
-# # Compute the total flow
-# df['totalFlow'] = df['Entries'] + df['Exits']
-
-# # Country coordinates
-# country_coords = {
-#     'Estonia': {'lat': 58.5953, 'lon': 25.0136},
-#     'Finland': {'lat': 61.9241, 'lon': 25.7482},
-#     'Latvia': {'lat': 56.8796, 'lon': 24.6032},
-#     'Russia': {'lat': 61.5240, 'lon': 105.3188},
-#     'Lithuania': {'lat': 55.1694, 'lon': 23.8813},
-#     'Ukraine': {'lat': 48.3794, 'lon': 31.1656},
-#     'Germany': {'lat': 51.1657, 'lon': 10.4515},
-#     'France': {'lat': 46.6034, 'lon': 1.8883},
-#     'Poland': {'lat': 51.9194, 'lon': 19.1451},
-#     'Italy': {'lat': 41.8719, 'lon': 12.5674},
-#     'Spain': {'lat': 40.4637, 'lon': -3.7492}
-# }
-
-# # Function to add flow arrows
-# def add_flow_arrows(df, fig, country_coords):
-#     for i in range(len(df)):
-#         from_country = df['fromCountryLabel'][i]
-#         to_country = df['toCountryLabel'][i]
-#         fig.add_trace(go.Scattergeo(
-#             locationmode='country names',
-#             lon=[country_coords[from_country]['lon'], country_coords[to_country]['lon']],
-#             lat=[country_coords[from_country]['lat'], country_coords[to_country]['lat']],
-#             mode='lines+markers',
-#             line=dict(width=2, color='blue' if df['Entries'][i] > 0 else 'red'),
-#             marker=dict(size=5),
-#             name=f"{from_country} to {to_country}"
-#         ))
-
-
-# # Create the base map
-# fig = go.Figure()
-
-# # Function to add flow arrows
-# def add_flow_arrows(df, fig):
-#     for i in range(len(df)):
-#         fig.add_trace(go.Scattergeo(
-#             locationmode='country names',
-#             lon=[df['fromCountryLabel'][i], df['toCountryLabel'][i]],
-#             lat=[df['fromCountryLabel'][i], df['toCountryLabel'][i]],
-#             mode='lines+markers',
-#             line=dict(width=2, color='blue' if df['totalFlow'][i] > 0 else 'red'),
-#             marker=dict(size=5),
-#             name=f"{df['fromCountryLabel'][i]} to {df['toCountryLabel'][i]}"
-#         ))
-
-# # Add flow arrows
-# add_flow_arrows(df, fig)
-
-# # Add the color scale for total flow
-# fig.update_traces(marker=dict(color=df['totalFlow'], colorscale='Viridis', cmin=df['totalFlow'].min(), cmax=df['totalFlow'].max()))
-
-# # Update layout to center the map and position the color scale
-# fig.update_geos(
-#     visible=True,
-#     resolution=50,
-#     showcoastlines=True,
-#     showcountries=True,
-#     coastlinecolor="Black",
-#     countrywidth=0.5,
-#     showland=True,
-#     landcolor="white",
-#     showocean=True,
-#     oceancolor="lightblue",
-#     projection_type="mercator",
-#     center=dict(lat=50.5, lon=15.2551),
-#     projection_scale=5
-# )
-
-# # Adjust the color bar position
-# fig.update_layout(
-#     title_text="Gas Flow Exchanges Between Countries",
-#     coloraxis_colorbar=dict(
-#         title="Total Flow",
-#         tickvals=[df['totalFlow'].min(), df['totalFlow'].max()],
-#         ticks="outside",
-#         # lenmode="fraction",
-#         # len=0.75,
-#         # yanchor="middle",
-#         # y=0.5,
-#         # xanchor="left",
-#         # x=1.05
-#     )
-# )
-
-# # Show the figure
-# fig.show()

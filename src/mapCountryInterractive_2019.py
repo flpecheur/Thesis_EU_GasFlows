@@ -50,8 +50,6 @@ app.layout = html.Div([
         figure=create_initial_map(lng_dict),
         style={'width': '75%', 'display': 'inline-block'}
     ),
-    html.Div(id='sidebar',
-             style={'width': '90%'}),
     html.Div([
         dcc.Dropdown(
             id='country-dropdown',
@@ -61,6 +59,8 @@ app.layout = html.Div([
             placeholder='Select a country',
             style={'width': '50%'}
         ),
+        html.Div(id='sidebar',
+            style={'width': '90%'}),
         dcc.Graph(id='entries-graph',
                   style={'width': '100%', 'display': 'inline-block'})
     ],style={'margin-top': '40px'})
@@ -238,20 +238,22 @@ def generate_AllCountries_view(lng_dict):
         y='entries',
         color='Country',
         title='Total LNG Entries by Country (2019)',
-        labels={'entries': 'Entries (kWh/d)'}
+        labels={'entries': 'Entries (kWh)'}
     )
-    line_fig.update_traces(hovertemplate=" Total Entries: %{y:.2e}")
+    line_fig.update_traces(hovertemplate=" Total Entries: %{y:.2e} (kWh)")
     line_fig.update_layout(
         hovermode='x unified',
         height=800
         )
 
     # Generate pie chart
+    total_entries = sum([sum(entries) for entries in country_data.values()])
     pie_chart = px.pie(
         values=[sum(entries) for entries in country_data.values()],
-        names=list(country_data.keys()),
-        title='Total Entries by Country (2019)'
+        names=[f"{country}:{sum(entries):3e}" for country,entries in country_data.items()],
+        title=f'Total Entries by Country in 2019 - Total Entries: {total_entries:.2e}'
     )
+    pie_chart.update_traces(hovertemplate="Total Entries: %{value:.2e}")
 
     # Generate table
     table = generate_country_table(country_data)
@@ -278,19 +280,21 @@ def generate_Country_view(selected_country,lng_dict):
         y='entries',
         color='point_label',
         title=f'LNG entries in {selected_country} (2019)',
-        labels={'entries': 'Entries (kWh/d)', 'point_label': 'LNG Point'},
+        labels={'entries': 'Entries (kWh)', 'point_label': 'LNG Point'},
     )
     line_fig.update_traces(hovertemplate=" Total Entries: %{y:.2e}")
     line_fig.update_layout(hovermode='x unified')
 
 
     # Generate pie chart
+    total_entries = sum([sum(point['total_entries']) for point in points.values()])
+
     pie_chart = px.pie(
         values=[sum(point['total_entries']) for point in points.values()],
         names=[point['point_label'] for point in points.values()],
-        title=f'LNG Entries in {selected_country}'
+        title=f'LNG Entries in {selected_country} - Total Entries: {total_entries:.2e} (kWh)'
     )
-    pie_chart.update_traces(hovertemplate="%{label} <br> Total Entries: %{value:.2e} </br>")
+    pie_chart.update_traces(hovertemplate=" Total Entries: %{value:.2e}") #% {label} <br> Total Entries: %{value:.2e} </br>")
 
     # Generate table
     table = generate_point_table(points)
@@ -343,7 +347,7 @@ def generate_country_table(country_data):
     """
     return html.Table(
         children=[
-            html.Tr([html.Th('Country'), html.Th('Total Entries (kWh/d)')]),
+            html.Tr([html.Th('Country'), html.Th('Total Entries (kWh)')]),
             *[html.Tr([html.Td(country, style={'whiteSpace': 'nowrap', 'maxWidth': '150px'}), html.Td(f"{sum(entries):.3e}")]) for country, entries in country_data.items()]
         ],
         style={
@@ -351,7 +355,8 @@ def generate_country_table(country_data):
             'border': '1px solid black',
             'margin-top': '60px',
             'maxHeight': '400px', 'overflowY': 'scroll',
-            'tableLayout': 'fixed'
+            'tableLayout': 'fixed',
+            'width': '30%'
         }
     )
 
@@ -361,7 +366,7 @@ def generate_point_table(points):
     """
     return html.Table(
         children=[
-            html.Tr([html.Th("Point Label"), html.Th("Tot Entries (kWh/d)")]),
+            html.Tr([html.Th("Point Label"), html.Th("Tot Entries (kWh)")]),
             *[html.Tr([html.Td(point_data['point_label'], style={'whiteSpace': 'nowrap', 'overflow': 'hidden', 'textOverflow': 'ellipsis', 'maxWidth': '150px'}), html.Td(f"{sum(point_data['total_entries']):.3e}")]) for point_data in points.values()]
         ],
         style={
@@ -369,7 +374,8 @@ def generate_point_table(points):
             'border': '1px solid black',
             'margin-top': '60px',
             'maxHeight': '400px', 'overflowY': 'scroll',
-            'tableLayout': 'fixed'
+            'tableLayout': 'fixed',
+                        'width': '30%'
         }
     )
 

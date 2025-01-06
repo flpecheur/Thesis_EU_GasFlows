@@ -27,11 +27,9 @@ import plotly.express as px
 
 current_dir = os.getcwd()
 DIR = f"{current_dir}"
-YEAR = 2019
 DATES_19 = ['2019_01','2019_02','2019_03','2019_04','2019_05', '2019_06', '2019_07', '2019_08', '2019_09', '2019_10', '2019_11', '2019_12']
 DATES_23 = ['2023_01', '2023_02', '2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12' ]
-dates = DATES_19 if YEAR == 2019 else DATES_23
-
+ 
 ##################
 #   Load data    #
 ##################
@@ -39,7 +37,7 @@ def load_data(date):
     """Load operational, points, operator points directions, and interconnections data."""
     operational_df = pd.read_csv(f"{DIR}/data/opData/op_data_{date}.csv")
     points_df = pd.read_csv(f"{DIR}/data/points_data.csv")
-    operator_points_directions_df = pd.read_csv(f"{DIR}/data/operator_points_dir.csv")
+    operator_points_directions_df = pd.read_csv(f"{DIR}/data/operator_points_dir.csv") # UNUSED
     interconnections_df = pd.read_csv(f'{DIR}/data/interconnections_data.csv')
     return operational_df, points_df, operator_points_directions_df, interconnections_df
 ######################
@@ -117,18 +115,19 @@ def filter_data(merged_df,points_df=None):
     - exit means gas exits "countryTo" to "countryFrom"
     Resulting in all pairs being considered as "entries" for the countryFrom
     """
-    print(f'Size before filtering: {merged_df.shape}')
+    # print(f'Size before filtering: {merged_df.shape}')
     filtered_df = merged_df[(merged_df['directionKey'].isin(['entry', 'exit']))]
     filtered_df = filtered_df[filtered_df['value'].notna()]
     if points_df is not None:
         filtered_df = filtered_df[filtered_df['pointKey'].isin(points_df['point_key'])]
-    print(f'... Size after filtering: {filtered_df.shape}')
+    # print(f'... Size after filtering: {filtered_df.shape}')
 
     return filtered_df
 
 def normalize_direction(filtered_df):
     """
-    NOTE : THis might create some duplicates -> aggregate_entries_exits seperates both
+    UNUSED
+    NOTE : THis might create some duplicates -> aggregate_entries_exits separates both
     Normalize the direction of the gas flow to have a common direction for all entries.
     Add columns countryTo and countryFrom so that :
     - entry means gas enters "countryFrom" to "countryTo"
@@ -160,6 +159,7 @@ def aggregate_entries_exits(filtered_df):
 
 def sankey_diagram(combined_df,selected_countries=None):
     """
+    UNUSED
     Create a sankey diagram from the aggregated data.
     Pre : The dataframe should contain the following columns : fromCountryLabel, toCountryLabel, entryValue, exitValue
 
@@ -235,6 +235,7 @@ def merge_pairs_entries_exits(combined_df):
 
 def visualize_country_entries_exits(merged_df):
     """ 
+    UNUSED
     Create a bar chart to visualize the total gas flow entries and exits between countries.
     Pre : The dataframe should contain the following columns : fromCountryLabel, toCountryLabel, Entries, Exits
     Post : A bar chart px figure
@@ -280,11 +281,11 @@ def visualize_pairs_entries_exits(merged_df):
 
     merged_df['countryPair'] = merged_df['fromCountryLabel'] + ' -> ' + merged_df['toCountryLabel']
     diff_df = merged_df.copy()
-    print(f"Size before filtering: {diff_df.shape}")
+    # print(f"Size before filtering: {diff_df.shape}")
     diff_df = diff_df[['countryPair', 'Entries', 'Exits']]
     diff_df = diff_df[(diff_df['Entries'] != 0) | (diff_df['Exits'] != 0)]
     diff_df = diff_df[diff_df['countryPair'].apply(lambda x: x.split(' -> ')[0] != x.split(' -> ')[1])]
-    print(f"... Size after filtering: {diff_df.shape}")
+    # print(f"... Size after filtering: {diff_df.shape}")
     diff_df['Difference'] = diff_df['Entries'] + diff_df['Exits']
 
     # Create a long-form DataFrame suitable for Plotly Express
@@ -326,9 +327,8 @@ def visualize_pairs_entries_exits(merged_df):
 
 def add_country_info(filtered_df):
     """
-    UNUSED
     Add country information based on 'to' and 'from' country labels.
-    Post : All pairs are considered as "entries"
+    Post : All pairs are considered as "entries". Dataset has added columns 'fromCountry', 'toCountry', 'operatorCountryCode'
     """
     filtered_df['fromCountry'] = filtered_df.apply(lambda row: row['fromCountryLabel'] if row['directionKey'] == 'entry' else row['toCountryLabel'], axis=1)
     filtered_df['toCountry'] = filtered_df.apply(lambda row: row['toCountryLabel'] if row['directionKey'] == 'exit' else row['fromCountryLabel'], axis=1)
@@ -337,6 +337,8 @@ def add_country_info(filtered_df):
 
 def aggregate_data(filtered_df):
     """ 
+    Aggregate filtered operational data by pair of country and direction.
+    POST : new attribute 'totalFlow' = entryValue - exitValue
     - entryValue : total gas flow with key 'entry' , countryFrom to countryTo
     - exitValue : total gas flow with key 'exit' , countryFrom to countryTo    
     """
@@ -347,22 +349,22 @@ def aggregate_data(filtered_df):
     #   - exit means gas exits "countryFrom" to "countryTo" 
     #   - entry means gas enters "countryFrom" from "countryTo"
 
-    aggregated_df = pd.merge(grouped_entries, grouped_exits, 
-            on=['fromCountryLabel', 'toCountryLabel'], 
-            how='outer').fillna(0)
+    aggregated_df = pd.merge(grouped_entries, grouped_exits, on=['fromCountryLabel', 'toCountryLabel'], how='outer').fillna(0)
 
     aggregated_df['totalFlow'] = aggregated_df['entryValue'] - aggregated_df['exitValue']
     aggregated_df = aggregated_df[(aggregated_df['fromCountryLabel'] != aggregated_df['toCountryLabel'])]
-    print(f"... Size after removing intra-country data : {aggregated_df.shape}")
+    # print(f"... Size after removing intra-country data : {aggregated_df.shape}")
 
-    return aggregated_df, grouped_entries, grouped_exits
+    return aggregated_df , grouped_entries, grouped_exits
 
 def aggregate_percountry(aggregated_df):
     """ 
     Pre : Aggregated_df contains the columns ['fromCountryLabel', 'toCountryLabel', 'entryValue', 'exitValue', 'totalFlow']
+    Post : Returns dataset with the columns ['countryName', 'totalEntries', 'totalExits', 'totalFlow']
+    Each country name is associated with the total gas flow entries, exits, and total flow.
     """
     # Aggregate the data per country
-    entries_df = aggregated_df.groupby('fromCountryLabel')['entryValue'].sum().reset_index()
+    entries_df = aggregated_df.groupby('toCountryLabel')['entryValue'].sum().reset_index()
     entries_df.columns = ['countryName', 'totalEntries']
 
     exits_df = aggregated_df.groupby('toCountryLabel')['exitValue'].sum().reset_index()
@@ -376,9 +378,6 @@ def aggregate_percountry(aggregated_df):
 
     return percountry_flow_df
 
-
-
-    
 
 
 def save_data(aggregated_df, percountry_flow_df, date):
@@ -395,7 +394,7 @@ def save_data(aggregated_df, percountry_flow_df, date):
 ###############
 def process_data(date):
     """Main function to process the operational data and create aggregated files."""
-    print(f"Processing data for {date}...")
+    # print(f"Processing data for {date}...")
     operational_df, points_df, _, interconnections_df = load_data(date)
     rename_columns(points_df, operational_df)
     merged_df = merge_data(operational_df, points_df, interconnections_df)
@@ -404,8 +403,13 @@ def process_data(date):
     aggregated_df,_,_ = aggregate_data(filtered_df)
     percountry_flow_df = aggregate_percountry(aggregated_df)
     save_data(aggregated_df, percountry_flow_df, date)
-    print(f"Processing complete for {date}")
+    # print(f"Processing complete for {date}")
 
 if __name__ == "__main__":
-    for date in dates:
+
+    print("Aggregating data per country for 2019...")
+    for date in DATES_19:
+        process_data(date)
+    print("Aggregating data per country for 2023...")
+    for date in DATES_23:   
         process_data(date)

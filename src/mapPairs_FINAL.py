@@ -10,17 +10,17 @@ from buildPairs import COUNTRY_COORDS, build_dict
 
 app = dash.Dash(__name__)
 
-YEAR = 2019 # 2019 or 2023
 DATES_19 = ['2019_01','2019_02','2019_03','2019_04','2019_05', '2019_06', '2019_07', '2019_08', '2019_09', '2019_10', '2019_11', '2019_12']
 DATES_23 = ['2023_01', '2023_02', '2023_03','2023_04','2023_05','2023_06','2023_07','2023_08','2023_09','2023_10','2023_11','2023_12' ]
 
-dates = DATES_19 if YEAR == 2019 else DATES_23
-
-DICT = build_dict(dates)
-# print(DICT)
+DICT_19 = build_dict(DATES_19)
+DICT_23 = build_dict(DATES_23)
 
 def interpolate_coords(coord1, coord2, ratio=2/3):
-    """Interpolates coordinates between coord1 and coord2 based on the given ratio."""
+    """
+    Interpolates coordinates between coord1 and coord2 based on the given ratio.
+    The ration sets the place of the arrow on the map.
+    """
     lon1, lat1 = coord1
     lon2, lat2 = coord2
     lon = lon1 + (lon2 - lon1) * ratio
@@ -28,33 +28,37 @@ def interpolate_coords(coord1, coord2, ratio=2/3):
     return (lon, lat)
 
 
-def create_global_map(input_dict=DICT):
+def create_global_map(year,selected_country=False,input_dict=None):
+
     fig = go.Figure()
 
-    # annotations = []
+    # If a country is selected, only show the flows involving that country 
+    # Input_dict is already filtered in this case (see create_selected_map)
+    if not selected_country :
+        input_dict = DICT_19 if year == '2019' else DICT_23
+
     max_total_flow = max(abs(sum(data['totalFlow'])) for data in input_dict.values())
     gradient_colors = px.colors.sequential.haline_r
 
+
     for pair_dict, data in input_dict.items():
 
-        total_flow = sum(data['totalFlow'])
+        total_flow = sum(data['totalFlow']) # Total flow for the year
         pair = (pair_dict[0], pair_dict[1])
-        total_flow_data = [data['totalFlow']]
         fromCoords, toCoords = data['toCoords'], data['fromCoords']
 
         if total_flow < 0:
             # Invert the countries and make the flow positive
             pair = (pair_dict[1], pair_dict[0])
-            total_flow_data = [-flow for flow in data['totalFlow']]
             fromCoords,toCoords = data['toCoords'], data['fromCoords']
             total_flow = -total_flow
 
         normalized_flow = total_flow / (max_total_flow * 1.5)  # Slightly above the max value
         color_index = int(normalized_flow * (len(gradient_colors) - 1))
-        color = 'black' if total_flow==0 else gradient_colors[color_index]
+        color = 'grey' if total_flow==0 else gradient_colors[color_index]
 
-        text=f"{pair[0]} - {pair[1]} : {total_flow:.3e} (kWh/d)",
-        angle = compute_bearing((fromCoords['lat'], fromCoords['lon']), (toCoords['lat'], toCoords['lon']))
+        text=f"{pair[0]} - {pair[1]} : {total_flow:.3e} (kWh)",
+        angle = compute_bearing((fromCoords['lat'], fromCoords['lon']), (toCoords['lat'], toCoords['lon'])) # Angle of the arrow
         mid_lon, mid_lat = interpolate_coords((fromCoords['lon'], fromCoords['lat']), (toCoords['lon'], toCoords['lat']))
 
         # Create traces
@@ -63,7 +67,7 @@ def create_global_map(input_dict=DICT):
             lat=[fromCoords['lat'], toCoords['lat']],
             mode='lines',
             hoverinfo='none',
-            name=f"{pair[0]} - {pair[1]} : {total_flow:.3e} (kWh/d)",
+            name=f"{pair[0]} - {pair[1]} : {total_flow:.3e} (kWh)",
             line=dict(color=color),
             showlegend=True
         ))
@@ -80,9 +84,8 @@ def create_global_map(input_dict=DICT):
             showlegend=False
         ))
 
-
     fig.update_layout(
-        title='Gas Flow Network in Europe (2019)',
+        title=f'Gas Flow Network in Europe ({year})',
         geo=dict(
             projection_type='mercator',
             showland=True,
@@ -96,20 +99,36 @@ def create_global_map(input_dict=DICT):
             countrycolor='rgb(255, 255, 255)',
         ),
         showlegend=True,
+        coloraxis=dict(
+            cmin=-max_total_flow,
+            cmax=max_total_flow,
+            colorscale="viridis",
+            colorbar=dict(
+                title='Flow (kWh)',
+                tickvals=[-max_total_flow, 0, max_total_flow],
+                ticktext=[f"{-max_total_flow:.3e}", '0', f"{max_total_flow:.3e}"]
+            )
+        )
         # dict1={'colorscale':gradient_colors}
         # annotations=annotations
     )
+#    if not selected_country:
+#        print("Global map updated to year ",year)
+#    else :
+#        print("Global map for select country updated to year ",year)
+
     return fig
 
-def create_selected_map(country):
-    country_data = {pair: data for pair, data in DICT.items() if pair[0] == country or pair[1] == country}
-    print(f"Country data size for {country}: {len(country_data)}")
+def create_selected_map(country,year):
 
-    fig = create_global_map(country_data)
+#    print("Selected map updated to year ",year)
+
+    data_dict = DICT_19 if year == '2019' else DICT_23
+    country_data = {pair: data for pair, data in data_dict.items() if pair[0] == country or pair[1] == country}
+    fig = create_global_map(year,True,country_data)
 
     color_map = px.colors.qualitative.Plotly
     pair_colors = {pair: color_map[i % len(color_map)] for i, pair in enumerate(country_data.keys())}
-    print(f"Pair colors : {pair_colors}")
 
     # Create pie charts for entries and exits
     entries = {pair[1]: sum(data['entries']) for pair, data in country_data.items() if pair[0] == country}
@@ -118,11 +137,11 @@ def create_selected_map(country):
     fig_pie_entries = px.pie(values=list(entries.values()),
                              color=[pair for pair in entries.keys()],
                              color_discrete_map=pair_colors,
-                              names=[f"{key} : {value:.3e}" for key,value in entries.items()], title=f'Total Entries : {sum(entries.values()):.3e} (kWh/d)')
+                              names=[f"{key} : {value:.3e}" for key,value in entries.items()], title=f'Total Entries : {sum(entries.values()):.3e} (kWh)')
     fig_pie_exits = px.pie(values=list(exits.values()),
                             color=[pair for pair in exits.keys()],
                             color_discrete_map=pair_colors,
-                            names=[f"{key} : {value:.3e}" for key,value in exits.items()], title=f'Total Exits : {sum(exits.values()):3e} (kWh/d)')
+                            names=[f"{key} : {value:.3e}" for key,value in exits.items()], title=f'Total Exits : {sum(exits.values()):3e} (kWh)')
 
     # Create line graph for flow evolution over the year
     monthly_flows = []
@@ -143,14 +162,8 @@ def create_selected_map(country):
     fig_bar = go.Figure()
 
     for pair in monthly_flows_df['Pair'].unique():
-    #     pair_data = monthly_flows_df[monthly_flows_df['Pair'] == pair]
-    #     fig_line.add_trace(go.Scatter(x=pair_data['Month'], y=pair_data['Total Flow'], mode='lines+markers',hoverinfo=f"y+name", stackgroup='one'))
-    #     fig_line.add_trace(go.Scatter(x=pair_data['Month'], y=pair_data['Entries'], mode='lines+markers', hoverinfo=f"y+name",stackgroup='one'))
-    #     fig_line.add_trace(go.Scatter(x=pair_data['Month'], y=pair_data['Exits'], mode='lines+markers', hoverinfo=f"y+name",stackgroup='one'))
 
-    # fig_line.update_layout(
-    #     hovermode='x unified'
-    # )
+        # Create a bar chart for each country paired with the selected country
         pair_data = monthly_flows_df[monthly_flows_df['Pair'] == pair]
         pair_key = (pair.split(' - ')[0], pair.split(' - ')[1])
         color = pair_colors[pair_key]
@@ -173,7 +186,7 @@ def create_selected_map(country):
         title='Flow Evolution Over the Year',
         hovermode='x unified',
         xaxis_title='Month',
-        yaxis_title='Flow (kWh/d)'
+        yaxis_title='Flow (kWh)'
     )
 
 
@@ -182,12 +195,21 @@ def create_selected_map(country):
 
 app.layout = html.Div([
     dcc.Dropdown(
+        id='year-dropdown',
+        options=[
+            {'label': '2019', 'value': '2019'},
+            {'label': '2023', 'value': '2023'}
+        ],
+        value='2019'
+    ),
+    dcc.Dropdown(
         id='country-dropdown',
         options=[{'label': country, 'value': country} for country in COUNTRY_COORDS.keys()]+[{'label': 'All Countries', 'value': 'All Countries'}],
         value='All Countries',
         clearable=False
     ),
-    dcc.Graph(id='global-map', figure=create_global_map()),
+    #dcc.Graph(id='global-map', figure=create_global_map()),
+    dcc.Graph(id='global-map'),
     html.Div(id='country-details')
 ])
 
@@ -195,14 +217,18 @@ app.layout = html.Div([
 @app.callback(
     [Output('global-map', 'figure'),
      Output('country-details', 'children')],
-    [Input('country-dropdown', 'value')]
+    [Input('country-dropdown', 'value'),
+    Input('year-dropdown', 'value')]
 )
-def update_output(selected_country):
+def update_output(selected_country, selected_year):
+    print("Current data selected: ",selected_country,selected_year)
+
     if not selected_country or selected_country == 'All Countries':
-        return create_global_map(), []
+        print("All Countries map updates to year ",selected_year)
+        return create_global_map(selected_year), []
 
-
-    fig,fig_pie_entries,fig_pie_exits,fig_line = create_selected_map(selected_country)
+    print("Updating selected country map to year ",selected_year)
+    fig,fig_pie_entries,fig_pie_exits,fig_line = create_selected_map(selected_country,selected_year)
     
     return fig, [
         dcc.Graph(figure=fig_pie_entries),

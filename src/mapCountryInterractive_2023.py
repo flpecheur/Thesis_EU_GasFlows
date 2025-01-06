@@ -10,7 +10,7 @@
 # - data/points/lng_points.csv: Contains information about the LNG points, including the point label, coordinates, country, and operational status.
 # - data/opData/op_data_YYYY_MM.csv: Contains operational data for each LNG point for a specific month (YYYY_MM).
 
-# Upcoming TODO tasks:
+# Upcoming TODO ideas for improvement:
 # - Refactor for better readability and maintainability (methods descr. + comment)
 # - Add a pie chart for all countries showing the total entries for each country.
 # - Add a slider to select the month for which to display the data.
@@ -22,6 +22,8 @@
 ############################################
 
 import dash
+import numpy as np
+import os
 from dash import dcc, html, Input, Output
 import plotly.graph_objects as go
 import plotly.express as px
@@ -29,7 +31,8 @@ import pandas as pd
 from utils import process_total_data, initialize_lng_dict
 from utils import create_initial_map
 
-DIR = 'FINAL'
+current_dir = os.getcwd()
+DIR = f"{current_dir}"
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
@@ -48,8 +51,6 @@ app.layout = html.Div([
         figure=create_initial_map(lng_dict),
         style={'width': '75%', 'display': 'inline-block'}
     ),
-    html.Div(id='sidebar',
-             style={'width': '90%'}),
     html.Div([
         dcc.Dropdown(
             id='country-dropdown',
@@ -59,9 +60,12 @@ app.layout = html.Div([
             placeholder='Select a country',
             style={'width': '50%'}
         ),
+        html.Div(id='sidebar',
+             style={'width': '90%'}),
         dcc.Graph(id='entries-graph',
                   style={'width': '100%', 'display': 'inline-block'})
     ],style={'margin-top': '40px'})
+    
 ])
 
 ### Callbacks ###
@@ -81,135 +85,13 @@ def update_on_country(selected_country):
     # lng_points = {k: v for k, v in lng_dict.items() if v['Country'] == selected_country}
 
     if selected_country == 'All Countries':
-        # # Aggregate data for all countries
-        # country_data = {}
-        # for point_key, point_data in lng_dict.items():
-        #     country = point_data['Country']
-        #     if country not in country_data:
-        #         country_data[country] = [0] * 12
-        #     for month in range(12):
-        #         country_data[country][month] += point_data['total_entries'][month]
         
-        # # Create a dataframe for Plotly Express
-        # data = []
-        # for country, entries in country_data.items():
-        #     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        #     for i in range(12):
-        #         dict_entry = {
-        #             'Country': country,
-        #             'entries': entries[i],
-        #             'month' : months[i]
-        #         }
-        #         data.append(dict_entry)
-        
-        # df = pd.DataFrame(data)
-        
-        # # Generate line plot using Plotly Express
-        # fig = px.line(
-        #     df, 
-        #     x='month', 
-        #     y='entries', 
-        #     color='Country', 
-        #     title='Total LNG Entries by Country (2023)',
-        #     labels={'entries': 'Entries (kWh/d)'}
-        # )
-        # fig.update_traces(hovertemplate=" Total Entries: %{y:.2e}")
-        # fig.update_layout(hovermode='x unified')
-        # # Create a table with all values
-        # table = html.Table(children=[
-        #     html.Tr([html.Th('Country'), html.Th('Total Entries (kWh/d)')]),
-        #     *[html.Tr([
-        #         html.Td(f"{country}",style={'whiteSpace': 'nowrap','maxwidth':'150px'}), 
-        #         html.Td(f"{sum(entries):.3e}")]) 
-        #         for country,entries in country_data.items()]
-
-        # ],
-        # style={'display': 'inline-block','vertical-align': 'top',
-        #        'border': '1px solid black',
-        #        'margin-top': '60px',
-        #        'maxHeight': '400px', 'overflowY': 'scroll',
-        #        'tableLayout': 'fixed'
-        #        })
-        
-
-
-        # pie_chart = px.pie(
-        #     values=[sum(entries) for entries in country_data.values()],
-        #     names=list(country_data.keys()),
-        #     title='Total Entries by Country (2023)'
-        #     )
-
-        # return html.Div([
-        #     html.H2('All Countries', style={'text-align': 'center'}),
-        #     dcc.Graph(
-        #         figure=pie_chart,
-        #         style={'width': '60%', 'display': 'inline-block'}
-        #     ),
-        #         table       
-        #     ]), fig
-
         return generate_AllCountries_view(lng_dict)
     
     else : 
         return generate_Country_view(selected_country,lng_dict)
 
-    # # Else ...
-    # data = []
-    # for k, v in lng_points.items():
-    #     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    #     for i in range(12):
-    #         dict_entry = {
-    #             'point_label': v['point_label'],
-    #             'entries': v['total_entries'][i],
-    #             'month' : months[i]
-    #         }
-    #         data.append(dict_entry)
-
-    # df = pd.DataFrame(data)
-
-    # fig = px.line(
-    #     df,
-    #     x='month',
-    #     y='entries',
-    #     color='point_label',
-    #     title=f'LNG entries in {selected_country} (2023)',
-    #     labels={'entries': 'Entries (kWh/d)','point_label':'LNG Point'},
-    # )
-
-    # # Create a table with the LNG points
-    # table = html.Table(children=[
-    #     html.Tr([html.Th("Point Label"), html.Th("Tot Entries (kWh/d)")]),
-    #     *[html.Tr([
-    #         html.Td(point_data['point_label'], style={'whiteSpace': 'nowrap', 'overflow': 'hidden', 'textOverflow': 'ellipsis','maxWidth': '150px'}),
-    #         html.Td(f"{sum(point_data['total_entries']):.3e}")
-    #     ]) for point_key, point_data in lng_points.items()]
-    #     ],
-    #     style={
-    #         'display': 'inline-block','vertical-align': 'top',
-    #         'border': '1px solid black',
-    #         'margin-top': '60px',
-    #         'maxHeight': '400px', 'overflowY': 'scroll',
-    #         'tableLayout': 'fixed',
-    #         }
-    #         )
-
-    # pie_chart = px.pie(
-    #         values=[sum(point['total_entries']) for point in lng_points.values()],
-    #         names=[point['point_label'] for point in lng_points.values()],
-    #         title=f'LNG Entries in {selected_country}'
-    #         )
-    # # pie_chart.update_layout(width=400, height=400)
-    # pie_chart.update_traces(hovertemplate="%{label} <br> Total Entries: %{value:.2e} </br>")
     
-    # return html.Div([
-    #     html.H2(f'LNG Points in {selected_country}', style={'text-align': 'center'}),
-    #         dcc.Graph(figure=pie_chart,
-    #         style={'width': '60%', 'display': 'inline-block'}
-    #     ),
-    #     table
-    # ]), fig
-
-
 @app.callback(
     Output('main-map', 'figure'),
     Input('country-dropdown', 'value')
@@ -236,7 +118,7 @@ def generate_AllCountries_view(lng_dict):
         y='entries',
         color='Country',
         title='Total LNG Entries by Country (2023)',
-        labels={'entries': 'Entries (kWh/d)'}
+        labels={'entries': 'Entries (kWh)'}
     )
     line_fig.update_traces(hovertemplate=" Total Entries: %{y:.2e}")
     line_fig.update_layout(
@@ -245,11 +127,13 @@ def generate_AllCountries_view(lng_dict):
         )
 
     # Generate pie chart
+    total_entries = sum([np.nansum(entries) for entries in country_data.values()])
     pie_chart = px.pie(
         values=[sum(entries) for entries in country_data.values()],
-        names=list(country_data.keys()),
-        title='Total Entries by Country (2023)'
+        names=[f"{country}:{sum(entries):3e}" for country,entries in country_data.items()],
+        title=f'Total Entries by Country in 2023 - Total Entries: {total_entries:.2e} (kWh)'
     )
+    pie_chart.update_traces(hovertemplate="Total Entries: %{value:.2e}")
 
     # Generate table
     table = generate_country_table(country_data)
@@ -276,26 +160,27 @@ def generate_Country_view(selected_country,lng_dict):
         y='entries',
         color='point_label',
         title=f'LNG entries in {selected_country} (2023)',
-        labels={'entries': 'Entries (kWh/d)', 'point_label': 'LNG Point'},
+        labels={'entries': 'Entries (kWh)', 'point_label': 'LNG Point'},
     )
     line_fig.update_traces(hovertemplate=" Total Entries: %{y:.2e}")
     line_fig.update_layout(hovermode='x unified')
 
 
     # Generate pie chart
+    total_entries = sum([np.nansum(point['total_entries']) for point in points.values()]) #nansum to avoid nan values in found in UK data 2023
     pie_chart = px.pie(
         values=[sum(point['total_entries']) for point in points.values()],
         names=[point['point_label'] for point in points.values()],
-        title=f'LNG Entries in {selected_country}'
+        title=f'LNG Entries in {selected_country} - Total Entries: {total_entries:.2e} (kWh)'
     )
-    pie_chart.update_traces(hovertemplate="%{label} <br> Total Entries: %{value:.2e} </br>")
+    pie_chart.update_traces(hovertemplate="Total Entries: %{value:.2e}")
 
     # Generate table
     table = generate_point_table(points)
 
     return html.Div([
         html.H2(f'LNG Points in {selected_country}', style={'text-align': 'center'}),
-        dcc.Graph(figure=pie_chart, style={'width': '80%', 'display': 'inline-block'}),
+        dcc.Graph(figure=pie_chart, style={'width': '60%', 'display': 'inline-block'}),
         table
     ]), line_fig
 
@@ -303,6 +188,7 @@ def generate_Country_view(selected_country,lng_dict):
 def aggregate_country_data(lng_dict):
     """
     Aggregate data for all countries.
+    Post : return a dictionary with the list of total entries per month for each country.
     """
     country_data = {}
     for point_data in lng_dict.values():
@@ -316,6 +202,7 @@ def aggregate_country_data(lng_dict):
 def create_country_data_df(country_data):
     """
     Create a dataframe for country data.
+    Post : return a dataframe with the total entries for each country for each month.
     """
     data = []
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -341,7 +228,7 @@ def generate_country_table(country_data):
     """
     return html.Table(
         children=[
-            html.Tr([html.Th('Country'), html.Th('Total Entries (kWh/d)')]),
+            html.Tr([html.Th('Country'), html.Th('Total Entries (kWh)')]),
             *[html.Tr([html.Td(country, style={'whiteSpace': 'nowrap', 'maxWidth': '150px'}), html.Td(f"{sum(entries):.3e}")]) for country, entries in country_data.items()]
         ],
         style={
@@ -349,7 +236,9 @@ def generate_country_table(country_data):
             'border': '1px solid black',
             'margin-top': '60px',
             'maxHeight': '400px', 'overflowY': 'scroll',
-            'tableLayout': 'fixed'
+            'tableLayout': 'fixed',
+                        'width': '30%'
+
         }
     )
 
@@ -359,19 +248,21 @@ def generate_point_table(points):
     """
     return html.Table(
         children=[
-            html.Tr([html.Th("Point Label"), html.Th("Tot Entries (kWh/d)")]),
+            html.Tr([html.Th("Point Label"), html.Th("Tot Entries (kWh)")]),
             *[html.Tr([html.Td(point_data['point_label'], style={'whiteSpace': 'nowrap', 'overflow': 'hidden', 'textOverflow': 'ellipsis', 'maxWidth': '150px'}), html.Td(f"{sum(point_data['total_entries']):.3e}")]) for point_data in points.values()]
         ],
         style={
             'display': 'inline-block', 'vertical-align': 'top',
             'border': '1px solid black',
-            'margin-top': '60px',
+            'margin-top': '30px',
             'maxHeight': '400px', 'overflowY': 'scroll',
-            'tableLayout': 'fixed'
+            'tableLayout': 'fixed',
+            'width': '30%'
+
         }
     )
 
 
 ### RUN APP ###
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port = 8051)

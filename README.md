@@ -64,8 +64,3 @@ mapCountryInterractive_YEAR.py provides a Dash layout showing active and non-act
 * mapPairs_FINAL.py displays total connection flows between countries over the year. Selecting a specific country shows total contributions per connected country and the flow evolution during the year. The YEAR parameter at the top of the file should be set accordingly. Some inconsistencies in flow direction have been found and will be investigated further, but the data is consistent.
 
 
-
-
-
-6. 
-
