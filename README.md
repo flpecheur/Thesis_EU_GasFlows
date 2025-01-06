@@ -78,10 +78,6 @@ This script (where YEAR is replaced with the specific year, e.g., mapCountryInte
 This script visualizes the total connection flows between countries over a specified year. When a country is selected, the map shows the total contribution from each connected country and the flow evolution during the year. This tool helps in understanding the flow relationships and dependencies between different countries.
 
 
-# Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-
 # Additional Notes : 
 * In buildPairs.py, the DATA_DICT constant contains the final initialized dictionary. 
 * In buildDataPerCountry.py, the YEAR constant should be set at the top of the file. This script aggregates data per country to display total entries/exits/flow per country. Note that some methods in this file are for visualization and may need to be checked for compatibility with recent code and data modifications.
